@@ -1,0 +1,17 @@
+Install vci_3_5_2_4072.exe . 
+
+Restart the Computer.
+
+Install SetupHMT V3.2.5.0.msi (Change the directory to C:\Spectra Physics\HMT)
+
+Start the HMT Software
+
+Close the HMT Software
+
+Coppy all the data from the original laptop C:\USER\..\Documents\HMT to the new PC in the same C:\USER\..\Documents\HMT directory.
+
+Start the HMT Software. Klick to CONNECT. If the Config File is not selected, browse to C:\USER\..\Documents\HMT and select the first file in the folder (not the candump file). Select Node ID 0x0E and Baudrate 125kBit/s
+
+Klick to Connect.
+
+Work with the system.

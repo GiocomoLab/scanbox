@@ -1,0 +1,43 @@
+// Scanknob firmware v2.0 - by Dario Ringach 
+// 08/02/2017
+
+F0: JA Nop
+F1: JA Valign
+F2: JA Trk
+
+Nop:  STOP
+
+Valign:
+      GAP 11, 3           // left switch status
+      JC ZE, LOOP2
+      
+LOOP1:MVP REL,3,-100      // objective in negative angle
+      GAP 11, 3
+      JC NZ, LOOP1
+L12:  MVP REL,3,4         
+      GAP 11, 3
+      JC ZE, L12
+L13:  MVP REL,3,-1        
+      GAP 11, 3
+      JC NZ, L13
+L14:  MVP REL,3,1        
+      GAP 11, 3
+      JC ZE, L14
+      STOP        
+        
+LOOP2:MVP REL,3,100       // objective in postive angle 
+      GAP 11, 3
+      JC ZE, LOOP2
+L21:  MVP REL,3,-4       
+      GAP 11, 3
+      JC NZ, L21
+L22:  MVP REL,3,1        
+      GAP 11, 3
+      JC ZE, L22
+L23:  MVP REL,3,-1        
+      GAP 11, 3
+      JC NZ, L23  
+      STOP
+      
+Trk:  MVP COORD, $8F, 10   // track axes 0,1,2 without interpolation
+      JA Trk

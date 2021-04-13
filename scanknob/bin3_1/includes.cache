@@ -1,0 +1,27 @@
+[
+  {
+    "Sourcefile": "",
+    "Include": "",
+    "Includepath": "C:\\Users\\dario\\AppData\\Local\\Arduino15\\packages\\arduino\\hardware\\sam\\1.6.11\\cores\\arduino"
+  },
+  {
+    "Sourcefile": "",
+    "Include": "",
+    "Includepath": "C:\\Users\\dario\\AppData\\Local\\Arduino15\\packages\\arduino\\hardware\\sam\\1.6.11\\variants\\arduino_due_x"
+  },
+  {
+    "Sourcefile": "C:\\Users\\dario\\AppData\\Local\\Temp\\arduino_build_180443\\sketch\\knobby3_1.ino.cpp",
+    "Include": "Encoder.h",
+    "Includepath": "C:\\Users\\dario\\Documents\\Arduino\\libraries\\Encoder"
+  },
+  {
+    "Sourcefile": "C:\\Users\\dario\\AppData\\Local\\Temp\\arduino_build_180443\\sketch\\knobby3_1.ino.cpp",
+    "Include": "",
+    "Includepath": ""
+  },
+  {
+    "Sourcefile": "C:\\Users\\dario\\Documents\\Arduino\\libraries\\Encoder\\Encoder.cpp",
+    "Include": "",
+    "Includepath": ""
+  }
+]

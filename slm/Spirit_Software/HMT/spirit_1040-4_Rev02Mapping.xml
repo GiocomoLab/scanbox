@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8" ?> 
+<Module type="A3">
+	<MappingSet name="RxPdo1" type="receive" pdoNbr="1" transmissionMode="asynchronous" transmissionType="acyclic" inhibitTime="none" eventTime="none">
+		<MappedObject index="2000" subIndex="0" size="1" number="1"/>
+	</MappingSet>
+	<MappingSet name="TxPdo1" type="transmit" pdoNbr="1" >
+		<MappedObject index="2001" subIndex="0" size="1" number="1"/>
+		<MappedObject index="2100" subIndex="0" size="2" number="2"/>
+		<MappedObject index="2101" subIndex="0" size="2" number="3"/>
+	</MappingSet>
+</Module>

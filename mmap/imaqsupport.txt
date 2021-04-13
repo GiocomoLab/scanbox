@@ -1,0 +1,2297 @@
+----------------------------------------------------------------------------------------------------
+MATLAB Version: 9.2.0.556344 (R2017a)
+MATLAB License Number: 143909
+Operating System: Microsoft Windows 10 Pro Version 10.0 (Build 14393)
+Java Version: Java 1.7.0_60-b19 with Oracle Corporation Java HotSpot(TM) 64-Bit Server VM mixed mode
+----------------------------------------------------------------------------------------------------
+Image Acquisition Toolbox                             Version 5.2         (R2017a)
+
+----------SUPPORT PACKAGE DIAGNOSTICS----------
+
+                                       Name                                        Version       Base Product       
+---------------------------------------------------------------------------------- ------- -------------------------
+Image Acquisition Toolbox Support Package for GigE Vision Hardware                 17.1.0  Image Acquisition Toolbox
+Data Acquisition Toolbox Support Package for National Instruments NI-DAQmx Devices 17.1.0  Data Acquisition Toolbox
+
+
+
+----------DATE/TIME----------
+
+03-Nov-2017 11:43:33
+
+
+----------DIRECTX----------
+
+DirectX Version: OS Generic Video Support Package not installed
+
+
+----------STAND ALONE HARDWARE DETECTION----------
+
+Hardware detection application for the R2017a version of Image Acquisition Toolbox.
+
+Detecting hardware for the winvideo adaptor.
+
+	No compatible devices found.
+
+Unable to run the detector for the dcam.  The error was: 
+	The specified module could not be found.
+
+
+
+----------AVAILABLE HARDWARE----------
+
+    InstalledAdaptors: {'gige'}
+        MATLABVersion: '9.2 (R2017a)'
+          ToolboxName: 'Image Acquisition Toolbox'
+       ToolboxVersion: '5.2 (R2017a)'
+
+
+----------THIRD PARTY ADAPTORS REGISTERED WITH IMAQREGISTER----------
+
+
+ans =
+
+  0×1 empty <a href="matlab:helpPopup cell" style="font-weight:bold">cell</a> array
+
+
+----------GIGE ADAPTOR----------
+
+Adaptor Name: gige
+Adaptor DLL: C:\ProgramData\MATLAB\SupportPackages\R2017a\toolbox\imaq\supportpackages\gige\adaptor\win64\mwgigeimaq.dll
+
+IMAQHWINFO: 
+       AdaptorDllName: 'C:\ProgramData\MATLAB\SupportPackages\R2017a\toolbox\imaq\supportpackages\gige\adaptor\win64\mwgigeimaq.dll'
+    AdaptorDllVersion: '5.2 (R2017a)'
+          AdaptorName: 'gige'
+            DeviceIDs: {[1]  [2]}
+           DeviceInfo: [1×2 struct]
+
+
+Available Devices: 
+
+	Device Name: GT2750 (02-2612A)
+	Device ID: 1
+	Device File Supported: 0
+	Default Format: Mono8
+	Supported Formats: 
+
+    'Mono12'
+    'Mono12Packed'
+    'Mono14'
+    'Mono8'
+
+
+	Device Name: Genie M1280
+	Device ID: 2
+	Device File Supported: 0
+	Default Format: Mono8
+	Supported Formats: 
+
+    'Mono10'
+    'Mono8'
+
+
+
+----------EXISTING VIDEOINPUT OBJECT DISPLAY----------
+
+
+----------VIDEOINPUT OBJECT CREATION - GIGE----------
+
+videoinput('gige', 1, 'Mono12')--SUCCEEDED
+	Adaptor Name: gige
+	Device Name: GT2750 (02-2612A)
+	Device ID: 1
+	VideoFormat: Mono12
+	Max Height: 550
+	Max Width: 688
+	Native Data Type: uint16
+	Total Sources: 1
+	Vendor Driver Description: Image Acquisition Toolbox GigE Vision Adaptor
+	Vendor Driver Version: 1.13.LIBRARY_BUILD_DATE_STRING
+
+Current device specific property settings (using GET)
+      General Settings:
+        Parent = [1x1 videoinput]
+        Selected = on
+        SourceName = input1
+        Tag = [0x0 string]
+        Type = videosource
+
+      Device Specific Properties:
+        AcquisitionFrameCount = 1
+        AcquisitionFrameRateAbs = 14.9999
+        AcquisitionFrameRateLimit = 15.1529
+        ActionDeviceKey = 0
+        ActionGroupKey = 0
+        ActionGroupMask = 0
+        ActionQueueSize = (Currently not accessible)
+        ActionSelector = 0
+        BalanceRatioAbs = (Currently not accessible)
+        BalanceWhiteAutoAdjustTol = (Currently not accessible)
+        BalanceWhiteAutoRate = (Currently not accessible)
+        BandwidthControlMode = StreamBytesPerSecond
+        BinningHorizontal = 4
+        BinningVertical = 4
+        ColorTransformationValue = (Currently not accessible)
+        DecimationHorizontal = 1
+        DecimationVertical = 1
+        DefectMaskEnable = True
+        DeviceFirmwareVersion = 00.01.54.17562 
+        DeviceID = 02-2612A-07476
+        DeviceModelName = GT2750
+        DevicePartNumber = 02-2612A
+        DeviceScanType = Areascan
+        DeviceTemperature = 42.656
+        DeviceTemperatureSelector = Main
+        DeviceUserID = [0x0 string]
+        DeviceVendorName = Allied Vision Technologies
+        DSPSubregionBottom = 2200
+        DSPSubregionLeft = 0
+        DSPSubregionRight = 2752
+        DSPSubregionTop = 0
+        EFLensFocusCurrent = (Currently not accessible)
+        EFLensFocusMax = (Currently not accessible)
+        EFLensFocusMin = (Currently not accessible)
+        EFLensFocusStepSize = (Currently not accessible)
+        EFLensFStopCurrent = (Currently not accessible)
+        EFLensFStopMax = (Currently not accessible)
+        EFLensFStopMin = (Currently not accessible)
+        EFLensFStopStepSize = (Currently not accessible)
+        EFLensID = (Currently not accessible)
+        EFLensZoomCurrent = (Currently not accessible)
+        EFLensZoomMax = (Currently not accessible)
+        EFLensZoomMin = (Currently not accessible)
+        ExposureAuto = Off
+        ExposureAutoAdjustTol = 5
+        ExposureAutoAlg = Mean
+        ExposureAutoMax = 500000
+        ExposureAutoMin = 10
+        ExposureAutoOutliers = 0
+        ExposureAutoRate = 100
+        ExposureAutoTarget = 50
+        ExposureMode = Timed
+        ExposureTimeAbs = 66000
+        FirmwareVerBuild = 17562
+        FirmwareVerMajor = 1
+        FirmwareVerMinor = 54
+        Gain = 0
+        GainAuto = Off
+        GainAutoAdjustTol = 5
+        GainAutoMax = 33
+        GainAutoMin = 0
+        GainAutoOutliers = 0
+        GainAutoRate = 100
+        GainAutoTarget = 50
+        GainSelector = All
+        Gamma = 1
+        Hue = (Currently not accessible)
+        ImageSize = 756800
+        IrisAutoTarget = 50
+        IrisMode = Disabled
+        IrisVideoLevel = 0
+        IrisVideoLevelMax = (Currently not accessible)
+        IrisVideoLevelMin = (Currently not accessible)
+        LensDCDriveStrength = 10
+        LensPIrisFrequency = 100
+        LensPIrisNumSteps = 50
+        LensPIrisPosition = 50
+        NonImagePayloadSize = 0
+        PacketDelay = 0
+        PacketSize = 9000
+        PtpAcquisitionGateTime = 0
+        PtpMode = Off
+        PtpStatus = Disabled
+        ReverseX = False
+        ReverseY = False
+        Saturation = (Currently not accessible)
+        SensorBits = 14
+        SensorDigitizationTaps = Four
+        SensorTaps = Four
+        SensorType = Mono
+        StreamBytesPerSecond = 115000000
+        StreamFrameRateConstrain = True
+        StreamHoldCapacity = 170
+        StreamHoldEnable = Off
+        StrobeDelay = 0
+        StrobeDuration = 0
+        StrobeDurationMode = Source
+        StrobeSource = FrameTrigger
+        SyncInGlitchFilter = 0
+        SyncInLevels = 0
+        SyncInSelector = SyncIn1
+        SyncOutLevels = 0
+        SyncOutPolarity = Normal
+        SyncOutSelector = SyncOut1
+        SyncOutSource = Exposing
+        TimestampTickFrequency = 1000000000
+        TriggerActivation = RisingEdge
+        TriggerDelayAbs = 0
+        TriggerMode = Off
+        TriggerOverlap = Off
+        TriggerSelector = FrameStart
+        TriggerSource = Freerun
+        VsubValue = 0
+
+Available device specific property settings (using SET)
+   General Settings:
+    Tag
+
+  Device Specific Properties:
+    AcquisitionFrameCount
+    AcquisitionFrameRateAbs
+    ActionDeviceKey
+    ActionGroupKey
+    ActionGroupMask
+    ActionSelector
+    BandwidthControlMode:[ {StreamBytesPerSecond} | SCPD | Both ]
+    BinningHorizontal
+    BinningVertical
+    DecimationHorizontal
+    DecimationVertical
+    DefectMaskEnable:[ {True} | False ]
+    DeviceTemperatureSelector:[ {Main} | Sensor ]
+    DeviceUserID
+    DSPSubregionBottom
+    DSPSubregionLeft
+    DSPSubregionRight
+    DSPSubregionTop
+    ExposureAuto:[ {Off} | Continuous | Once ]
+    ExposureAutoAdjustTol
+    ExposureAutoAlg:[ {Mean} | FitRange ]
+    ExposureAutoMax
+    ExposureAutoMin
+    ExposureAutoOutliers
+    ExposureAutoRate
+    ExposureAutoTarget
+    ExposureMode:[ {Timed} | TriggerWidth ]
+    ExposureTimeAbs
+    Gain
+    GainAuto:[ {Off} | Continuous | Once ]
+    GainAutoAdjustTol
+    GainAutoMax
+    GainAutoMin
+    GainAutoOutliers
+    GainAutoRate
+    GainAutoTarget
+    GainSelector:[ {All} ]
+    Gamma
+    IrisAutoTarget
+    IrisMode:[ {Disabled} | PIrisAuto | PIrisManual | DCIris ]
+    LensDCDriveStrength
+    LensPIrisFrequency
+    LensPIrisNumSteps
+    LensPIrisPosition
+    PacketDelay
+    PacketSize
+    PtpAcquisitionGateTime
+    PtpMode:[ {Off} | Slave | Master | Auto ]
+    ReverseX:[ {False} | True ]
+    ReverseY:[ {False} | True ]
+    SensorDigitizationTaps:[ {Four} | One ]
+    StreamBytesPerSecond
+    StreamFrameRateConstrain:[ {True} | False ]
+    StreamHoldEnable:[ {Off} | On ]
+    StrobeDelay
+    StrobeDuration
+    StrobeDurationMode:[ {Source} | Controlled ]
+    StrobeSource:[ {FrameTrigger} | AcquisitionTriggerReady | FrameTriggerReady | Exposing | FrameReadout | Acquiring | LineIn1 | LineIn2 ]
+    SyncInGlitchFilter
+    SyncInSelector:[ {SyncIn1} | SyncIn2 ]
+    SyncOutLevels
+    SyncOutPolarity:[ {Normal} | Invert ]
+    SyncOutSelector:[ {SyncOut1} | SyncOut2 | SyncOut3 | SyncOut4 ]
+    SyncOutSource:[ {Exposing} | GPO | AcquisitionTriggerReady | FrameTriggerReady | FrameReadout | Imaging | Acquiring | LineIn1 | LineIn2 | Strobe1 ]
+    TriggerActivation:[ {RisingEdge} | FallingEdge | AnyEdge | LevelHigh | LevelLow ]
+    TriggerDelayAbs
+    TriggerMode:[ {Off} | On ]
+    TriggerOverlap:[ {Off} | PreviousFrame ]
+    TriggerSelector:[ {FrameStart} | AcquisitionStart | AcquisitionEnd | AcquisitionRecord ]
+    TriggerSource:[ {Freerun} | Line1 | Line2 | FixedRate | Software | Action0 | Action1 ]
+
+
+videoinput('gige', 1, 'Mono12Packed')--SUCCEEDED
+Current device specific property settings (using GET)
+      General Settings:
+        Parent = [1x1 videoinput]
+        Selected = on
+        SourceName = input1
+        Tag = [0x0 string]
+        Type = videosource
+
+      Device Specific Properties:
+        AcquisitionFrameCount = 1
+        AcquisitionFrameRateAbs = 14.9999
+        AcquisitionFrameRateLimit = 15.1529
+        ActionDeviceKey = 0
+        ActionGroupKey = 0
+        ActionGroupMask = 0
+        ActionQueueSize = (Currently not accessible)
+        ActionSelector = 0
+        BalanceRatioAbs = (Currently not accessible)
+        BalanceWhiteAutoAdjustTol = (Currently not accessible)
+        BalanceWhiteAutoRate = (Currently not accessible)
+        BandwidthControlMode = StreamBytesPerSecond
+        BinningHorizontal = 4
+        BinningVertical = 4
+        ColorTransformationValue = (Currently not accessible)
+        DecimationHorizontal = 1
+        DecimationVertical = 1
+        DefectMaskEnable = True
+        DeviceFirmwareVersion = 00.01.54.17562 
+        DeviceID = 02-2612A-07476
+        DeviceModelName = GT2750
+        DevicePartNumber = 02-2612A
+        DeviceScanType = Areascan
+        DeviceTemperature = 42.656
+        DeviceTemperatureSelector = Main
+        DeviceUserID = [0x0 string]
+        DeviceVendorName = Allied Vision Technologies
+        DSPSubregionBottom = 2200
+        DSPSubregionLeft = 0
+        DSPSubregionRight = 2752
+        DSPSubregionTop = 0
+        EFLensFocusCurrent = (Currently not accessible)
+        EFLensFocusMax = (Currently not accessible)
+        EFLensFocusMin = (Currently not accessible)
+        EFLensFocusStepSize = (Currently not accessible)
+        EFLensFStopCurrent = (Currently not accessible)
+        EFLensFStopMax = (Currently not accessible)
+        EFLensFStopMin = (Currently not accessible)
+        EFLensFStopStepSize = (Currently not accessible)
+        EFLensID = (Currently not accessible)
+        EFLensZoomCurrent = (Currently not accessible)
+        EFLensZoomMax = (Currently not accessible)
+        EFLensZoomMin = (Currently not accessible)
+        ExposureAuto = Off
+        ExposureAutoAdjustTol = 5
+        ExposureAutoAlg = Mean
+        ExposureAutoMax = 500000
+        ExposureAutoMin = 10
+        ExposureAutoOutliers = 0
+        ExposureAutoRate = 100
+        ExposureAutoTarget = 50
+        ExposureMode = Timed
+        ExposureTimeAbs = 66000
+        FirmwareVerBuild = 17562
+        FirmwareVerMajor = 1
+        FirmwareVerMinor = 54
+        Gain = 0
+        GainAuto = Off
+        GainAutoAdjustTol = 5
+        GainAutoMax = 33
+        GainAutoMin = 0
+        GainAutoOutliers = 0
+        GainAutoRate = 100
+        GainAutoTarget = 50
+        GainSelector = All
+        Gamma = 1
+        Hue = (Currently not accessible)
+        ImageSize = 567600
+        IrisAutoTarget = 50
+        IrisMode = Disabled
+        IrisVideoLevel = 0
+        IrisVideoLevelMax = (Currently not accessible)
+        IrisVideoLevelMin = (Currently not accessible)
+        LensDCDriveStrength = 10
+        LensPIrisFrequency = 100
+        LensPIrisNumSteps = 50
+        LensPIrisPosition = 50
+        NonImagePayloadSize = 0
+        PacketDelay = 0
+        PacketSize = 9000
+        PtpAcquisitionGateTime = 0
+        PtpMode = Off
+        PtpStatus = Disabled
+        ReverseX = False
+        ReverseY = False
+        Saturation = (Currently not accessible)
+        SensorBits = 14
+        SensorDigitizationTaps = Four
+        SensorTaps = Four
+        SensorType = Mono
+        StreamBytesPerSecond = 115000000
+        StreamFrameRateConstrain = True
+        StreamHoldCapacity = 226
+        StreamHoldEnable = Off
+        StrobeDelay = 0
+        StrobeDuration = 0
+        StrobeDurationMode = Source
+        StrobeSource = FrameTrigger
+        SyncInGlitchFilter = 0
+        SyncInLevels = 0
+        SyncInSelector = SyncIn1
+        SyncOutLevels = 0
+        SyncOutPolarity = Normal
+        SyncOutSelector = SyncOut1
+        SyncOutSource = Exposing
+        TimestampTickFrequency = 1000000000
+        TriggerActivation = RisingEdge
+        TriggerDelayAbs = 0
+        TriggerMode = Off
+        TriggerOverlap = Off
+        TriggerSelector = FrameStart
+        TriggerSource = Freerun
+        VsubValue = 0
+
+Available device specific property settings (using SET)
+   General Settings:
+    Tag
+
+  Device Specific Properties:
+    AcquisitionFrameCount
+    AcquisitionFrameRateAbs
+    ActionDeviceKey
+    ActionGroupKey
+    ActionGroupMask
+    ActionSelector
+    BandwidthControlMode:[ {StreamBytesPerSecond} | SCPD | Both ]
+    BinningHorizontal
+    BinningVertical
+    DecimationHorizontal
+    DecimationVertical
+    DefectMaskEnable:[ {True} | False ]
+    DeviceTemperatureSelector:[ {Main} | Sensor ]
+    DeviceUserID
+    DSPSubregionBottom
+    DSPSubregionLeft
+    DSPSubregionRight
+    DSPSubregionTop
+    ExposureAuto:[ {Off} | Continuous | Once ]
+    ExposureAutoAdjustTol
+    ExposureAutoAlg:[ {Mean} | FitRange ]
+    ExposureAutoMax
+    ExposureAutoMin
+    ExposureAutoOutliers
+    ExposureAutoRate
+    ExposureAutoTarget
+    ExposureMode:[ {Timed} | TriggerWidth ]
+    ExposureTimeAbs
+    Gain
+    GainAuto:[ {Off} | Continuous | Once ]
+    GainAutoAdjustTol
+    GainAutoMax
+    GainAutoMin
+    GainAutoOutliers
+    GainAutoRate
+    GainAutoTarget
+    GainSelector:[ {All} ]
+    Gamma
+    IrisAutoTarget
+    IrisMode:[ {Disabled} | PIrisAuto | PIrisManual | DCIris ]
+    LensDCDriveStrength
+    LensPIrisFrequency
+    LensPIrisNumSteps
+    LensPIrisPosition
+    PacketDelay
+    PacketSize
+    PtpAcquisitionGateTime
+    PtpMode:[ {Off} | Slave | Master | Auto ]
+    ReverseX:[ {False} | True ]
+    ReverseY:[ {False} | True ]
+    SensorDigitizationTaps:[ {Four} | One ]
+    StreamBytesPerSecond
+    StreamFrameRateConstrain:[ {True} | False ]
+    StreamHoldEnable:[ {Off} | On ]
+    StrobeDelay
+    StrobeDuration
+    StrobeDurationMode:[ {Source} | Controlled ]
+    StrobeSource:[ {FrameTrigger} | AcquisitionTriggerReady | FrameTriggerReady | Exposing | FrameReadout | Acquiring | LineIn1 | LineIn2 ]
+    SyncInGlitchFilter
+    SyncInSelector:[ {SyncIn1} | SyncIn2 ]
+    SyncOutLevels
+    SyncOutPolarity:[ {Normal} | Invert ]
+    SyncOutSelector:[ {SyncOut1} | SyncOut2 | SyncOut3 | SyncOut4 ]
+    SyncOutSource:[ {Exposing} | GPO | AcquisitionTriggerReady | FrameTriggerReady | FrameReadout | Imaging | Acquiring | LineIn1 | LineIn2 | Strobe1 ]
+    TriggerActivation:[ {RisingEdge} | FallingEdge | AnyEdge | LevelHigh | LevelLow ]
+    TriggerDelayAbs
+    TriggerMode:[ {Off} | On ]
+    TriggerOverlap:[ {Off} | PreviousFrame ]
+    TriggerSelector:[ {FrameStart} | AcquisitionStart | AcquisitionEnd | AcquisitionRecord ]
+    TriggerSource:[ {Freerun} | Line1 | Line2 | FixedRate | Software | Action0 | Action1 ]
+
+
+videoinput('gige', 1, 'Mono14')--SUCCEEDED
+Current device specific property settings (using GET)
+      General Settings:
+        Parent = [1x1 videoinput]
+        Selected = on
+        SourceName = input1
+        Tag = [0x0 string]
+        Type = videosource
+
+      Device Specific Properties:
+        AcquisitionFrameCount = 1
+        AcquisitionFrameRateAbs = 14.9999
+        AcquisitionFrameRateLimit = 15.1529
+        ActionDeviceKey = 0
+        ActionGroupKey = 0
+        ActionGroupMask = 0
+        ActionQueueSize = (Currently not accessible)
+        ActionSelector = 0
+        BalanceRatioAbs = (Currently not accessible)
+        BalanceWhiteAutoAdjustTol = (Currently not accessible)
+        BalanceWhiteAutoRate = (Currently not accessible)
+        BandwidthControlMode = StreamBytesPerSecond
+        BinningHorizontal = 4
+        BinningVertical = 4
+        ColorTransformationValue = (Currently not accessible)
+        DecimationHorizontal = 1
+        DecimationVertical = 1
+        DefectMaskEnable = True
+        DeviceFirmwareVersion = 00.01.54.17562 
+        DeviceID = 02-2612A-07476
+        DeviceModelName = GT2750
+        DevicePartNumber = 02-2612A
+        DeviceScanType = Areascan
+        DeviceTemperature = 42.656
+        DeviceTemperatureSelector = Main
+        DeviceUserID = [0x0 string]
+        DeviceVendorName = Allied Vision Technologies
+        DSPSubregionBottom = 2200
+        DSPSubregionLeft = 0
+        DSPSubregionRight = 2752
+        DSPSubregionTop = 0
+        EFLensFocusCurrent = (Currently not accessible)
+        EFLensFocusMax = (Currently not accessible)
+        EFLensFocusMin = (Currently not accessible)
+        EFLensFocusStepSize = (Currently not accessible)
+        EFLensFStopCurrent = (Currently not accessible)
+        EFLensFStopMax = (Currently not accessible)
+        EFLensFStopMin = (Currently not accessible)
+        EFLensFStopStepSize = (Currently not accessible)
+        EFLensID = (Currently not accessible)
+        EFLensZoomCurrent = (Currently not accessible)
+        EFLensZoomMax = (Currently not accessible)
+        EFLensZoomMin = (Currently not accessible)
+        ExposureAuto = Off
+        ExposureAutoAdjustTol = 5
+        ExposureAutoAlg = Mean
+        ExposureAutoMax = 500000
+        ExposureAutoMin = 10
+        ExposureAutoOutliers = 0
+        ExposureAutoRate = 100
+        ExposureAutoTarget = 50
+        ExposureMode = Timed
+        ExposureTimeAbs = 66000
+        FirmwareVerBuild = 17562
+        FirmwareVerMajor = 1
+        FirmwareVerMinor = 54
+        Gain = 0
+        GainAuto = Off
+        GainAutoAdjustTol = 5
+        GainAutoMax = 33
+        GainAutoMin = 0
+        GainAutoOutliers = 0
+        GainAutoRate = 100
+        GainAutoTarget = 50
+        GainSelector = All
+        Gamma = 1
+        Hue = (Currently not accessible)
+        ImageSize = 756800
+        IrisAutoTarget = 50
+        IrisMode = Disabled
+        IrisVideoLevel = 0
+        IrisVideoLevelMax = (Currently not accessible)
+        IrisVideoLevelMin = (Currently not accessible)
+        LensDCDriveStrength = 10
+        LensPIrisFrequency = 100
+        LensPIrisNumSteps = 50
+        LensPIrisPosition = 50
+        NonImagePayloadSize = 0
+        PacketDelay = 0
+        PacketSize = 9000
+        PtpAcquisitionGateTime = 0
+        PtpMode = Off
+        PtpStatus = Disabled
+        ReverseX = False
+        ReverseY = False
+        Saturation = (Currently not accessible)
+        SensorBits = 14
+        SensorDigitizationTaps = Four
+        SensorTaps = Four
+        SensorType = Mono
+        StreamBytesPerSecond = 115000000
+        StreamFrameRateConstrain = True
+        StreamHoldCapacity = 170
+        StreamHoldEnable = Off
+        StrobeDelay = 0
+        StrobeDuration = 0
+        StrobeDurationMode = Source
+        StrobeSource = FrameTrigger
+        SyncInGlitchFilter = 0
+        SyncInLevels = 0
+        SyncInSelector = SyncIn1
+        SyncOutLevels = 0
+        SyncOutPolarity = Normal
+        SyncOutSelector = SyncOut1
+        SyncOutSource = Exposing
+        TimestampTickFrequency = 1000000000
+        TriggerActivation = RisingEdge
+        TriggerDelayAbs = 0
+        TriggerMode = Off
+        TriggerOverlap = Off
+        TriggerSelector = FrameStart
+        TriggerSource = Freerun
+        VsubValue = 0
+
+Available device specific property settings (using SET)
+   General Settings:
+    Tag
+
+  Device Specific Properties:
+    AcquisitionFrameCount
+    AcquisitionFrameRateAbs
+    ActionDeviceKey
+    ActionGroupKey
+    ActionGroupMask
+    ActionSelector
+    BandwidthControlMode:[ {StreamBytesPerSecond} | SCPD | Both ]
+    BinningHorizontal
+    BinningVertical
+    DecimationHorizontal
+    DecimationVertical
+    DefectMaskEnable:[ {True} | False ]
+    DeviceTemperatureSelector:[ {Main} | Sensor ]
+    DeviceUserID
+    DSPSubregionBottom
+    DSPSubregionLeft
+    DSPSubregionRight
+    DSPSubregionTop
+    ExposureAuto:[ {Off} | Continuous | Once ]
+    ExposureAutoAdjustTol
+    ExposureAutoAlg:[ {Mean} | FitRange ]
+    ExposureAutoMax
+    ExposureAutoMin
+    ExposureAutoOutliers
+    ExposureAutoRate
+    ExposureAutoTarget
+    ExposureMode:[ {Timed} | TriggerWidth ]
+    ExposureTimeAbs
+    Gain
+    GainAuto:[ {Off} | Continuous | Once ]
+    GainAutoAdjustTol
+    GainAutoMax
+    GainAutoMin
+    GainAutoOutliers
+    GainAutoRate
+    GainAutoTarget
+    GainSelector:[ {All} ]
+    Gamma
+    IrisAutoTarget
+    IrisMode:[ {Disabled} | PIrisAuto | PIrisManual | DCIris ]
+    LensDCDriveStrength
+    LensPIrisFrequency
+    LensPIrisNumSteps
+    LensPIrisPosition
+    PacketDelay
+    PacketSize
+    PtpAcquisitionGateTime
+    PtpMode:[ {Off} | Slave | Master | Auto ]
+    ReverseX:[ {False} | True ]
+    ReverseY:[ {False} | True ]
+    SensorDigitizationTaps:[ {Four} | One ]
+    StreamBytesPerSecond
+    StreamFrameRateConstrain:[ {True} | False ]
+    StreamHoldEnable:[ {Off} | On ]
+    StrobeDelay
+    StrobeDuration
+    StrobeDurationMode:[ {Source} | Controlled ]
+    StrobeSource:[ {FrameTrigger} | AcquisitionTriggerReady | FrameTriggerReady | Exposing | FrameReadout | Acquiring | LineIn1 | LineIn2 ]
+    SyncInGlitchFilter
+    SyncInSelector:[ {SyncIn1} | SyncIn2 ]
+    SyncOutLevels
+    SyncOutPolarity:[ {Normal} | Invert ]
+    SyncOutSelector:[ {SyncOut1} | SyncOut2 | SyncOut3 | SyncOut4 ]
+    SyncOutSource:[ {Exposing} | GPO | AcquisitionTriggerReady | FrameTriggerReady | FrameReadout | Imaging | Acquiring | LineIn1 | LineIn2 | Strobe1 ]
+    TriggerActivation:[ {RisingEdge} | FallingEdge | AnyEdge | LevelHigh | LevelLow ]
+    TriggerDelayAbs
+    TriggerMode:[ {Off} | On ]
+    TriggerOverlap:[ {Off} | PreviousFrame ]
+    TriggerSelector:[ {FrameStart} | AcquisitionStart | AcquisitionEnd | AcquisitionRecord ]
+    TriggerSource:[ {Freerun} | Line1 | Line2 | FixedRate | Software | Action0 | Action1 ]
+
+
+videoinput('gige', 1, 'Mono8')--SUCCEEDED
+Current device specific property settings (using GET)
+      General Settings:
+        Parent = [1x1 videoinput]
+        Selected = on
+        SourceName = input1
+        Tag = [0x0 string]
+        Type = videosource
+
+      Device Specific Properties:
+        AcquisitionFrameCount = 1
+        AcquisitionFrameRateAbs = 14.9999
+        AcquisitionFrameRateLimit = 15.1529
+        ActionDeviceKey = 0
+        ActionGroupKey = 0
+        ActionGroupMask = 0
+        ActionQueueSize = (Currently not accessible)
+        ActionSelector = 0
+        BalanceRatioAbs = (Currently not accessible)
+        BalanceWhiteAutoAdjustTol = (Currently not accessible)
+        BalanceWhiteAutoRate = (Currently not accessible)
+        BandwidthControlMode = StreamBytesPerSecond
+        BinningHorizontal = 4
+        BinningVertical = 4
+        ColorTransformationValue = (Currently not accessible)
+        DecimationHorizontal = 1
+        DecimationVertical = 1
+        DefectMaskEnable = True
+        DeviceFirmwareVersion = 00.01.54.17562 
+        DeviceID = 02-2612A-07476
+        DeviceModelName = GT2750
+        DevicePartNumber = 02-2612A
+        DeviceScanType = Areascan
+        DeviceTemperature = 42.656
+        DeviceTemperatureSelector = Main
+        DeviceUserID = [0x0 string]
+        DeviceVendorName = Allied Vision Technologies
+        DSPSubregionBottom = 2200
+        DSPSubregionLeft = 0
+        DSPSubregionRight = 2752
+        DSPSubregionTop = 0
+        EFLensFocusCurrent = (Currently not accessible)
+        EFLensFocusMax = (Currently not accessible)
+        EFLensFocusMin = (Currently not accessible)
+        EFLensFocusStepSize = (Currently not accessible)
+        EFLensFStopCurrent = (Currently not accessible)
+        EFLensFStopMax = (Currently not accessible)
+        EFLensFStopMin = (Currently not accessible)
+        EFLensFStopStepSize = (Currently not accessible)
+        EFLensID = (Currently not accessible)
+        EFLensZoomCurrent = (Currently not accessible)
+        EFLensZoomMax = (Currently not accessible)
+        EFLensZoomMin = (Currently not accessible)
+        ExposureAuto = Off
+        ExposureAutoAdjustTol = 5
+        ExposureAutoAlg = Mean
+        ExposureAutoMax = 500000
+        ExposureAutoMin = 10
+        ExposureAutoOutliers = 0
+        ExposureAutoRate = 100
+        ExposureAutoTarget = 50
+        ExposureMode = Timed
+        ExposureTimeAbs = 66000
+        FirmwareVerBuild = 17562
+        FirmwareVerMajor = 1
+        FirmwareVerMinor = 54
+        Gain = 0
+        GainAuto = Off
+        GainAutoAdjustTol = 5
+        GainAutoMax = 33
+        GainAutoMin = 0
+        GainAutoOutliers = 0
+        GainAutoRate = 100
+        GainAutoTarget = 50
+        GainSelector = All
+        Gamma = 1
+        Hue = (Currently not accessible)
+        ImageSize = 378400
+        IrisAutoTarget = 50
+        IrisMode = Disabled
+        IrisVideoLevel = 0
+        IrisVideoLevelMax = (Currently not accessible)
+        IrisVideoLevelMin = (Currently not accessible)
+        LensDCDriveStrength = 10
+        LensPIrisFrequency = 100
+        LensPIrisNumSteps = 50
+        LensPIrisPosition = 50
+        NonImagePayloadSize = 0
+        PacketDelay = 0
+        PacketSize = 9000
+        PtpAcquisitionGateTime = 0
+        PtpMode = Off
+        PtpStatus = Disabled
+        ReverseX = False
+        ReverseY = False
+        Saturation = (Currently not accessible)
+        SensorBits = 14
+        SensorDigitizationTaps = Four
+        SensorTaps = Four
+        SensorType = Mono
+        StreamBytesPerSecond = 115000000
+        StreamFrameRateConstrain = True
+        StreamHoldCapacity = 339
+        StreamHoldEnable = Off
+        StrobeDelay = 0
+        StrobeDuration = 0
+        StrobeDurationMode = Source
+        StrobeSource = FrameTrigger
+        SyncInGlitchFilter = 0
+        SyncInLevels = 0
+        SyncInSelector = SyncIn1
+        SyncOutLevels = 0
+        SyncOutPolarity = Normal
+        SyncOutSelector = SyncOut1
+        SyncOutSource = Exposing
+        TimestampTickFrequency = 1000000000
+        TriggerActivation = RisingEdge
+        TriggerDelayAbs = 0
+        TriggerMode = Off
+        TriggerOverlap = Off
+        TriggerSelector = FrameStart
+        TriggerSource = Freerun
+        VsubValue = 0
+
+Available device specific property settings (using SET)
+   General Settings:
+    Tag
+
+  Device Specific Properties:
+    AcquisitionFrameCount
+    AcquisitionFrameRateAbs
+    ActionDeviceKey
+    ActionGroupKey
+    ActionGroupMask
+    ActionSelector
+    BandwidthControlMode:[ {StreamBytesPerSecond} | SCPD | Both ]
+    BinningHorizontal
+    BinningVertical
+    DecimationHorizontal
+    DecimationVertical
+    DefectMaskEnable:[ {True} | False ]
+    DeviceTemperatureSelector:[ {Main} | Sensor ]
+    DeviceUserID
+    DSPSubregionBottom
+    DSPSubregionLeft
+    DSPSubregionRight
+    DSPSubregionTop
+    ExposureAuto:[ {Off} | Continuous | Once ]
+    ExposureAutoAdjustTol
+    ExposureAutoAlg:[ {Mean} | FitRange ]
+    ExposureAutoMax
+    ExposureAutoMin
+    ExposureAutoOutliers
+    ExposureAutoRate
+    ExposureAutoTarget
+    ExposureMode:[ {Timed} | TriggerWidth ]
+    ExposureTimeAbs
+    Gain
+    GainAuto:[ {Off} | Continuous | Once ]
+    GainAutoAdjustTol
+    GainAutoMax
+    GainAutoMin
+    GainAutoOutliers
+    GainAutoRate
+    GainAutoTarget
+    GainSelector:[ {All} ]
+    Gamma
+    IrisAutoTarget
+    IrisMode:[ {Disabled} | PIrisAuto | PIrisManual | DCIris ]
+    LensDCDriveStrength
+    LensPIrisFrequency
+    LensPIrisNumSteps
+    LensPIrisPosition
+    PacketDelay
+    PacketSize
+    PtpAcquisitionGateTime
+    PtpMode:[ {Off} | Slave | Master | Auto ]
+    ReverseX:[ {False} | True ]
+    ReverseY:[ {False} | True ]
+    SensorDigitizationTaps:[ {Four} | One ]
+    StreamBytesPerSecond
+    StreamFrameRateConstrain:[ {True} | False ]
+    StreamHoldEnable:[ {Off} | On ]
+    StrobeDelay
+    StrobeDuration
+    StrobeDurationMode:[ {Source} | Controlled ]
+    StrobeSource:[ {FrameTrigger} | AcquisitionTriggerReady | FrameTriggerReady | Exposing | FrameReadout | Acquiring | LineIn1 | LineIn2 ]
+    SyncInGlitchFilter
+    SyncInSelector:[ {SyncIn1} | SyncIn2 ]
+    SyncOutLevels
+    SyncOutPolarity:[ {Normal} | Invert ]
+    SyncOutSelector:[ {SyncOut1} | SyncOut2 | SyncOut3 | SyncOut4 ]
+    SyncOutSource:[ {Exposing} | GPO | AcquisitionTriggerReady | FrameTriggerReady | FrameReadout | Imaging | Acquiring | LineIn1 | LineIn2 | Strobe1 ]
+    TriggerActivation:[ {RisingEdge} | FallingEdge | AnyEdge | LevelHigh | LevelLow ]
+    TriggerDelayAbs
+    TriggerMode:[ {Off} | On ]
+    TriggerOverlap:[ {Off} | PreviousFrame ]
+    TriggerSelector:[ {FrameStart} | AcquisitionStart | AcquisitionEnd | AcquisitionRecord ]
+    TriggerSource:[ {Freerun} | Line1 | Line2 | FixedRate | Software | Action0 | Action1 ]
+
+
+
+videoinput('gige', 2, 'Mono10')--SUCCEEDED
+	Adaptor Name: gige
+	Device Name: Genie M1280
+	Device ID: 2
+	VideoFormat: Mono10
+	Max Height: 480
+	Max Width: 640
+	Native Data Type: uint16
+	Total Sources: 1
+	Vendor Driver Description: Image Acquisition Toolbox GigE Vision Adaptor
+	Vendor Driver Version: 1.13.LIBRARY_BUILD_DATE_STRING
+
+Current device specific property settings (using GET)
+      General Settings:
+        Parent = [1x1 videoinput]
+        Selected = on
+        SourceName = input1
+        Tag = [0x0 string]
+        Type = videosource
+
+      Device Specific Properties:
+        AcquisitionFrameCount = (Currently not accessible)
+        AcquisitionFrameRateAbs = 15
+        AcquisitionFrameRateRaw = 15000
+        BinningHorizontal = 2
+        BinningVertical = 2
+        BlackLevelAbs = 0
+        BlackLevelRaw = 0
+        CounterEventSource = Clock
+        CounterResetMode = Software
+        CounterSelector = GevTimestamp
+        DeviceFirmwareVersion = 62735
+        DeviceID = S1052356
+        DeviceModelName = Genie M1280
+        DeviceScanType = Areascan
+        DeviceUserID = S1052356
+        DeviceVendorName = DALSA
+        DeviceVersion = 1.80.260
+        ExposureAlignment = Synchronous
+        ExposureDelay = (Currently not accessible)
+        ExposureMode = Timed
+        ExposureTime = 7000
+        ExposureTimeAbs = 7000
+        GainAbs = 1
+        GainRaw = 0
+        InputLineDebouncingPeriod = 50
+        InputLinePolarity = ActiveHigh
+        LineMode = Input
+        LineSelector = Line1
+        LineStatus = True
+        MACAddress = 2147483647
+        NoiseReduction = False
+        OutputLinePulseDelay = (Currently not accessible)
+        OutputLinePulseDuration = (Currently not accessible)
+        PacketDelay = 0
+        PacketSize = 9000
+        PixelColorFilter = None
+        ReverseX = False
+        sensorColorType = Monochrome
+        ShadingCorrectionGain = (Currently not accessible)
+        ShadingCorrectionMode = Disable
+        ShadingCorrectionOffset = (Currently not accessible)
+        ShadingCorrectionPixelXCoordinate = (Currently not accessible)
+        ShadingCorrectionPixelYCoordinate = (Currently not accessible)
+        ShadingCorrectionReplacePixel = False
+        TestImageSelector = Off
+        TimestampTickFrequency = 1000000
+        TriggerDelayAbs = (Currently not accessible)
+        TriggerMode = Off
+        TriggerSelector = FrameStart
+
+Available device specific property settings (using SET)
+   General Settings:
+    Tag
+
+  Device Specific Properties:
+    AcquisitionFrameRateAbs
+    AcquisitionFrameRateRaw
+    BinningHorizontal
+    BinningVertical
+    BlackLevelAbs
+    BlackLevelRaw
+    CounterEventSource:[ {Clock} | Line | EndOfReadout ]
+    CounterResetMode:[ {Software} | Hardware ]
+    CounterSelector:[ {GevTimestamp} ]
+    DeviceUserID
+    ExposureTime
+    ExposureTimeAbs
+    GainAbs
+    GainRaw
+    InputLineDebouncingPeriod
+    InputLinePolarity:[ {ActiveHigh} | ActiveLow ]
+    LineSelector:[ {Line1} | Line2 | Line3 | Line4 ]
+    NoiseReduction:[ {False} | True ]
+    PacketDelay
+    PacketSize
+    ReverseX:[ {False} | True ]
+    ShadingCorrectionMode:[ {Disable} | Enable | Calibration ]
+    TestImageSelector:[ {Off} | HorizontalWedge | VerticalWedge | DiagonalMovingWedge | Purity ]
+    TriggerMode:[ {Off} | On ]
+    TriggerSelector:[ {FrameStart} ]
+
+
+videoinput('gige', 2, 'Mono8')--SUCCEEDED
+Current device specific property settings (using GET)
+      General Settings:
+        Parent = [1x1 videoinput]
+        Selected = on
+        SourceName = input1
+        Tag = [0x0 string]
+        Type = videosource
+
+      Device Specific Properties:
+        AcquisitionFrameCount = (Currently not accessible)
+        AcquisitionFrameRateAbs = 15
+        AcquisitionFrameRateRaw = 15000
+        BinningHorizontal = 2
+        BinningVertical = 2
+        BlackLevelAbs = 0
+        BlackLevelRaw = 0
+        CounterEventSource = Clock
+        CounterResetMode = Software
+        CounterSelector = GevTimestamp
+        DeviceFirmwareVersion = 62735
+        DeviceID = S1052356
+        DeviceModelName = Genie M1280
+        DeviceScanType = Areascan
+        DeviceUserID = S1052356
+        DeviceVendorName = DALSA
+        DeviceVersion = 1.80.260
+        ExposureAlignment = Synchronous
+        ExposureDelay = (Currently not accessible)
+        ExposureMode = Timed
+        ExposureTime = 7000
+        ExposureTimeAbs = 7000
+        GainAbs = 1
+        GainRaw = 0
+        InputLineDebouncingPeriod = 50
+        InputLinePolarity = ActiveHigh
+        LineMode = Input
+        LineSelector = Line1
+        LineStatus = True
+        MACAddress = 2147483647
+        NoiseReduction = False
+        OutputLinePulseDelay = (Currently not accessible)
+        OutputLinePulseDuration = (Currently not accessible)
+        PacketDelay = 0
+        PacketSize = 9000
+        PixelColorFilter = None
+        ReverseX = False
+        sensorColorType = Monochrome
+        ShadingCorrectionGain = (Currently not accessible)
+        ShadingCorrectionMode = Disable
+        ShadingCorrectionOffset = (Currently not accessible)
+        ShadingCorrectionPixelXCoordinate = (Currently not accessible)
+        ShadingCorrectionPixelYCoordinate = (Currently not accessible)
+        ShadingCorrectionReplacePixel = False
+        TestImageSelector = Off
+        TimestampTickFrequency = 1000000
+        TriggerDelayAbs = (Currently not accessible)
+        TriggerMode = Off
+        TriggerSelector = FrameStart
+
+Available device specific property settings (using SET)
+   General Settings:
+    Tag
+
+  Device Specific Properties:
+    AcquisitionFrameRateAbs
+    AcquisitionFrameRateRaw
+    BinningHorizontal
+    BinningVertical
+    BlackLevelAbs
+    BlackLevelRaw
+    CounterEventSource:[ {Clock} | Line | EndOfReadout ]
+    CounterResetMode:[ {Software} | Hardware ]
+    CounterSelector:[ {GevTimestamp} ]
+    DeviceUserID
+    ExposureTime
+    ExposureTimeAbs
+    GainAbs
+    GainRaw
+    InputLineDebouncingPeriod
+    InputLinePolarity:[ {ActiveHigh} | ActiveLow ]
+    LineSelector:[ {Line1} | Line2 | Line3 | Line4 ]
+    NoiseReduction:[ {False} | True ]
+    PacketDelay
+    PacketSize
+    ReverseX:[ {False} | True ]
+    ShadingCorrectionMode:[ {Disable} | Enable | Calibration ]
+    TestImageSelector:[ {Off} | HorizontalWedge | VerticalWedge | DiagonalMovingWedge | Purity ]
+    TriggerMode:[ {Off} | On ]
+    TriggerSelector:[ {FrameStart} ]
+
+
+
+----------MATLAB ROOT DIRECTORY----------
+
+	C:\Program Files\MATLAB\R2017a
+
+----------MATLAB PATH----------
+
+
+		MATLABPATH
+
+	C:\Users\dario\Documents\MATLAB
+	C:\Users\dario\Documents\MATLAB\Scanbox
+	C:\Users\dario\Documents\MATLAB\Scanbox\.git
+	C:\Users\dario\Documents\MATLAB\Scanbox\.git\hooks
+	C:\Users\dario\Documents\MATLAB\Scanbox\.git\info
+	C:\Users\dario\Documents\MATLAB\Scanbox\.git\logs
+	C:\Users\dario\Documents\MATLAB\Scanbox\.git\logs\refs
+	C:\Users\dario\Documents\MATLAB\Scanbox\.git\logs\refs\heads
+	C:\Users\dario\Documents\MATLAB\Scanbox\.git\logs\refs\remotes
+	C:\Users\dario\Documents\MATLAB\Scanbox\.git\logs\refs\remotes\origin
+	C:\Users\dario\Documents\MATLAB\Scanbox\.git\objects
+	C:\Users\dario\Documents\MATLAB\Scanbox\.git\objects\00
+	C:\Users\dario\Documents\MATLAB\Scanbox\.git\objects\01
+	C:\Users\dario\Documents\MATLAB\Scanbox\.git\objects\02
+	C:\Users\dario\Documents\MATLAB\Scanbox\.git\objects\03
+	C:\Users\dario\Documents\MATLAB\Scanbox\.git\objects\04
+	C:\Users\dario\Documents\MATLAB\Scanbox\.git\objects\05
+	C:\Users\dario\Documents\MATLAB\Scanbox\.git\objects\06
+	C:\Users\dario\Documents\MATLAB\Scanbox\.git\objects\07
+	C:\Users\dario\Documents\MATLAB\Scanbox\.git\objects\08
+	C:\Users\dario\Documents\MATLAB\Scanbox\.git\objects\09
+	C:\Users\dario\Documents\MATLAB\Scanbox\.git\objects\0a
+	C:\Users\dario\Documents\MATLAB\Scanbox\.git\objects\0c
+	C:\Users\dario\Documents\MATLAB\Scanbox\.git\objects\0d
+	C:\Users\dario\Documents\MATLAB\Scanbox\.git\objects\0e
+	C:\Users\dario\Documents\MATLAB\Scanbox\.git\objects\0f
+	C:\Users\dario\Documents\MATLAB\Scanbox\.git\objects\10
+	C:\Users\dario\Documents\MATLAB\Scanbox\.git\objects\11
+	C:\Users\dario\Documents\MATLAB\Scanbox\.git\objects\12
+	C:\Users\dario\Documents\MATLAB\Scanbox\.git\objects\13
+	C:\Users\dario\Documents\MATLAB\Scanbox\.git\objects\14
+	C:\Users\dario\Documents\MATLAB\Scanbox\.git\objects\15
+	C:\Users\dario\Documents\MATLAB\Scanbox\.git\objects\16
+	C:\Users\dario\Documents\MATLAB\Scanbox\.git\objects\17
+	C:\Users\dario\Documents\MATLAB\Scanbox\.git\objects\18
+	C:\Users\dario\Documents\MATLAB\Scanbox\.git\objects\19
+	C:\Users\dario\Documents\MATLAB\Scanbox\.git\objects\1a
+	C:\Users\dario\Documents\MATLAB\Scanbox\.git\objects\1b
+	C:\Users\dario\Documents\MATLAB\Scanbox\.git\objects\1c
+	C:\Users\dario\Documents\MATLAB\Scanbox\.git\objects\1d
+	C:\Users\dario\Documents\MATLAB\Scanbox\.git\objects\1e
+	C:\Users\dario\Documents\MATLAB\Scanbox\.git\objects\1f
+	C:\Users\dario\Documents\MATLAB\Scanbox\.git\objects\20
+	C:\Users\dario\Documents\MATLAB\Scanbox\.git\objects\21
+	C:\Users\dario\Documents\MATLAB\Scanbox\.git\objects\22
+	C:\Users\dario\Documents\MATLAB\Scanbox\.git\objects\23
+	C:\Users\dario\Documents\MATLAB\Scanbox\.git\objects\24
+	C:\Users\dario\Documents\MATLAB\Scanbox\.git\objects\26
+	C:\Users\dario\Documents\MATLAB\Scanbox\.git\objects\27
+	C:\Users\dario\Documents\MATLAB\Scanbox\.git\objects\28
+	C:\Users\dario\Documents\MATLAB\Scanbox\.git\objects\29
+	C:\Users\dario\Documents\MATLAB\Scanbox\.git\objects\2a
+	C:\Users\dario\Documents\MATLAB\Scanbox\.git\objects\2b
+	C:\Users\dario\Documents\MATLAB\Scanbox\.git\objects\2c
+	C:\Users\dario\Documents\MATLAB\Scanbox\.git\objects\2d
+	C:\Users\dario\Documents\MATLAB\Scanbox\.git\objects\2e
+	C:\Users\dario\Documents\MATLAB\Scanbox\.git\objects\2f
+	C:\Users\dario\Documents\MATLAB\Scanbox\.git\objects\30
+	C:\Users\dario\Documents\MATLAB\Scanbox\.git\objects\31
+	C:\Users\dario\Documents\MATLAB\Scanbox\.git\objects\32
+	C:\Users\dario\Documents\MATLAB\Scanbox\.git\objects\33
+	C:\Users\dario\Documents\MATLAB\Scanbox\.git\objects\34
+	C:\Users\dario\Documents\MATLAB\Scanbox\.git\objects\36
+	C:\Users\dario\Documents\MATLAB\Scanbox\.git\objects\37
+	C:\Users\dario\Documents\MATLAB\Scanbox\.git\objects\38
+	C:\Users\dario\Documents\MATLAB\Scanbox\.git\objects\39
+	C:\Users\dario\Documents\MATLAB\Scanbox\.git\objects\3a
+	C:\Users\dario\Documents\MATLAB\Scanbox\.git\objects\3b
+	C:\Users\dario\Documents\MATLAB\Scanbox\.git\objects\3c
+	C:\Users\dario\Documents\MATLAB\Scanbox\.git\objects\3d
+	C:\Users\dario\Documents\MATLAB\Scanbox\.git\objects\3f
+	C:\Users\dario\Documents\MATLAB\Scanbox\.git\objects\40
+	C:\Users\dario\Documents\MATLAB\Scanbox\.git\objects\41
+	C:\Users\dario\Documents\MATLAB\Scanbox\.git\objects\42
+	C:\Users\dario\Documents\MATLAB\Scanbox\.git\objects\43
+	C:\Users\dario\Documents\MATLAB\Scanbox\.git\objects\44
+	C:\Users\dario\Documents\MATLAB\Scanbox\.git\objects\45
+	C:\Users\dario\Documents\MATLAB\Scanbox\.git\objects\46
+	C:\Users\dario\Documents\MATLAB\Scanbox\.git\objects\47
+	C:\Users\dario\Documents\MATLAB\Scanbox\.git\objects\48
+	C:\Users\dario\Documents\MATLAB\Scanbox\.git\objects\49
+	C:\Users\dario\Documents\MATLAB\Scanbox\.git\objects\4a
+	C:\Users\dario\Documents\MATLAB\Scanbox\.git\objects\4b
+	C:\Users\dario\Documents\MATLAB\Scanbox\.git\objects\4c
+	C:\Users\dario\Documents\MATLAB\Scanbox\.git\objects\4d
+	C:\Users\dario\Documents\MATLAB\Scanbox\.git\objects\4e
+	C:\Users\dario\Documents\MATLAB\Scanbox\.git\objects\4f
+	C:\Users\dario\Documents\MATLAB\Scanbox\.git\objects\50
+	C:\Users\dario\Documents\MATLAB\Scanbox\.git\objects\51
+	C:\Users\dario\Documents\MATLAB\Scanbox\.git\objects\52
+	C:\Users\dario\Documents\MATLAB\Scanbox\.git\objects\53
+	C:\Users\dario\Documents\MATLAB\Scanbox\.git\objects\54
+	C:\Users\dario\Documents\MATLAB\Scanbox\.git\objects\55
+	C:\Users\dario\Documents\MATLAB\Scanbox\.git\objects\56
+	C:\Users\dario\Documents\MATLAB\Scanbox\.git\objects\57
+	C:\Users\dario\Documents\MATLAB\Scanbox\.git\objects\58
+	C:\Users\dario\Documents\MATLAB\Scanbox\.git\objects\59
+	C:\Users\dario\Documents\MATLAB\Scanbox\.git\objects\5a
+	C:\Users\dario\Documents\MATLAB\Scanbox\.git\objects\5b
+	C:\Users\dario\Documents\MATLAB\Scanbox\.git\objects\5c
+	C:\Users\dario\Documents\MATLAB\Scanbox\.git\objects\5d
+	C:\Users\dario\Documents\MATLAB\Scanbox\.git\objects\5e
+	C:\Users\dario\Documents\MATLAB\Scanbox\.git\objects\5f
+	C:\Users\dario\Documents\MATLAB\Scanbox\.git\objects\60
+	C:\Users\dario\Documents\MATLAB\Scanbox\.git\objects\61
+	C:\Users\dario\Documents\MATLAB\Scanbox\.git\objects\62
+	C:\Users\dario\Documents\MATLAB\Scanbox\.git\objects\63
+	C:\Users\dario\Documents\MATLAB\Scanbox\.git\objects\64
+	C:\Users\dario\Documents\MATLAB\Scanbox\.git\objects\65
+	C:\Users\dario\Documents\MATLAB\Scanbox\.git\objects\66
+	C:\Users\dario\Documents\MATLAB\Scanbox\.git\objects\68
+	C:\Users\dario\Documents\MATLAB\Scanbox\.git\objects\69
+	C:\Users\dario\Documents\MATLAB\Scanbox\.git\objects\6a
+	C:\Users\dario\Documents\MATLAB\Scanbox\.git\objects\6b
+	C:\Users\dario\Documents\MATLAB\Scanbox\.git\objects\6c
+	C:\Users\dario\Documents\MATLAB\Scanbox\.git\objects\6d
+	C:\Users\dario\Documents\MATLAB\Scanbox\.git\objects\6e
+	C:\Users\dario\Documents\MATLAB\Scanbox\.git\objects\6f
+	C:\Users\dario\Documents\MATLAB\Scanbox\.git\objects\70
+	C:\Users\dario\Documents\MATLAB\Scanbox\.git\objects\71
+	C:\Users\dario\Documents\MATLAB\Scanbox\.git\objects\72
+	C:\Users\dario\Documents\MATLAB\Scanbox\.git\objects\73
+	C:\Users\dario\Documents\MATLAB\Scanbox\.git\objects\74
+	C:\Users\dario\Documents\MATLAB\Scanbox\.git\objects\75
+	C:\Users\dario\Documents\MATLAB\Scanbox\.git\objects\76
+	C:\Users\dario\Documents\MATLAB\Scanbox\.git\objects\77
+	C:\Users\dario\Documents\MATLAB\Scanbox\.git\objects\78
+	C:\Users\dario\Documents\MATLAB\Scanbox\.git\objects\7a
+	C:\Users\dario\Documents\MATLAB\Scanbox\.git\objects\7b
+	C:\Users\dario\Documents\MATLAB\Scanbox\.git\objects\7c
+	C:\Users\dario\Documents\MATLAB\Scanbox\.git\objects\7d
+	C:\Users\dario\Documents\MATLAB\Scanbox\.git\objects\7e
+	C:\Users\dario\Documents\MATLAB\Scanbox\.git\objects\7f
+	C:\Users\dario\Documents\MATLAB\Scanbox\.git\objects\80
+	C:\Users\dario\Documents\MATLAB\Scanbox\.git\objects\81
+	C:\Users\dario\Documents\MATLAB\Scanbox\.git\objects\82
+	C:\Users\dario\Documents\MATLAB\Scanbox\.git\objects\83
+	C:\Users\dario\Documents\MATLAB\Scanbox\.git\objects\84
+	C:\Users\dario\Documents\MATLAB\Scanbox\.git\objects\85
+	C:\Users\dario\Documents\MATLAB\Scanbox\.git\objects\86
+	C:\Users\dario\Documents\MATLAB\Scanbox\.git\objects\87
+	C:\Users\dario\Documents\MATLAB\Scanbox\.git\objects\88
+	C:\Users\dario\Documents\MATLAB\Scanbox\.git\objects\89
+	C:\Users\dario\Documents\MATLAB\Scanbox\.git\objects\8a
+	C:\Users\dario\Documents\MATLAB\Scanbox\.git\objects\8b
+	C:\Users\dario\Documents\MATLAB\Scanbox\.git\objects\8d
+	C:\Users\dario\Documents\MATLAB\Scanbox\.git\objects\8e
+	C:\Users\dario\Documents\MATLAB\Scanbox\.git\objects\8f
+	C:\Users\dario\Documents\MATLAB\Scanbox\.git\objects\90
+	C:\Users\dario\Documents\MATLAB\Scanbox\.git\objects\91
+	C:\Users\dario\Documents\MATLAB\Scanbox\.git\objects\92
+	C:\Users\dario\Documents\MATLAB\Scanbox\.git\objects\93
+	C:\Users\dario\Documents\MATLAB\Scanbox\.git\objects\94
+	C:\Users\dario\Documents\MATLAB\Scanbox\.git\objects\95
+	C:\Users\dario\Documents\MATLAB\Scanbox\.git\objects\96
+	C:\Users\dario\Documents\MATLAB\Scanbox\.git\objects\97
+	C:\Users\dario\Documents\MATLAB\Scanbox\.git\objects\99
+	C:\Users\dario\Documents\MATLAB\Scanbox\.git\objects\9a
+	C:\Users\dario\Documents\MATLAB\Scanbox\.git\objects\9b
+	C:\Users\dario\Documents\MATLAB\Scanbox\.git\objects\9d
+	C:\Users\dario\Documents\MATLAB\Scanbox\.git\objects\9e
+	C:\Users\dario\Documents\MATLAB\Scanbox\.git\objects\9f
+	C:\Users\dario\Documents\MATLAB\Scanbox\.git\objects\a0
+	C:\Users\dario\Documents\MATLAB\Scanbox\.git\objects\a1
+	C:\Users\dario\Documents\MATLAB\Scanbox\.git\objects\a2
+	C:\Users\dario\Documents\MATLAB\Scanbox\.git\objects\a3
+	C:\Users\dario\Documents\MATLAB\Scanbox\.git\objects\a4
+	C:\Users\dario\Documents\MATLAB\Scanbox\.git\objects\a5
+	C:\Users\dario\Documents\MATLAB\Scanbox\.git\objects\a6
+	C:\Users\dario\Documents\MATLAB\Scanbox\.git\objects\a7
+	C:\Users\dario\Documents\MATLAB\Scanbox\.git\objects\a8
+	C:\Users\dario\Documents\MATLAB\Scanbox\.git\objects\a9
+	C:\Users\dario\Documents\MATLAB\Scanbox\.git\objects\aa
+	C:\Users\dario\Documents\MATLAB\Scanbox\.git\objects\ab
+	C:\Users\dario\Documents\MATLAB\Scanbox\.git\objects\ac
+	C:\Users\dario\Documents\MATLAB\Scanbox\.git\objects\ad
+	C:\Users\dario\Documents\MATLAB\Scanbox\.git\objects\ae
+	C:\Users\dario\Documents\MATLAB\Scanbox\.git\objects\af
+	C:\Users\dario\Documents\MATLAB\Scanbox\.git\objects\b0
+	C:\Users\dario\Documents\MATLAB\Scanbox\.git\objects\b1
+	C:\Users\dario\Documents\MATLAB\Scanbox\.git\objects\b2
+	C:\Users\dario\Documents\MATLAB\Scanbox\.git\objects\b3
+	C:\Users\dario\Documents\MATLAB\Scanbox\.git\objects\b4
+	C:\Users\dario\Documents\MATLAB\Scanbox\.git\objects\b5
+	C:\Users\dario\Documents\MATLAB\Scanbox\.git\objects\b6
+	C:\Users\dario\Documents\MATLAB\Scanbox\.git\objects\b7
+	C:\Users\dario\Documents\MATLAB\Scanbox\.git\objects\b8
+	C:\Users\dario\Documents\MATLAB\Scanbox\.git\objects\b9
+	C:\Users\dario\Documents\MATLAB\Scanbox\.git\objects\ba
+	C:\Users\dario\Documents\MATLAB\Scanbox\.git\objects\bb
+	C:\Users\dario\Documents\MATLAB\Scanbox\.git\objects\bc
+	C:\Users\dario\Documents\MATLAB\Scanbox\.git\objects\bd
+	C:\Users\dario\Documents\MATLAB\Scanbox\.git\objects\be
+	C:\Users\dario\Documents\MATLAB\Scanbox\.git\objects\bf
+	C:\Users\dario\Documents\MATLAB\Scanbox\.git\objects\c0
+	C:\Users\dario\Documents\MATLAB\Scanbox\.git\objects\c2
+	C:\Users\dario\Documents\MATLAB\Scanbox\.git\objects\c3
+	C:\Users\dario\Documents\MATLAB\Scanbox\.git\objects\c4
+	C:\Users\dario\Documents\MATLAB\Scanbox\.git\objects\c6
+	C:\Users\dario\Documents\MATLAB\Scanbox\.git\objects\c7
+	C:\Users\dario\Documents\MATLAB\Scanbox\.git\objects\c8
+	C:\Users\dario\Documents\MATLAB\Scanbox\.git\objects\c9
+	C:\Users\dario\Documents\MATLAB\Scanbox\.git\objects\cb
+	C:\Users\dario\Documents\MATLAB\Scanbox\.git\objects\cc
+	C:\Users\dario\Documents\MATLAB\Scanbox\.git\objects\cd
+	C:\Users\dario\Documents\MATLAB\Scanbox\.git\objects\ce
+	C:\Users\dario\Documents\MATLAB\Scanbox\.git\objects\cf
+	C:\Users\dario\Documents\MATLAB\Scanbox\.git\objects\d0
+	C:\Users\dario\Documents\MATLAB\Scanbox\.git\objects\d1
+	C:\Users\dario\Documents\MATLAB\Scanbox\.git\objects\d2
+	C:\Users\dario\Documents\MATLAB\Scanbox\.git\objects\d3
+	C:\Users\dario\Documents\MATLAB\Scanbox\.git\objects\d4
+	C:\Users\dario\Documents\MATLAB\Scanbox\.git\objects\d5
+	C:\Users\dario\Documents\MATLAB\Scanbox\.git\objects\d6
+	C:\Users\dario\Documents\MATLAB\Scanbox\.git\objects\d7
+	C:\Users\dario\Documents\MATLAB\Scanbox\.git\objects\d8
+	C:\Users\dario\Documents\MATLAB\Scanbox\.git\objects\d9
+	C:\Users\dario\Documents\MATLAB\Scanbox\.git\objects\da
+	C:\Users\dario\Documents\MATLAB\Scanbox\.git\objects\db
+	C:\Users\dario\Documents\MATLAB\Scanbox\.git\objects\dc
+	C:\Users\dario\Documents\MATLAB\Scanbox\.git\objects\dd
+	C:\Users\dario\Documents\MATLAB\Scanbox\.git\objects\df
+	C:\Users\dario\Documents\MATLAB\Scanbox\.git\objects\e0
+	C:\Users\dario\Documents\MATLAB\Scanbox\.git\objects\e1
+	C:\Users\dario\Documents\MATLAB\Scanbox\.git\objects\e2
+	C:\Users\dario\Documents\MATLAB\Scanbox\.git\objects\e3
+	C:\Users\dario\Documents\MATLAB\Scanbox\.git\objects\e4
+	C:\Users\dario\Documents\MATLAB\Scanbox\.git\objects\e5
+	C:\Users\dario\Documents\MATLAB\Scanbox\.git\objects\e6
+	C:\Users\dario\Documents\MATLAB\Scanbox\.git\objects\e7
+	C:\Users\dario\Documents\MATLAB\Scanbox\.git\objects\e9
+	C:\Users\dario\Documents\MATLAB\Scanbox\.git\objects\ea
+	C:\Users\dario\Documents\MATLAB\Scanbox\.git\objects\eb
+	C:\Users\dario\Documents\MATLAB\Scanbox\.git\objects\ec
+	C:\Users\dario\Documents\MATLAB\Scanbox\.git\objects\ed
+	C:\Users\dario\Documents\MATLAB\Scanbox\.git\objects\ee
+	C:\Users\dario\Documents\MATLAB\Scanbox\.git\objects\ef
+	C:\Users\dario\Documents\MATLAB\Scanbox\.git\objects\f0
+	C:\Users\dario\Documents\MATLAB\Scanbox\.git\objects\f1
+	C:\Users\dario\Documents\MATLAB\Scanbox\.git\objects\f3
+	C:\Users\dario\Documents\MATLAB\Scanbox\.git\objects\f4
+	C:\Users\dario\Documents\MATLAB\Scanbox\.git\objects\f5
+	C:\Users\dario\Documents\MATLAB\Scanbox\.git\objects\f6
+	C:\Users\dario\Documents\MATLAB\Scanbox\.git\objects\f7
+	C:\Users\dario\Documents\MATLAB\Scanbox\.git\objects\f8
+	C:\Users\dario\Documents\MATLAB\Scanbox\.git\objects\f9
+	C:\Users\dario\Documents\MATLAB\Scanbox\.git\objects\fa
+	C:\Users\dario\Documents\MATLAB\Scanbox\.git\objects\fc
+	C:\Users\dario\Documents\MATLAB\Scanbox\.git\objects\fd
+	C:\Users\dario\Documents\MATLAB\Scanbox\.git\objects\fe
+	C:\Users\dario\Documents\MATLAB\Scanbox\.git\objects\ff
+	C:\Users\dario\Documents\MATLAB\Scanbox\.git\objects\info
+	C:\Users\dario\Documents\MATLAB\Scanbox\.git\objects\pack
+	C:\Users\dario\Documents\MATLAB\Scanbox\.git\refs
+	C:\Users\dario\Documents\MATLAB\Scanbox\.git\refs\heads
+	C:\Users\dario\Documents\MATLAB\Scanbox\.git\refs\remotes
+	C:\Users\dario\Documents\MATLAB\Scanbox\.git\refs\remotes\origin
+	C:\Users\dario\Documents\MATLAB\Scanbox\.git\refs\tags
+	C:\Users\dario\Documents\MATLAB\Scanbox\alazartech
+	C:\Users\dario\Documents\MATLAB\Scanbox\cameras
+	C:\Users\dario\Documents\MATLAB\Scanbox\chameleon
+	C:\Users\dario\Documents\MATLAB\Scanbox\core
+	C:\Users\dario\Documents\MATLAB\Scanbox\drivers
+	C:\Users\dario\Documents\MATLAB\Scanbox\firgelli
+	C:\Users\dario\Documents\MATLAB\Scanbox\firgelli\LAC_Software_V2
+	C:\Users\dario\Documents\MATLAB\Scanbox\knobby_scheduler
+	C:\Users\dario\Documents\MATLAB\Scanbox\knobby_virtual
+	C:\Users\dario\Documents\MATLAB\Scanbox\knobby_virtual\data
+	C:\Users\dario\Documents\MATLAB\Scanbox\knobby_virtual\lib
+	C:\Users\dario\Documents\MATLAB\Scanbox\knobby_virtual\source
+	C:\Users\dario\Documents\MATLAB\Scanbox\mmap
+	C:\Users\dario\Documents\MATLAB\Scanbox\mouse3D
+	C:\Users\dario\Documents\MATLAB\Scanbox\mtimesx
+	C:\Users\dario\Documents\MATLAB\Scanbox\priority
+	C:\Users\dario\Documents\MATLAB\Scanbox\quad
+	C:\Users\dario\Documents\MATLAB\Scanbox\quad\quad_encoder
+	C:\Users\dario\Documents\MATLAB\Scanbox\quad\quad_encoder_mega
+	C:\Users\dario\Documents\MATLAB\Scanbox\sb
+	C:\Users\dario\Documents\MATLAB\Scanbox\sbx
+	C:\Users\dario\Documents\MATLAB\Scanbox\sbx\old
+	C:\Users\dario\Documents\MATLAB\Scanbox\scanknob
+	C:\Users\dario\Documents\MATLAB\Scanbox\scanknob\bin
+	C:\Users\dario\Documents\MATLAB\Scanbox\scanknob\bin\core
+	C:\Users\dario\Documents\MATLAB\Scanbox\scanknob\bin\core\USB
+	C:\Users\dario\Documents\MATLAB\Scanbox\scanknob\bin\core\avr
+	C:\Users\dario\Documents\MATLAB\Scanbox\scanknob\bin\libraries
+	C:\Users\dario\Documents\MATLAB\Scanbox\scanknob\bin\libraries\Adafruit-GFX
+	C:\Users\dario\Documents\MATLAB\Scanbox\scanknob\bin\libraries\Adafruit_FT6206
+	C:\Users\dario\Documents\MATLAB\Scanbox\scanknob\bin\libraries\Adafruit_ILI9341
+	C:\Users\dario\Documents\MATLAB\Scanbox\scanknob\bin\libraries\Encoder
+	C:\Users\dario\Documents\MATLAB\Scanbox\scanknob\bin\libraries\SD
+	C:\Users\dario\Documents\MATLAB\Scanbox\scanknob\bin\libraries\SD\utility
+	C:\Users\dario\Documents\MATLAB\Scanbox\scanknob\bin\libraries\SPI
+	C:\Users\dario\Documents\MATLAB\Scanbox\scanknob\bin\libraries\Wire
+	C:\Users\dario\Documents\MATLAB\Scanbox\scanknob\bin\preproc
+	C:\Users\dario\Documents\MATLAB\Scanbox\scanknob\bin\sketch
+	C:\Users\dario\Documents\MATLAB\Scanbox\scanknob\bin2
+	C:\Users\dario\Documents\MATLAB\Scanbox\scanknob\bin2\core
+	C:\Users\dario\Documents\MATLAB\Scanbox\scanknob\bin2\core\USB
+	C:\Users\dario\Documents\MATLAB\Scanbox\scanknob\bin2\core\avr
+	C:\Users\dario\Documents\MATLAB\Scanbox\scanknob\bin2\libraries
+	C:\Users\dario\Documents\MATLAB\Scanbox\scanknob\bin2\libraries\Encoder
+	C:\Users\dario\Documents\MATLAB\Scanbox\scanknob\bin2\preproc
+	C:\Users\dario\Documents\MATLAB\Scanbox\scanknob\bin2\sketch
+	C:\Users\dario\Documents\MATLAB\Scanbox\scanknob\knobby
+	C:\Users\dario\Documents\MATLAB\Scanbox\scanknob\knobby2
+	C:\Users\dario\Documents\MATLAB\Scanbox\scanknob\knobby2_1
+	C:\Users\dario\Documents\MATLAB\Scanbox\scanknob\knobby_dev
+	C:\Users\dario\Documents\MATLAB\Scanbox\scanknob\knobby_prev
+	C:\Users\dario\Documents\MATLAB\Scanbox\scanknob\microsd
+	C:\Users\dario\Documents\MATLAB\Scanbox\segment
+	C:\Users\dario\Documents\MATLAB\Scanbox\slm
+	C:\Users\dario\Documents\MATLAB\Scanbox\trinamic
+	C:\Program Files\MATLAB\R2017a\toolbox\matlab\datafun
+	C:\Program Files\MATLAB\R2017a\toolbox\matlab\datatypes
+	C:\Program Files\MATLAB\R2017a\toolbox\matlab\elfun
+	C:\Program Files\MATLAB\R2017a\toolbox\matlab\elmat
+	C:\Program Files\MATLAB\R2017a\toolbox\matlab\funfun
+	C:\Program Files\MATLAB\R2017a\toolbox\matlab\general
+	C:\Program Files\MATLAB\R2017a\toolbox\matlab\iofun
+	C:\Program Files\MATLAB\R2017a\toolbox\matlab\lang
+	C:\Program Files\MATLAB\R2017a\toolbox\matlab\matfun
+	C:\Program Files\MATLAB\R2017a\toolbox\matlab\mvm
+	C:\Program Files\MATLAB\R2017a\toolbox\matlab\ops
+	C:\Program Files\MATLAB\R2017a\toolbox\matlab\polyfun
+	C:\Program Files\MATLAB\R2017a\toolbox\matlab\randfun
+	C:\Program Files\MATLAB\R2017a\toolbox\matlab\sparfun
+	C:\Program Files\MATLAB\R2017a\toolbox\matlab\specfun
+	C:\Program Files\MATLAB\R2017a\toolbox\matlab\strfun
+	C:\Program Files\MATLAB\R2017a\toolbox\matlab\timefun
+	C:\Program Files\MATLAB\R2017a\toolbox\matlab\validators
+	C:\Program Files\MATLAB\R2017a\toolbox\matlabxl\matlabxl
+	C:\Program Files\MATLAB\R2017a\toolbox\matlab\demos
+	C:\Program Files\MATLAB\R2017a\toolbox\matlab\findfiles
+	C:\Program Files\MATLAB\R2017a\toolbox\matlab\graph2d
+	C:\Program Files\MATLAB\R2017a\toolbox\matlab\graph3d
+	C:\Program Files\MATLAB\R2017a\toolbox\matlab\graphics
+	C:\Program Files\MATLAB\R2017a\toolbox\matlab\graphics\obsolete
+	C:\Program Files\MATLAB\R2017a\toolbox\matlab\plottools
+	C:\Program Files\MATLAB\R2017a\toolbox\matlab\scribe
+	C:\Program Files\MATLAB\R2017a\toolbox\matlab\scribe\obsolete
+	C:\Program Files\MATLAB\R2017a\toolbox\matlab\specgraph
+	C:\Program Files\MATLAB\R2017a\toolbox\matlab\uitools
+	C:\Program Files\MATLAB\R2017a\toolbox\matlab\uitools\obsolete
+	C:\Program Files\MATLAB\R2017a\toolbox\matlab\hardware\stubs
+	C:\Program Files\MATLAB\R2017a\toolbox\matlab\images
+	C:\Program Files\MATLAB\R2017a\toolbox\local
+	C:\Program Files\MATLAB\R2017a\toolbox\matlab\optimfun
+	C:\Program Files\MATLAB\R2017a\toolbox\matlab\bigdata
+	C:\Program Files\MATLAB\R2017a\toolbox\matlab\codetools
+	C:\Program Files\MATLAB\R2017a\toolbox\matlab\codetools\embeddedoutputs
+	C:\Program Files\MATLAB\R2017a\toolbox\matlab\datamanager
+	C:\Program Files\MATLAB\R2017a\toolbox\matlab\datastoreio
+	C:\Program Files\MATLAB\R2017a\toolbox\matlab\depfun
+	C:\Program Files\MATLAB\R2017a\toolbox\matlab\graphfun
+	C:\Program Files\MATLAB\R2017a\toolbox\matlab\guide
+	C:\Program Files\MATLAB\R2017a\toolbox\matlab\helptools
+	C:\Program Files\MATLAB\R2017a\toolbox\matlab\icons
+	C:\Program Files\MATLAB\R2017a\toolbox\matlab\mapreduceio
+	C:\Program Files\MATLAB\R2017a\toolbox\matlab\testframework\core
+	C:\Program Files\MATLAB\R2017a\toolbox\matlab\testframework\obsolete
+	C:\Program Files\MATLAB\R2017a\toolbox\matlab\testframework\ext
+	C:\Program Files\MATLAB\R2017a\toolbox\matlab\testframework\measurement
+	C:\Program Files\MATLAB\R2017a\toolbox\matlab\testframework\mock
+	C:\Program Files\MATLAB\R2017a\toolbox\matlab\testframework\parallel
+	C:\Program Files\MATLAB\R2017a\toolbox\matlab\testframework\performance
+	C:\Program Files\MATLAB\R2017a\toolbox\matlab\verctrl
+	C:\Program Files\MATLAB\R2017a\toolbox\matlab\winfun
+	C:\Program Files\MATLAB\R2017a\toolbox\matlab\winfun\net
+	C:\Program Files\MATLAB\R2017a\toolbox\simulink\components
+	C:\Program Files\MATLAB\R2017a\toolbox\simulink\dee
+	C:\Program Files\MATLAB\R2017a\toolbox\rtw\targets\asap2\asap2\dataclasses
+	C:\Program Files\MATLAB\R2017a\toolbox\rtw\targets\asap2\asap2
+	C:\Program Files\MATLAB\R2017a\toolbox\rtw\targets\asap2\asap2\user
+	C:\Program Files\MATLAB\R2017a\toolbox\rtw\targets\common\can\blocks\dataclasses
+	C:\Program Files\MATLAB\R2017a\toolbox\rtw\targets\common\can\blocks
+	C:\Program Files\MATLAB\R2017a\toolbox\rtw\targets\common\can\blocks\tlc_c
+	C:\Program Files\MATLAB\R2017a\toolbox\rtw\targets\common\tgtcommon
+	C:\Program Files\MATLAB\R2017a\toolbox\coder\simulinkcoder\cgv\api
+	C:\Program Files\MATLAB\R2017a\toolbox\coder\simulinkcoder
+	C:\Program Files\MATLAB\R2017a\toolbox\coder\simulinkcoder\templates
+	C:\Program Files\MATLAB\R2017a\toolbox\coder\simulinkcoder\targets
+	C:\Program Files\MATLAB\R2017a\toolbox\rtw\targets\pil
+	C:\Program Files\MATLAB\R2017a\toolbox\coder\advisor
+	C:\Program Files\MATLAB\R2017a\toolbox\coder\simulinkcoder_app\backend
+	C:\Program Files\MATLAB\R2017a\toolbox\coder\simulinkcoder_app\core
+	C:\Program Files\MATLAB\R2017a\toolbox\coder\simulinkcoder_app\slfpc
+	C:\Program Files\MATLAB\R2017a\toolbox\coder\simulinkcoder_app\ui
+	C:\Program Files\MATLAB\R2017a\toolbox\rtw\accel
+	C:\Program Files\MATLAB\R2017a\toolbox\coder\simulinkcoder_core
+	C:\Program Files\MATLAB\R2017a\toolbox\rtw\rtwdemos
+	C:\Program Files\MATLAB\R2017a\toolbox\rtw\rtwdemos\rsimdemos
+	C:\Program Files\MATLAB\R2017a\toolbox\coder\objectives
+	C:\Program Files\MATLAB\R2017a\toolbox\simulinktest\core\simharness\simharness
+	C:\Program Files\MATLAB\R2017a\toolbox\simulinktest\core\observer\observer
+	C:\Program Files\MATLAB\R2017a\toolbox\simulinktest\core\testsequence\testsequence
+	C:\Program Files\MATLAB\R2017a\toolbox\simulink\blocks\library
+	C:\Program Files\MATLAB\R2017a\toolbox\simulink\blocks\library\simulinkcoder
+	C:\Program Files\MATLAB\R2017a\toolbox\simulink\blocks\obsolete
+	C:\Program Files\MATLAB\R2017a\toolbox\simulink\blocks
+	C:\Program Files\MATLAB\R2017a\toolbox\simulink\simulink\dataclasses
+	C:\Program Files\MATLAB\R2017a\toolbox\simulink\simulink
+	C:\Program Files\MATLAB\R2017a\toolbox\simulink\simulink\mplayio
+	C:\Program Files\MATLAB\R2017a\toolbox\simulink\simulink\dataobjectwizard
+	C:\Program Files\MATLAB\R2017a\toolbox\simulink\simulink\slresolve
+	C:\Program Files\MATLAB\R2017a\toolbox\simulink\simulink\units
+	C:\Program Files\MATLAB\R2017a\toolbox\simulink\simulink\resources
+	C:\Program Files\MATLAB\R2017a\toolbox\simulink\simulink\model_transformer
+	C:\Program Files\MATLAB\R2017a\toolbox\simulink\simulink\clone_detection
+	C:\Program Files\MATLAB\R2017a\toolbox\simulink\simulink\templates\core
+	C:\Program Files\MATLAB\R2017a\toolbox\simulink\simdemos\dataclasses
+	C:\Program Files\MATLAB\R2017a\toolbox\simulink\simdemos
+	C:\Program Files\MATLAB\R2017a\toolbox\simulink\simdemos\aerospace
+	C:\Program Files\MATLAB\R2017a\toolbox\simulink\simdemos\automotive
+	C:\Program Files\MATLAB\R2017a\toolbox\simulink\simdemos\simfeatures
+	C:\Program Files\MATLAB\R2017a\toolbox\simulink\simdemos\simfeatures\modelreference
+	C:\Program Files\MATLAB\R2017a\toolbox\simulink\simdemos\simfeatures\datadictionary
+	C:\Program Files\MATLAB\R2017a\toolbox\simulink\simdemos\automotive\fuelsys
+	C:\Program Files\MATLAB\R2017a\toolbox\simulink\simdemos\simgeneral
+	C:\Program Files\MATLAB\R2017a\toolbox\simulink\simdemos\industrial
+	C:\Program Files\MATLAB\R2017a\toolbox\simulink\simdemos\automotive\powerwindow
+	C:\Program Files\MATLAB\R2017a\toolbox\simulink\sldependency
+	C:\Program Files\MATLAB\R2017a\toolbox\slde\slde
+	C:\Program Files\MATLAB\R2017a\toolbox\slde\slde\resources
+	C:\Program Files\MATLAB\R2017a\toolbox\simulink\simulink_export_methods
+	C:\Program Files\MATLAB\R2017a\toolbox\simulink\hmi
+	C:\Program Files\MATLAB\R2017a\toolbox\simulink\simulink\modeladvisor
+	C:\Program Files\MATLAB\R2017a\toolbox\simulink\simulink\modeladvisor\fixpt
+	C:\Program Files\MATLAB\R2017a\toolbox\simulink\simulink\modeladvisor\misra
+	C:\Program Files\MATLAB\R2017a\toolbox\simulink\simulink\templates\product
+	C:\Program Files\MATLAB\R2017a\toolbox\simulink\sdi
+	C:\Program Files\MATLAB\R2017a\toolbox\simulink\sysarch\sysarch
+	C:\Program Files\MATLAB\R2017a\toolbox\simulink\simulink\frameedit
+	C:\Program Files\MATLAB\R2017a\toolbox\simulink\ui\library_browser\core\m
+	C:\Program Files\MATLAB\R2017a\toolbox\shared\examples\verification
+	C:\Program Files\MATLAB\R2017a\toolbox\stateflow\stateflow
+	C:\Program Files\MATLAB\R2017a\toolbox\stateflow\coder
+	C:\Program Files\MATLAB\R2017a\toolbox\stateflow\sfdemos
+	C:\Program Files\MATLAB\R2017a\toolbox\matlab\addons
+	C:\Program Files\MATLAB\R2017a\toolbox\matlab\addons\cef
+	C:\Program Files\MATLAB\R2017a\toolbox\matlab\addons\fallbackmanager
+	C:\Program Files\MATLAB\R2017a\toolbox\matlab\addons\supportpackages
+	C:\Program Files\MATLAB\R2017a\toolbox\matlab\addons_product
+	C:\Program Files\MATLAB\R2017a\toolbox\matlab\supportpackagemanagement
+	C:\Program Files\MATLAB\R2017a\toolbox\matlab\addons_toolbox
+	C:\Program Files\MATLAB\R2017a\toolbox\matlab\addons_zip
+	C:\Program Files\MATLAB\R2017a\toolbox\matlab\appdesigner\appdesigner
+	C:\Program Files\MATLAB\R2017a\toolbox\matlab\appdesigner\appdesigner\interface
+	C:\Program Files\MATLAB\R2017a\toolbox\matlab\apps
+	C:\Program Files\MATLAB\R2017a\toolbox\matlab\audiovideo
+	C:\Program Files\MATLAB\R2017a\toolbox\rtw\targets\autosar\autosar\dataclasses
+	C:\Program Files\MATLAB\R2017a\toolbox\rtw\targets\autosar\autosar
+	C:\Program Files\MATLAB\R2017a\toolbox\bioinfo\bioinfodata
+	C:\Program Files\MATLAB\R2017a\toolbox\matlab\cefclient
+	C:\Program Files\MATLAB\R2017a\toolbox\coder\codedescriptor_core
+	C:\Program Files\MATLAB\R2017a\toolbox\coder\codegendemos
+	C:\Program Files\MATLAB\R2017a\toolbox\coder\coder
+	C:\Program Files\MATLAB\R2017a\toolbox\coder\connectivity
+	C:\Program Files\MATLAB\R2017a\toolbox\rtw\targets\connectivity
+	C:\Program Files\MATLAB\R2017a\toolbox\coder\emlcodermex
+	C:\Program Files\MATLAB\R2017a\toolbox\coder\coverage
+	C:\Program Files\MATLAB\R2017a\toolbox\rtw\rtw
+	C:\Program Files\MATLAB\R2017a\toolbox\coder\foundation
+	C:\Program Files\MATLAB\R2017a\toolbox\coder\foundation\build
+	C:\Program Files\MATLAB\R2017a\toolbox\coder\foundation\build\tools\registry
+	C:\Program Files\MATLAB\R2017a\toolbox\coder\foundation\tfl
+	C:\Program Files\MATLAB\R2017a\toolbox\coder\foundation\tfl\autosar\autosar4p0\ifx
+	C:\Program Files\MATLAB\R2017a\toolbox\coder\foundation\tfl\autosar\autosar4p0\ifl
+	C:\Program Files\MATLAB\R2017a\toolbox\coder\foundation\tfl\gui
+	C:\Program Files\MATLAB\R2017a\toolbox\coder\foundation\templates
+	C:\Program Files\MATLAB\R2017a\toolbox\shared\simtargets
+	C:\Program Files\MATLAB\R2017a\toolbox\coder\matlabcoder
+	C:\Program Files\MATLAB\R2017a\toolbox\coder\matlabcoder\templates
+	C:\Program Files\MATLAB\R2017a\toolbox\coder\profile
+	C:\Program Files\MATLAB\R2017a\toolbox\coder\rtiostream
+	C:\Program Files\MATLAB\R2017a\toolbox\coder\trace
+	C:\Program Files\MATLAB\R2017a\toolbox\coder\wizard
+	C:\Program Files\MATLAB\R2017a\toolbox\coder\xrelexport
+	C:\Program Files\MATLAB\R2017a\toolbox\shared\comparisons
+	C:\Program Files\MATLAB\R2017a\toolbox\simulink\compiled_model_interface
+	C:\Program Files\MATLAB\R2017a\toolbox\compiler_sdk\java
+	C:\Program Files\MATLAB\R2017a\toolbox\compiler
+	C:\Program Files\MATLAB\R2017a\toolbox\compiler\compilerdemos
+	C:\Program Files\MATLAB\R2017a\toolbox\compiler\java
+	C:\Program Files\MATLAB\R2017a\toolbox\compiler_sdk
+	C:\Program Files\MATLAB\R2017a\toolbox\compiler\mltall
+	C:\Program Files\MATLAB\R2017a\toolbox\matlab\configtools
+	C:\Program Files\MATLAB\R2017a\toolbox\matlab\connector2\common
+	C:\Program Files\MATLAB\R2017a\toolbox\matlab\connector2\configuration
+	C:\Program Files\MATLAB\R2017a\toolbox\matlab\connector2\connector
+	C:\Program Files\MATLAB\R2017a\toolbox\matlab\connector2\editor
+	C:\Program Files\MATLAB\R2017a\toolbox\matlab\connector2\figures
+	C:\Program Files\MATLAB\R2017a\toolbox\matlab\connector2\file
+	C:\Program Files\MATLAB\R2017a\toolbox\matlab\connector2\framework
+	C:\Program Files\MATLAB\R2017a\toolbox\matlab\connector2\http
+	C:\Program Files\MATLAB\R2017a\toolbox\matlab\connector2\interpreter
+	C:\Program Files\MATLAB\R2017a\toolbox\matlab\connector2\json
+	C:\Program Files\MATLAB\R2017a\toolbox\matlab\connector2\logger
+	C:\Program Files\MATLAB\R2017a\toolbox\matlab\connector2\messageservice
+	C:\Program Files\MATLAB\R2017a\toolbox\matlab\connector2\mgg
+	C:\Program Files\MATLAB\R2017a\toolbox\matlab\connector2\microservices
+	C:\Program Files\MATLAB\R2017a\toolbox\matlab\connector2\nativebridge
+	C:\Program Files\MATLAB\R2017a\toolbox\matlab\connector2\restmatlab
+	C:\Program Files\MATLAB\R2017a\toolbox\matlab\connector2\security
+	C:\Program Files\MATLAB\R2017a\toolbox\matlab\connector2\session
+	C:\Program Files\MATLAB\R2017a\toolbox\matlab\connector2\shadowfiles
+	C:\Program Files\MATLAB\R2017a\toolbox\matlab\connector2\usmatlabhost
+	C:\Program Files\MATLAB\R2017a\toolbox\matlab\connector2\visualization
+	C:\Program Files\MATLAB\R2017a\toolbox\matlab\connector2\worker
+	C:\Program Files\MATLAB\R2017a\toolbox\control\control
+	C:\Program Files\MATLAB\R2017a\toolbox\control\ctrlmodels
+	C:\Program Files\MATLAB\R2017a\toolbox\control\ctrlanalysis
+	C:\Program Files\MATLAB\R2017a\toolbox\control\ctrldesign
+	C:\Program Files\MATLAB\R2017a\toolbox\control\ctrlplots
+	C:\Program Files\MATLAB\R2017a\toolbox\control\ctrlguis
+	C:\Program Files\MATLAB\R2017a\toolbox\control\ctrlobsolete
+	C:\Program Files\MATLAB\R2017a\toolbox\control\ctrlutil
+	C:\Program Files\MATLAB\R2017a\toolbox\control\ctrldemos
+	C:\Program Files\MATLAB\R2017a\help\toolbox\control\examples
+	C:\Program Files\MATLAB\R2017a\toolbox\matlab\reports
+	C:\Program Files\MATLAB\R2017a\toolbox\curvefit\curvefit
+	C:\Program Files\MATLAB\R2017a\toolbox\curvefit\splines
+	C:\Program Files\MATLAB\R2017a\toolbox\curvefit\sftoolgui
+	C:\Program Files\MATLAB\R2017a\toolbox\curvefit\curvefitdemos
+	C:\Program Files\MATLAB\R2017a\toolbox\daq\daq
+	C:\Program Files\MATLAB\R2017a\toolbox\daq\daqdemos
+	C:\Program Files\MATLAB\R2017a\toolbox\daq\daqsdk\bin\win64
+	C:\Program Files\MATLAB\R2017a\toolbox\daq\daqsdk
+	C:\Program Files\MATLAB\R2017a\toolbox\daq\daqsdk\tests
+	C:\Program Files\MATLAB\R2017a\toolbox\daq\daqblks
+	C:\Program Files\MATLAB\R2017a\toolbox\daq\daqblks\daqsfcn
+	C:\Program Files\MATLAB\R2017a\toolbox\matlab\datatools\inspector\matlab
+	C:\Program Files\MATLAB\R2017a\toolbox\matlab\datatools\plotstab\matlab
+	C:\Program Files\MATLAB\R2017a\toolbox\matlab\datatools\variableeditor\matlab
+	C:\Program Files\MATLAB\R2017a\toolbox\matlab\datatools\workspacebrowser\matlab
+	C:\Program Files\MATLAB\R2017a\toolbox\dig\dig
+	C:\Program Files\MATLAB\R2017a\toolbox\distcomp
+	C:\Program Files\MATLAB\R2017a\toolbox\distcomp\distcomp
+	C:\Program Files\MATLAB\R2017a\toolbox\distcomp\user
+	C:\Program Files\MATLAB\R2017a\toolbox\distcomp\mpi
+	C:\Program Files\MATLAB\R2017a\toolbox\distcomp\parallel
+	C:\Program Files\MATLAB\R2017a\toolbox\distcomp\parallel\util
+	C:\Program Files\MATLAB\R2017a\toolbox\distcomp\lang
+	C:\Program Files\MATLAB\R2017a\toolbox\distcomp\cluster
+	C:\Program Files\MATLAB\R2017a\toolbox\distcomp\gpu
+	C:\Program Files\MATLAB\R2017a\toolbox\distcomp\array
+	C:\Program Files\MATLAB\R2017a\toolbox\distcomp\pctdemos
+	C:\Program Files\MATLAB\R2017a\toolbox\dotnetbuilder\dotnetbuilder
+	C:\Program Files\MATLAB\R2017a\toolbox\shared\dastudio\dpvu\dpvu
+	C:\Program Files\MATLAB\R2017a\toolbox\shared\dastudio\dpvu\dpvu\metamodel
+	C:\Program Files\MATLAB\R2017a\toolbox\shared\dastudio\dpvu\dpvu\actions
+	C:\Program Files\MATLAB\R2017a\toolbox\shared\dsp\simulink\dsp
+	C:\Program Files\MATLAB\R2017a\toolbox\eml\eml
+	C:\Program Files\MATLAB\R2017a\toolbox\matlab\external\engines\engine_api
+	C:\Program Files\MATLAB\R2017a\toolbox\exlink
+	C:\Program Files\MATLAB\R2017a\toolbox\matlab\filebrowser
+	C:\Program Files\MATLAB\R2017a\toolbox\fixedpoint\fixedpointtool
+	C:\Program Files\MATLAB\R2017a\toolbox\fixedpoint\fidemos
+	C:\Program Files\MATLAB\R2017a\toolbox\fixedpoint\fixedpoint
+	C:\Program Files\MATLAB\R2017a\toolbox\fixpoint
+	C:\Program Files\MATLAB\R2017a\toolbox\fixpoint\fpca
+	C:\Program Files\MATLAB\R2017a\toolbox\coder\float2fixed
+	C:\Program Files\MATLAB\R2017a\toolbox\coder\float2fixed\demos
+	C:\Program Files\MATLAB\R2017a\toolbox\coder\float2fixed\dmm_emlauthoring
+	C:\Program Files\MATLAB\R2017a\toolbox\coder\float2fixed\custom_logger
+	C:\Program Files\MATLAB\R2017a\toolbox\matlab\uitools\uicomponents\components
+	C:\Program Files\MATLAB\R2017a\toolbox\gpucoder\gpucoder
+	C:\Program Files\MATLAB\R2017a\toolbox\gpucoder\gpucoder\foundation\build
+	C:\Program Files\MATLAB\R2017a\toolbox\hdlcoder\hdlcommon
+	C:\Program Files\MATLAB\R2017a\toolbox\hdlcoder\hdlcommon\modelcheckeradvisor
+	C:\Program Files\MATLAB\R2017a\toolbox\hdlcoder\hdllib\ml_lib
+	C:\Program Files\MATLAB\R2017a\toolbox\hdlcoder\hdllib\sl_lib
+	C:\Program Files\MATLAB\R2017a\toolbox\hdlcoder\hdlslrt
+	C:\Program Files\MATLAB\R2017a\toolbox\shared\hadoopserializer
+	C:\Program Files\MATLAB\R2017a\toolbox\shared\appdes\services
+	C:\Program Files\MATLAB\R2017a\toolbox\shared\hwmanager\hwconnection
+	C:\Program Files\MATLAB\R2017a\toolbox\shared\hwmanager\hwsetup
+	C:\Program Files\MATLAB\R2017a\toolbox\shared\hwmanager\hwsetup\hwwidgets
+	C:\Program Files\MATLAB\R2017a\toolbox\shared\hwmanager\hwsetup\hwtemplates
+	C:\Program Files\MATLAB\R2017a\toolbox\shared\hwmanager\hwsetup\launch
+	C:\Program Files\MATLAB\R2017a\toolbox\shared\hwmanager\logger
+	C:\Program Files\MATLAB\R2017a\toolbox\idelink\extensions\ticcs
+	C:\Program Files\MATLAB\R2017a\toolbox\idelink\extensions\ticcs\ccsblks
+	C:\Program Files\MATLAB\R2017a\toolbox\idelink\extensions\ticcs\ccslinkblks
+	C:\Program Files\MATLAB\R2017a\toolbox\idelink\extensions\ticcs\ccslinkblks\rtdxsimblks
+	C:\Program Files\MATLAB\R2017a\toolbox\idelink\extensions\ticcs\mdlinfo
+	C:\Program Files\MATLAB\R2017a\toolbox\idelink\extensions\ticcs\tfl
+	C:\Program Files\MATLAB\R2017a\toolbox\idelink\extensions\ticcs\util
+	C:\Program Files\MATLAB\R2017a\toolbox\idelink\extensions\ticcs\rtw
+	C:\Program Files\MATLAB\R2017a\toolbox\idelink\extensions\ticcs\envchecker
+	C:\Program Files\MATLAB\R2017a\toolbox\idelink\foundation\pjtgenerator
+	C:\Program Files\MATLAB\R2017a\toolbox\idelink\foundation\pjtgenerator\rtw
+	C:\Program Files\MATLAB\R2017a\toolbox\idelink\foundation\pjtgenerator\tgtpref2
+	C:\Program Files\MATLAB\R2017a\toolbox\idelink\foundation\pjtgenerator\profiler
+	C:\Program Files\MATLAB\R2017a\toolbox\idelink\foundation\pjtgenerator\mdlinfo
+	C:\Program Files\MATLAB\R2017a\toolbox\idelink\foundation\pjtgenerator\blks
+	C:\Program Files\MATLAB\R2017a\toolbox\idelink\foundation\pjtgenerator\blks\masks
+	C:\Program Files\MATLAB\R2017a\toolbox\idelink\foundation\pjtgenerator\blks\tlc_c
+	C:\Program Files\MATLAB\R2017a\toolbox\idelink\foundation
+	C:\Program Files\MATLAB\R2017a\toolbox\idelink\foundation\autointerface
+	C:\Program Files\MATLAB\R2017a\toolbox\idelink\foundation\autointerface\ideregisterplugins
+	C:\Program Files\MATLAB\R2017a\toolbox\idelink\foundation\util
+	C:\Program Files\MATLAB\R2017a\toolbox\idelink\foundation\errorhandler
+	C:\Program Files\MATLAB\R2017a\toolbox\idelink\foundation\xmakefile
+	C:\Program Files\MATLAB\R2017a\toolbox\idelink\foundation\hookpoints
+	C:\Program Files\MATLAB\R2017a\toolbox\idelink\idelinkdemos
+	C:\Program Files\MATLAB\R2017a\toolbox\idelink\extensions\ticcs\ccsdemos
+	C:\Program Files\MATLAB\R2017a\toolbox\idelink\extensions\ticcs\ccsdemos\util
+	C:\Program Files\MATLAB\R2017a\toolbox\ident\ident
+	C:\Program Files\MATLAB\R2017a\toolbox\ident\nlident
+	C:\Program Files\MATLAB\R2017a\toolbox\ident\idobsolete
+	C:\Program Files\MATLAB\R2017a\toolbox\ident\idguis
+	C:\Program Files\MATLAB\R2017a\toolbox\ident\idutils
+	C:\Program Files\MATLAB\R2017a\toolbox\ident\idrecursive
+	C:\Program Files\MATLAB\R2017a\toolbox\ident\idhelp
+	C:\Program Files\MATLAB\R2017a\toolbox\ident\iddemos
+	C:\Program Files\MATLAB\R2017a\toolbox\ident\iddemos\examples
+	C:\Program Files\MATLAB\R2017a\toolbox\images\colorspaces
+	C:\Program Files\MATLAB\R2017a\toolbox\images\images
+	C:\Program Files\MATLAB\R2017a\toolbox\images\imdata
+	C:\Program Files\MATLAB\R2017a\toolbox\images\imuitools
+	C:\Program Files\MATLAB\R2017a\toolbox\images\iptformats
+	C:\Program Files\MATLAB\R2017a\toolbox\images\iptutils
+	C:\Program Files\MATLAB\R2017a\toolbox\matlab\imagesci
+	C:\Program Files\MATLAB\R2017a\toolbox\images\imdemos
+	C:\Program Files\MATLAB\R2017a\toolbox\imaq\imaq
+	C:\Program Files\MATLAB\R2017a\toolbox\imaq\imaqdemos
+	C:\Program Files\MATLAB\R2017a\toolbox\imaq\imaqblks\imaqblks
+	C:\Program Files\MATLAB\R2017a\toolbox\imaq\imaqblks\imaqmex
+	C:\Program Files\MATLAB\R2017a\toolbox\imaq\imaqblks\imaqmasks
+	C:\Program Files\MATLAB\R2017a\toolbox\instrument\instrument
+	C:\Program Files\MATLAB\R2017a\toolbox\instrument\instrumentblks\instrumentblks
+	C:\Program Files\MATLAB\R2017a\toolbox\instrument\instrumentblks\instrumentmex
+	C:\Program Files\MATLAB\R2017a\toolbox\instrument\instrumentblks\instrumentmasks
+	C:\Program Files\MATLAB\R2017a\toolbox\instrument\instrumentdemos
+	C:\Program Files\MATLAB\R2017a\toolbox\shared\instrument
+	C:\Program Files\MATLAB\R2017a\toolbox\javabuilder\javabuilder
+	C:\Program Files\MATLAB\R2017a\toolbox\shared\spcuilib\logicanalyzer
+	C:\Program Files\MATLAB\R2017a\toolbox\shared\m3i
+	C:\Program Files\MATLAB\R2017a\toolbox\simulink\mask\iconeditor
+	C:\Program Files\MATLAB\R2017a\toolbox\shared\mldatx
+	C:\Program Files\MATLAB\R2017a\toolbox\compiler\mlhadoop
+	C:\Program Files\MATLAB\R2017a\toolbox\compiler\mlspark
+	C:\Program Files\MATLAB\R2017a\toolbox\multisim
+	C:\Program Files\MATLAB\R2017a\toolbox\matlab\networklib
+	C:\Program Files\MATLAB\R2017a\toolbox\nnet
+	C:\Program Files\MATLAB\R2017a\toolbox\nnet\nncontrol
+	C:\Program Files\MATLAB\R2017a\toolbox\nnet\nnet
+	C:\Program Files\MATLAB\R2017a\toolbox\nnet\nnet\nnadapt
+	C:\Program Files\MATLAB\R2017a\toolbox\nnet\nnet\nndatafun
+	C:\Program Files\MATLAB\R2017a\toolbox\nnet\nnet\nnderivative
+	C:\Program Files\MATLAB\R2017a\toolbox\nnet\nnet\nndistance
+	C:\Program Files\MATLAB\R2017a\toolbox\nnet\nnet\nndivision
+	C:\Program Files\MATLAB\R2017a\toolbox\nnet\nnet\nninitlayer
+	C:\Program Files\MATLAB\R2017a\toolbox\nnet\nnet\nninitnetwork
+	C:\Program Files\MATLAB\R2017a\toolbox\nnet\nnet\nninitweight
+	C:\Program Files\MATLAB\R2017a\toolbox\nnet\nnet\nnlearn
+	C:\Program Files\MATLAB\R2017a\toolbox\nnet\nnet\nnnetfun
+	C:\Program Files\MATLAB\R2017a\toolbox\nnet\nnet\nnnetinput
+	C:\Program Files\MATLAB\R2017a\toolbox\nnet\nnet\nnnetwork
+	C:\Program Files\MATLAB\R2017a\toolbox\nnet\nnet\nnperformance
+	C:\Program Files\MATLAB\R2017a\toolbox\nnet\nnet\nnplot
+	C:\Program Files\MATLAB\R2017a\toolbox\nnet\nnet\nnprocess
+	C:\Program Files\MATLAB\R2017a\toolbox\nnet\nnet\nnsearch
+	C:\Program Files\MATLAB\R2017a\toolbox\nnet\nnet\nntopology
+	C:\Program Files\MATLAB\R2017a\toolbox\nnet\nnet\nntrain
+	C:\Program Files\MATLAB\R2017a\toolbox\nnet\nnet\nntransfer
+	C:\Program Files\MATLAB\R2017a\toolbox\nnet\nnet\nnweight
+	C:\Program Files\MATLAB\R2017a\toolbox\nnet\nnguis
+	C:\Program Files\MATLAB\R2017a\toolbox\nnet\nnobsolete
+	C:\Program Files\MATLAB\R2017a\toolbox\nnet\nnutils
+	C:\Program Files\MATLAB\R2017a\toolbox\nnet\cnn
+	C:\Program Files\MATLAB\R2017a\toolbox\nnet\nndemos
+	C:\Program Files\MATLAB\R2017a\toolbox\nnet\nndemos\nndatasets
+	C:\Program Files\MATLAB\R2017a\toolbox\optim\optim
+	C:\Program Files\MATLAB\R2017a\toolbox\optim
+	C:\Program Files\MATLAB\R2017a\toolbox\optim\optimdemos
+	C:\Program Files\MATLAB\R2017a\toolbox\distcomp\bigdata
+	C:\Program Files\MATLAB\R2017a\toolbox\matlab\pathtool
+	C:\Program Files\MATLAB\R2017a\toolbox\pde
+	C:\Program Files\MATLAB\R2017a\toolbox\pde\pdedata
+	C:\Program Files\MATLAB\R2017a\toolbox\pde\pdedemos
+	C:\Program Files\MATLAB\R2017a\toolbox\shared\codeinstrum\codeinstrum
+	C:\Program Files\MATLAB\R2017a\toolbox\shared\cxxfe_mi\cxxfe_mi
+	C:\Program Files\MATLAB\R2017a\toolbox\shared\polyspace
+	C:\Program Files\MATLAB\R2017a\toolbox\matlab\external\interfaces\python
+	C:\Program Files\MATLAB\R2017a\toolbox\realtime
+	C:\Program Files\MATLAB\R2017a\toolbox\realtime\realtime
+	C:\Program Files\MATLAB\R2017a\toolbox\realtime\realtime\rtw
+	C:\Program Files\MATLAB\R2017a\toolbox\matlab\serial
+	C:\Program Files\MATLAB\R2017a\toolbox\simulink\blocks\sb2sl
+	C:\Program Files\MATLAB\R2017a\toolbox\shared\sfcnlvl3\target
+	C:\Program Files\MATLAB\R2017a\toolbox\shared\sfcnlvl3\ddg
+	C:\Program Files\MATLAB\R2017a\toolbox\shared\advisor
+	C:\Program Files\MATLAB\R2017a\toolbox\shared\asynciolib
+	C:\Program Files\MATLAB\R2017a\toolbox\shared\bigdata
+	C:\Program Files\MATLAB\R2017a\toolbox\shared\can
+	C:\Program Files\MATLAB\R2017a\toolbox\shared\can\canblks
+	C:\Program Files\MATLAB\R2017a\toolbox\shared\can\canmasks
+	C:\Program Files\MATLAB\R2017a\toolbox\shared\can\canmex
+	C:\Program Files\MATLAB\R2017a\toolbox\shared\cgir_fe
+	C:\Program Files\MATLAB\R2017a\toolbox\shared\cgxe\cgxe
+	C:\Program Files\MATLAB\R2017a\toolbox\shared\cmlink\api
+	C:\Program Files\MATLAB\R2017a\toolbox\shared\coder\coder
+	C:\Program Files\MATLAB\R2017a\toolbox\shared\configset
+	C:\Program Files\MATLAB\R2017a\toolbox\shared\controllib\engine
+	C:\Program Files\MATLAB\R2017a\toolbox\shared\controllib\engine\numerics
+	C:\Program Files\MATLAB\R2017a\toolbox\shared\controllib\engine\options
+	C:\Program Files\MATLAB\R2017a\toolbox\shared\controllib\engine\optim
+	C:\Program Files\MATLAB\R2017a\toolbox\shared\controllib\engine\blocks
+	C:\Program Files\MATLAB\R2017a\toolbox\shared\controllib\general
+	C:\Program Files\MATLAB\R2017a\toolbox\shared\controllib\graphics
+	C:\Program Files\MATLAB\R2017a\toolbox\shared\controllib\graphics\utils
+	C:\Program Files\MATLAB\R2017a\toolbox\shared\controllib\graphics\plotoptions
+	C:\Program Files\MATLAB\R2017a\toolbox\shared\controllib\requirements
+	C:\Program Files\MATLAB\R2017a\toolbox\shared\curvefitlib
+	C:\Program Files\MATLAB\R2017a\toolbox\shared\dastudio
+	C:\Program Files\MATLAB\R2017a\toolbox\shared\deviceplugindetection
+	C:\Program Files\MATLAB\R2017a\toolbox\shared\dspblks\dspblks
+	C:\Program Files\MATLAB\R2017a\toolbox\shared\dspblks\dspmex
+	C:\Program Files\MATLAB\R2017a\toolbox\shared\dsp\dialog
+	C:\Program Files\MATLAB\R2017a\toolbox\shared\dsp\vision\matlab\utilities
+	C:\Program Files\MATLAB\R2017a\toolbox\shared\dsp\vision\simulink\utilities
+	C:\Program Files\MATLAB\R2017a\toolbox\shared\dsp\vision\matlab\utilities\mex
+	C:\Program Files\MATLAB\R2017a\toolbox\shared\dsp\vision\simulink\utilities\mex
+	C:\Program Files\MATLAB\R2017a\toolbox\shared\dsp\vision\matlab\utilities\init
+	C:\Program Files\MATLAB\R2017a\toolbox\shared\dsp\vision\matlab\vision
+	C:\Program Files\MATLAB\R2017a\toolbox\shared\dsp\vision\simulink\vision
+	C:\Program Files\MATLAB\R2017a\toolbox\shared\eda\board
+	C:\Program Files\MATLAB\R2017a\toolbox\shared\eda\edagraph
+	C:\Program Files\MATLAB\R2017a\toolbox\shared\eda\fil
+	C:\Program Files\MATLAB\R2017a\toolbox\shared\eda\fil\filmapi
+	C:\Program Files\MATLAB\R2017a\toolbox\shared\eda\fpgaautomation
+	C:\Program Files\MATLAB\R2017a\toolbox\shared\eda\fpgaautomation\obsolete
+	C:\Program Files\MATLAB\R2017a\toolbox\shared\eda\fpgabase
+	C:\Program Files\MATLAB\R2017a\toolbox\shared\eda\hdlparser
+	C:\Program Files\MATLAB\R2017a\toolbox\shared\filterdesignlib
+	C:\Program Files\MATLAB\R2017a\toolbox\shared\filterdesignlib\filterbuilder
+	C:\Program Files\MATLAB\R2017a\toolbox\shared\hdlshared
+	C:\Program Files\MATLAB\R2017a\toolbox\shared\hdlshared\hdlshared_gui
+	C:\Program Files\MATLAB\R2017a\toolbox\shared\hdlshared\hdlshared_soc
+	C:\Program Files\MATLAB\R2017a\toolbox\shared\hotpluglib
+	C:\Program Files\MATLAB\R2017a\toolbox\shared\hwconnectinstaller
+	C:\Program Files\MATLAB\R2017a\toolbox\shared\hwconnectinstaller\common
+	C:\Program Files\MATLAB\R2017a\toolbox\shared\imageslib
+	C:\Program Files\MATLAB\R2017a\toolbox\shared\imageio
+	C:\Program Files\MATLAB\R2017a\toolbox\shared\imaqlib
+	C:\Program Files\MATLAB\R2017a\toolbox\shared\io
+	C:\Program Files\MATLAB\R2017a\toolbox\shared\maputils
+	C:\Program Files\MATLAB\R2017a\toolbox\shared\measure
+	C:\Program Files\MATLAB\R2017a\toolbox\shared\mlreportgen\dom
+	C:\Program Files\MATLAB\R2017a\toolbox\shared\mlreportgen\dom\dom
+	C:\Program Files\MATLAB\R2017a\toolbox\shared\mlreportgen\dom\dom\help
+	C:\Program Files\MATLAB\R2017a\toolbox\shared\mlreportgen\ppt
+	C:\Program Files\MATLAB\R2017a\toolbox\shared\mlreportgen\ppt\ppt
+	C:\Program Files\MATLAB\R2017a\toolbox\shared\mlreportgen\ppt\ppt\help
+	C:\Program Files\MATLAB\R2017a\toolbox\shared\multimedia
+	C:\Program Files\MATLAB\R2017a\toolbox\shared\networklib
+	C:\Program Files\MATLAB\R2017a\toolbox\shared\optimlib
+	C:\Program Files\MATLAB\R2017a\toolbox\shared\pdelib
+	C:\Program Files\MATLAB\R2017a\toolbox\shared\reqmgt
+	C:\Program Files\MATLAB\R2017a\toolbox\shared\reqmgt\mmutils
+	C:\Program Files\MATLAB\R2017a\toolbox\shared\rptgen
+	C:\Program Files\MATLAB\R2017a\toolbox\shared\sdi
+	C:\Program Files\MATLAB\R2017a\toolbox\shared\sigbldr
+	C:\Program Files\MATLAB\R2017a\toolbox\shared\siglib
+	C:\Program Files\MATLAB\R2017a\toolbox\shared\simulink\sysarch\sysarch
+	C:\Program Files\MATLAB\R2017a\toolbox\shared\slcc\slcc
+	C:\Program Files\MATLAB\R2017a\toolbox\shared\slci\slci
+	C:\Program Files\MATLAB\R2017a\toolbox\shared\slcontrollib
+	C:\Program Files\MATLAB\R2017a\toolbox\shared\sl_coverage_configset
+	C:\Program Files\MATLAB\R2017a\toolbox\shared\sldv
+	C:\Program Files\MATLAB\R2017a\toolbox\shared\sldv_sfcn\sldv_sfcn
+	C:\Program Files\MATLAB\R2017a\toolbox\shared\slreportgen\reportexplorer
+	C:\Program Files\MATLAB\R2017a\toolbox\shared\spcuilib\slscopes
+	C:\Program Files\MATLAB\R2017a\toolbox\shared\slvnv
+	C:\Program Files\MATLAB\R2017a\toolbox\slvnv\slvnv
+	C:\Program Files\MATLAB\R2017a\toolbox\shared\sl_async_streaming
+	C:\Program Files\MATLAB\R2017a\toolbox\shared\sl_web_widgets
+	C:\Program Files\MATLAB\R2017a\toolbox\shared\spcuilib
+	C:\Program Files\MATLAB\R2017a\toolbox\shared\spreadsheet
+	C:\Program Files\MATLAB\R2017a\toolbox\shared\statslib
+	C:\Program Files\MATLAB\R2017a\toolbox\shared\statslib\sensitivity
+	C:\Program Files\MATLAB\R2017a\toolbox\shared\supportpkgservices\legacysupportpkginfo
+	C:\Program Files\MATLAB\R2017a\toolbox\shared\supportpkgservices\installservices
+	C:\Program Files\MATLAB\R2017a\toolbox\shared\supportpkgservices\supportpackageroot
+	C:\Program Files\MATLAB\R2017a\toolbox\shared\supportpkgservices\installedapi
+	C:\Program Files\MATLAB\R2017a\toolbox\shared\supportsoftware\launcher
+	C:\Program Files\MATLAB\R2017a\toolbox\shared\supportsoftware\services
+	C:\Program Files\MATLAB\R2017a\toolbox\shared\system\coder
+	C:\Program Files\MATLAB\R2017a\toolbox\shared\system\coreblocks
+	C:\Program Files\MATLAB\R2017a\toolbox\shared\system\sfun
+	C:\Program Files\MATLAB\R2017a\toolbox\shared\system\simulink
+	C:\Program Files\MATLAB\R2017a\toolbox\shared\testmeaslib\general
+	C:\Program Files\MATLAB\R2017a\toolbox\shared\testmeaslib\graphics
+	C:\Program Files\MATLAB\R2017a\toolbox\shared\testmeaslib\simulink
+	C:\Program Files\MATLAB\R2017a\toolbox\shared\tracking\trackinglib
+	C:\Program Files\MATLAB\R2017a\toolbox\shared\tracking\trackinglib\blocks
+	C:\Program Files\MATLAB\R2017a\toolbox\signal\signal
+	C:\Program Files\MATLAB\R2017a\toolbox\signal\sigtools
+	C:\Program Files\MATLAB\R2017a\toolbox\signal\sptoolgui
+	C:\Program Files\MATLAB\R2017a\toolbox\signal\sigdemos
+	C:\Program Files\MATLAB\R2017a\toolbox\signal\signalanalyzer
+	C:\Program Files\MATLAB\R2017a\toolbox\shared\simulink
+	C:\Program Files\MATLAB\R2017a\toolbox\shared\simulation_data_repository
+	C:\Program Files\MATLAB\R2017a\toolbox\sl3d\sl3d
+	C:\Program Files\MATLAB\R2017a\toolbox\sl3d\sl3ddemos
+	C:\Program Files\MATLAB\R2017a\toolbox\simulink\slmetrics_mmt
+	C:\Program Files\MATLAB\R2017a\toolbox\shared\simulink\slcheck_services
+	C:\Program Files\MATLAB\R2017a\toolbox\slcontrol\slcontrol
+	C:\Program Files\MATLAB\R2017a\toolbox\slcontrol\slctrlguis
+	C:\Program Files\MATLAB\R2017a\toolbox\slcontrol\slctrlutil
+	C:\Program Files\MATLAB\R2017a\toolbox\slcontrol\slctrlobsolete
+	C:\Program Files\MATLAB\R2017a\toolbox\slcontrol\slctrldemos
+	C:\Program Files\MATLAB\R2017a\help\toolbox\slcontrol\examples
+	C:\Program Files\MATLAB\R2017a\toolbox\slvnv\simcoverage
+	C:\Program Files\MATLAB\R2017a\toolbox\slvnv\simcovdemos
+	C:\Program Files\MATLAB\R2017a\toolbox\simulink\simulink_data_dictionary\sldd
+	C:\Program Files\MATLAB\R2017a\toolbox\sldrt\coder
+	C:\Program Files\MATLAB\R2017a\toolbox\sldrt\rtw
+	C:\Program Files\MATLAB\R2017a\toolbox\sldrt\sldrt
+	C:\Program Files\MATLAB\R2017a\toolbox\sldrt\sldrtexamples
+	C:\Program Files\MATLAB\R2017a\toolbox\sldv\sldv
+	C:\Program Files\MATLAB\R2017a\toolbox\simulink\slexportprevious
+	C:\Program Files\MATLAB\R2017a\toolbox\simulink\slhistory
+	C:\Program Files\MATLAB\R2017a\toolbox\simulink\simulink\slproject\simulink
+	C:\Program Files\MATLAB\R2017a\toolbox\simulink\simulink\slproject
+	C:\Program Files\MATLAB\R2017a\toolbox\simulink\simulink\slproject\menu
+	C:\Program Files\MATLAB\R2017a\toolbox\simulink\simulink\slproject\examples
+	C:\Program Files\MATLAB\R2017a\toolbox\simulink\simulink\slproject\templates
+	C:\Program Files\MATLAB\R2017a\toolbox\slrequirements\slrequirements
+	C:\Program Files\MATLAB\R2017a\toolbox\slvnv\rmidemos
+	C:\Program Files\MATLAB\R2017a\toolbox\simulink\sltemplate
+	C:\Program Files\MATLAB\R2017a\toolbox\sltp\editor
+	C:\Program Files\MATLAB\R2017a\toolbox\sltp\execorder
+	C:\Program Files\MATLAB\R2017a\toolbox\sltp\legend
+	C:\Program Files\MATLAB\R2017a\toolbox\slvnv\slvnvdemos
+	C:\Program Files\MATLAB\R2017a\toolbox\slcheck\do178b
+	C:\Program Files\MATLAB\R2017a\toolbox\slcheck\iec61508
+	C:\Program Files\MATLAB\R2017a\toolbox\slcheck\metrics
+	C:\Program Files\MATLAB\R2017a\toolbox\slcheck\styleguide
+	C:\Program Files\MATLAB\R2017a\toolbox\simulink\sl_async_streaming
+	C:\Program Files\MATLAB\R2017a\toolbox\simulink\fixedandfloat
+	C:\Program Files\MATLAB\R2017a\toolbox\simulink\fixedandfloat\obsolete
+	C:\Program Files\MATLAB\R2017a\toolbox\simulink\sl_graphics_services\tools
+	C:\Program Files\MATLAB\R2017a\toolbox\simulink\simulink\iodata\iomap
+	C:\Program Files\MATLAB\R2017a\toolbox\simulink\sta\sourceblocks
+	C:\Program Files\MATLAB\R2017a\toolbox\simulink\simulink\iodata\ioformat
+	C:\Program Files\MATLAB\R2017a\toolbox\shared\sl_messages
+	C:\Program Files\MATLAB\R2017a\toolbox\simulink\slmetrics
+	C:\Program Files\MATLAB\R2017a\toolbox\simulink\simulink\performance
+	C:\Program Files\MATLAB\R2017a\toolbox\simulink\simulink\performance\performancea
+	C:\Program Files\MATLAB\R2017a\toolbox\sl_pir_cap
+	C:\Program Files\MATLAB\R2017a\toolbox\shared\slpir
+	C:\Program Files\MATLAB\R2017a\toolbox\shared\dastudio\seqdiagram
+	C:\Program Files\MATLAB\R2017a\toolbox\shared\diagnostic
+	C:\Program Files\MATLAB\R2017a\toolbox\simulink\sta\scenarioconnector
+	C:\Program Files\MATLAB\R2017a\toolbox\simulink\sta\scenarioconnector\ui
+	C:\Program Files\MATLAB\R2017a\toolbox\simulink\sta\scenarioconnector\ui\toolstrip\modelsection
+	C:\Program Files\MATLAB\R2017a\toolbox\simulink\sta\scenarioconnector\ui\toolstrip\filesection
+	C:\Program Files\MATLAB\R2017a\toolbox\simulink\sta\editor
+	C:\Program Files\MATLAB\R2017a\toolbox\simulink\sta\editor\ui
+	C:\Program Files\MATLAB\R2017a\toolbox\simulink\sta\ui
+	C:\Program Files\MATLAB\R2017a\toolbox\simulink\sta\ui\comparisontool
+	C:\Program Files\MATLAB\R2017a\toolbox\simulink\sta\ui\mapping
+	C:\Program Files\MATLAB\R2017a\toolbox\simulink\sta\ui\mapping\callbacks
+	C:\Program Files\MATLAB\R2017a\toolbox\simulink\sta\ui\mapping\util
+	C:\Program Files\MATLAB\R2017a\toolbox\simulink\sta\ui\toolstrip
+	C:\Program Files\MATLAB\R2017a\toolbox\simulink\sta\ui\toolstrip\open\streaming
+	C:\Program Files\MATLAB\R2017a\toolbox\simulink\sta\ui\toolstrip\help
+	C:\Program Files\MATLAB\R2017a\toolbox\simulink\sta\ui\toolstrip\open
+	C:\Program Files\MATLAB\R2017a\toolbox\simulink\sta\ui\toolstrip\session
+	C:\Program Files\MATLAB\R2017a\toolbox\simulink\sta\ui\toolstrip\report
+	C:\Program Files\MATLAB\R2017a\toolbox\simulink\sta\derivedsignals
+	C:\Program Files\MATLAB\R2017a\toolbox\simulink\sta\repository
+	C:\Program Files\MATLAB\R2017a\toolbox\simulink\sta\repository\util
+	C:\Program Files\MATLAB\R2017a\toolbox\simulink\ui\sl_studio\sl_studio
+	C:\Program Files\MATLAB\R2017a\toolbox\simulink\simulink\upgradeadvisor
+	C:\Program Files\MATLAB\R2017a\toolbox\matlab\spf\matlabhost
+	C:\Program Files\MATLAB\R2017a\toolbox\matlab\spf\matlabservices
+	C:\Program Files\MATLAB\R2017a\toolbox\stats\bayesoptim
+	C:\Program Files\MATLAB\R2017a\toolbox\stats\bigdata
+	C:\Program Files\MATLAB\R2017a\toolbox\stats\classreg
+	C:\Program Files\MATLAB\R2017a\toolbox\stats\clustering
+	C:\Program Files\MATLAB\R2017a\toolbox\stats\featlearn
+	C:\Program Files\MATLAB\R2017a\toolbox\stats\stats
+	C:\Program Files\MATLAB\R2017a\toolbox\stats\statsdemos
+	C:\Program Files\MATLAB\R2017a\toolbox\stats\distributed
+	C:\Program Files\MATLAB\R2017a\toolbox\stats\gpu
+	C:\Program Files\MATLAB\R2017a\toolbox\stats\mlearnapp
+	C:\Program Files\MATLAB\R2017a\toolbox\matlab\storage\matlabdrive
+	C:\Program Files\MATLAB\R2017a\toolbox\matlab\storage\mldrivedesktop
+	C:\Program Files\MATLAB\R2017a\toolbox\symbolic\symbolic
+	C:\Program Files\MATLAB\R2017a\toolbox\symbolic\symbolicdemos
+	C:\Program Files\MATLAB\R2017a\toolbox\matlab\system
+	C:\Program Files\MATLAB\R2017a\toolbox\matlab\system\editor
+	C:\Program Files\MATLAB\R2017a\toolbox\target\codertarget
+	C:\Program Files\MATLAB\R2017a\toolbox\target\codertarget\rtw
+	C:\Program Files\MATLAB\R2017a\toolbox\target\codertarget\matlabcoder
+	C:\Program Files\MATLAB\R2017a\toolbox\target\extensions\processor\intelhost\tfl
+	C:\Program Files\MATLAB\R2017a\toolbox\target
+	C:\Program Files\MATLAB\R2017a\toolbox\target\foundation
+	C:\Program Files\MATLAB\R2017a\toolbox\target\foundation\utils
+	C:\Program Files\MATLAB\R2017a\toolbox\target\foundation\utils\resource_config
+	C:\Program Files\MATLAB\R2017a\toolbox\target\foundation\blks
+	C:\Program Files\MATLAB\R2017a\toolbox\target\foundation\blks\mex
+	C:\Program Files\MATLAB\R2017a\toolbox\target\foundation\blks\masks
+	C:\Program Files\MATLAB\R2017a\toolbox\target\extensions\processor\shared
+	C:\Program Files\MATLAB\R2017a\toolbox\target\extensions\processor\shared\ti
+	C:\Program Files\MATLAB\R2017a\toolbox\target\extensions\processor\shared\ti\mdlinfo
+	C:\Program Files\MATLAB\R2017a\toolbox\target\extensions\processor\shared\ti\utils
+	C:\Program Files\MATLAB\R2017a\toolbox\target\extensions\processor\shared\ti\blks
+	C:\Program Files\MATLAB\R2017a\toolbox\target\extensions\processor\shared\ti\blks\mex
+	C:\Program Files\MATLAB\R2017a\toolbox\target\extensions\processor\shared\ti\blks\masks
+	C:\Program Files\MATLAB\R2017a\toolbox\target\extensions\processor\arm\tfl
+	C:\Program Files\MATLAB\R2017a\toolbox\shared\etargets\etargets
+	C:\Program Files\MATLAB\R2017a\toolbox\shared\etargets\etargets\demoutils
+	C:\Program Files\MATLAB\R2017a\toolbox\target\extensions\processor\tic2000
+	C:\Program Files\MATLAB\R2017a\toolbox\target\extensions\processor\tic2000\rtw
+	C:\Program Files\MATLAB\R2017a\toolbox\target\extensions\processor\tic2000\utils
+	C:\Program Files\MATLAB\R2017a\toolbox\target\extensions\operatingsystem\linux\blks
+	C:\Program Files\MATLAB\R2017a\toolbox\target\extensions\operatingsystem\linux\blks\masks
+	C:\Program Files\MATLAB\R2017a\toolbox\target\extensions\operatingsystem\linux\blks\mex
+	C:\Program Files\MATLAB\R2017a\toolbox\target\extensions\operatingsystem\linux\src
+	C:\Program Files\MATLAB\R2017a\toolbox\target\extensions\operatingsystem\windows\blks
+	C:\Program Files\MATLAB\R2017a\toolbox\target\extensions\operatingsystem\windows\blks\masks
+	C:\Program Files\MATLAB\R2017a\toolbox\target\extensions\operatingsystem\windows\blks\mex
+	C:\Program Files\MATLAB\R2017a\toolbox\matlab\timeseries
+	C:\Program Files\MATLAB\R2017a\toolbox\matlab\toolboxmanagement\matlab_api
+	C:\Program Files\MATLAB\R2017a\toolbox\matlab\toolbox_packaging
+	C:\Program Files\MATLAB\R2017a\toolbox\matlab\toolstrip
+	C:\Program Files\MATLAB\R2017a\toolbox\matlab\uicomponents\uicomponents\plugin\appdesigner
+	C:\Program Files\MATLAB\R2017a\toolbox\matlab\uicomponents\uicomponents\plugin\appdesigner\graphics
+	C:\Program Files\MATLAB\R2017a\toolbox\matlab\uicomponents\uicomponents
+	C:\Program Files\MATLAB\R2017a\toolbox\matlab\uicomponents\uicomponents\graphics
+	C:\Program Files\MATLAB\R2017a\toolbox\vision\vision
+	C:\Program Files\MATLAB\R2017a\toolbox\vision\visiondata
+	C:\Program Files\MATLAB\R2017a\toolbox\vision\visionutilities
+	C:\Program Files\MATLAB\R2017a\toolbox\vision\visionutilities\visioninit
+	C:\Program Files\MATLAB\R2017a\toolbox\vision\visionutilities\visionmex
+	C:\Program Files\MATLAB\R2017a\toolbox\vision\visiondemos
+	C:\Program Files\MATLAB\R2017a\help\toolbox\vision\examples
+	C:\Program Files\MATLAB\R2017a\toolbox\wavelet\wavelet
+	C:\Program Files\MATLAB\R2017a\toolbox\wavelet\wmultisig1d
+	C:\Program Files\MATLAB\R2017a\toolbox\wavelet\compression
+	C:\Program Files\MATLAB\R2017a\toolbox\wavelet\wavedemo
+	C:\Program Files\MATLAB\R2017a\toolbox\matlab\webcam
+	C:\Program Files\MATLAB\R2017a\toolbox\matlab\external\interfaces\webservices\http
+	C:\Program Files\MATLAB\R2017a\toolbox\matlab\external\interfaces\json
+	C:\Program Files\MATLAB\R2017a\toolbox\matlab\external\interfaces\webservices\restful
+	C:\Program Files\MATLAB\R2017a\toolbox\matlab\external\interfaces\webservices
+	C:\Program Files\MATLAB\R2017a\toolbox\matlab\external\interfaces\webservices\wsdl
+	C:\ProgramData\MATLAB\SupportPackages\R2017a\toolbox\daq\supportpackages\nidaq
+	C:\ProgramData\MATLAB\SupportPackages\R2017a\toolbox\imaq\supportpackages\gige
+	C:\ProgramData\MATLAB\SupportPackages\R2017a\toolbox\imaq\supportpackages\gige\gigevisionhardwareexamples
+
+----------C:\PROGRAMDATA\MATLAB\SUPPORTPACKAGES\R2017A\TOOLBOX\IMAQ\SUPPORTPACKAGES\GIGE\ADAPTOR\WIN64 Directory----------
+
+ Volume in drive C is OS
+ Volume Serial Number is 727D-8744
+
+ Directory of C:\ProgramData\MATLAB\SupportPackages\R2017a\toolbox\imaq\supportpackages\gige\adaptor\win64
+
+05/23/2017  10:25 AM    <DIR>          .
+05/23/2017  10:25 AM    <DIR>          ..
+02/24/2017  12:52 PM           200,704 genicamadaptor.dll
+02/24/2017  12:52 PM           749,568 genicamshared.dll
+02/24/2017  12:52 PM           378,368 gigeacquisition.dll
+02/24/2017  12:53 PM           427,520 gigecontroller.dll
+02/24/2017  12:54 PM           391,680 gigedevice.dll
+02/24/2017  12:53 PM           170,496 gigediscovery.dll
+02/24/2017  12:52 PM           393,728 gigegvcpnet.dll
+02/24/2017  12:51 PM           138,240 gigemlconverter.dll
+02/24/2017  12:51 PM            77,824 gigepacket.dll
+02/24/2017  12:51 PM            30,720 gigesupport.dll
+02/24/2017  12:54 PM           282,112 mwgigeimaq.dll
+02/24/2017  12:54 PM            18,813 mwgigeimaq.imdf
+              12 File(s)      3,259,773 bytes
+               2 Dir(s)  1,517,519,015,936 bytes free
+
+----------CPU/SYSTEM INFORMATION----------
+
+
+--------------------CPUINFO--------------------
+
+CPU 1: Intel(R) Xeon(R) CPU E5-2687W v4 @ 3.00GHz
+CPU 2: Intel(R) Xeon(R) CPU E5-2687W v4 @ 3.00GHz
+CPU 3: Intel(R) Xeon(R) CPU E5-2687W v4 @ 3.00GHz
+CPU 4: Intel(R) Xeon(R) CPU E5-2687W v4 @ 3.00GHz
+CPU 5: Intel(R) Xeon(R) CPU E5-2687W v4 @ 3.00GHz
+CPU 6: Intel(R) Xeon(R) CPU E5-2687W v4 @ 3.00GHz
+CPU 7: Intel(R) Xeon(R) CPU E5-2687W v4 @ 3.00GHz
+CPU 8: Intel(R) Xeon(R) CPU E5-2687W v4 @ 3.00GHz
+CPU 9: Intel(R) Xeon(R) CPU E5-2687W v4 @ 3.00GHz
+CPU 10: Intel(R) Xeon(R) CPU E5-2687W v4 @ 3.00GHz
+CPU 11: Intel(R) Xeon(R) CPU E5-2687W v4 @ 3.00GHz
+CPU 12: Intel(R) Xeon(R) CPU E5-2687W v4 @ 3.00GHz
+CPU 13: Intel(R) Xeon(R) CPU E5-2687W v4 @ 3.00GHz
+CPU 14: Intel(R) Xeon(R) CPU E5-2687W v4 @ 3.00GHz
+CPU 15: Intel(R) Xeon(R) CPU E5-2687W v4 @ 3.00GHz
+CPU 16: Intel(R) Xeon(R) CPU E5-2687W v4 @ 3.00GHz
+CPU 17: Intel(R) Xeon(R) CPU E5-2687W v4 @ 3.00GHz
+CPU 18: Intel(R) Xeon(R) CPU E5-2687W v4 @ 3.00GHz
+CPU 19: Intel(R) Xeon(R) CPU E5-2687W v4 @ 3.00GHz
+CPU 20: Intel(R) Xeon(R) CPU E5-2687W v4 @ 3.00GHz
+CPU 21: Intel(R) Xeon(R) CPU E5-2687W v4 @ 3.00GHz
+CPU 22: Intel(R) Xeon(R) CPU E5-2687W v4 @ 3.00GHz
+CPU 23: Intel(R) Xeon(R) CPU E5-2687W v4 @ 3.00GHz
+CPU 24: Intel(R) Xeon(R) CPU E5-2687W v4 @ 3.00GHz
+CPU 25: Intel(R) Xeon(R) CPU E5-2687W v4 @ 3.00GHz
+CPU 26: Intel(R) Xeon(R) CPU E5-2687W v4 @ 3.00GHz
+CPU 27: Intel(R) Xeon(R) CPU E5-2687W v4 @ 3.00GHz
+CPU 28: Intel(R) Xeon(R) CPU E5-2687W v4 @ 3.00GHz
+CPU 29: Intel(R) Xeon(R) CPU E5-2687W v4 @ 3.00GHz
+CPU 30: Intel(R) Xeon(R) CPU E5-2687W v4 @ 3.00GHz
+CPU 31: Intel(R) Xeon(R) CPU E5-2687W v4 @ 3.00GHz
+CPU 32: Intel(R) Xeon(R) CPU E5-2687W v4 @ 3.00GHz
+CPU 33: Intel(R) Xeon(R) CPU E5-2687W v4 @ 3.00GHz
+CPU 34: Intel(R) Xeon(R) CPU E5-2687W v4 @ 3.00GHz
+CPU 35: Intel(R) Xeon(R) CPU E5-2687W v4 @ 3.00GHz
+CPU 36: Intel(R) Xeon(R) CPU E5-2687W v4 @ 3.00GHz
+CPU 37: Intel(R) Xeon(R) CPU E5-2687W v4 @ 3.00GHz
+CPU 38: Intel(R) Xeon(R) CPU E5-2687W v4 @ 3.00GHz
+CPU 39: Intel(R) Xeon(R) CPU E5-2687W v4 @ 3.00GHz
+CPU 40: Intel(R) Xeon(R) CPU E5-2687W v4 @ 3.00GHz
+CPU 41: Intel(R) Xeon(R) CPU E5-2687W v4 @ 3.00GHz
+CPU 42: Intel(R) Xeon(R) CPU E5-2687W v4 @ 3.00GHz
+CPU 43: Intel(R) Xeon(R) CPU E5-2687W v4 @ 3.00GHz
+CPU 44: Intel(R) Xeon(R) CPU E5-2687W v4 @ 3.00GHz
+CPU 45: Intel(R) Xeon(R) CPU E5-2687W v4 @ 3.00GHz
+CPU 46: Intel(R) Xeon(R) CPU E5-2687W v4 @ 3.00GHz
+CPU 47: Intel(R) Xeon(R) CPU E5-2687W v4 @ 3.00GHz
+CPU 48: Intel(R) Xeon(R) CPU E5-2687W v4 @ 3.00GHz
+
+--------------------SYSTEMINFO--------------------
+
+
+Host Name:                 SCANBOX
+OS Name:                   Microsoft Windows 10 Pro
+OS Version:                10.0.14393 N/A Build 14393
+OS Manufacturer:           Microsoft Corporation
+OS Configuration:          Standalone Workstation
+OS Build Type:             Multiprocessor Free
+Registered Owner:          N/A
+Registered Organization:   N/A
+Product ID:                00330-50522-10889-AAOEM
+Original Install Date:     5/22/2017, 5:38:59 PM
+System Boot Time:          10/31/2017, 11:09:58 AM
+System Manufacturer:       Dell Inc.
+System Model:              Precision Tower 7910
+System Type:               x64-based PC
+Processor(s):              2 Processor(s) Installed.
+                           [01]: Intel64 Family 6 Model 79 Stepping 1 GenuineIntel ~1200 Mhz
+                           [02]: Intel64 Family 6 Model 79 Stepping 1 GenuineIntel ~1200 Mhz
+BIOS Version:              Dell Inc. A19, 5/8/2017
+Windows Directory:         C:\Windows
+System Directory:          C:\Windows\system32
+Boot Device:               \Device\HarddiskVolume1
+System Locale:             en-us;English (United States)
+Input Locale:              en-us;English (United States)
+Time Zone:                 (UTC-08:00) Pacific Time (US & Canada)
+Total Physical Memory:     130,992 MB
+Available Physical Memory: 123,397 MB
+Virtual Memory: Max Size:  150,448 MB
+Virtual Memory: Available: 142,239 MB
+Virtual Memory: In Use:    8,209 MB
+Page File Location(s):     C:\pagefile.sys
+Domain:                    VN
+Logon Server:              \\SCANBOX
+Hotfix(s):                 8 Hotfix(s) Installed.
+                           [01]: KB3186568
+                           [02]: KB3199209
+                           [03]: KB4013418
+                           [04]: KB4023834
+                           [05]: KB4033637
+                           [06]: KB4035631
+                           [07]: KB4051613
+                           [08]: KB4041691
+Network Card(s):           6 NIC(s) Installed.
+                           [01]: Intel(R) I210 Gigabit Network Connection
+                                 Connection Name: Ethernet
+                                 DHCP Enabled:    No
+                                 IP address(es)
+                                 [01]: 15.22.2.1
+                           [02]: Intel(R) Ethernet Connection I217-LM
+                                 Connection Name: Ethernet 2
+                                 DHCP Enabled:    No
+                                 IP address(es)
+                                 [01]: 100.100.1.1
+                           [03]: Realtek PCIe GBE Family Controller
+                                 Connection Name: Ethernet 3
+                                 Status:          Media disconnected
+                           [04]: Realtek PCIe GBE Family Controller
+                                 Connection Name: Ethernet 5
+                                 Status:          Media disconnected
+                           [05]: Realtek PCIe GBE Family Controller
+                                 Connection Name: visual stim
+                                 DHCP Enabled:    No
+                                 IP address(es)
+                                 [01]: 18.15.4.1
+                                 [02]: fe80::4df6:aded:6138:51c5
+                           [06]: Realtek PCIe GBE Family Controller
+                                 Connection Name: Ethernet 7
+                                 DHCP Enabled:    Yes
+                                 DHCP Server:     164.67.38.129
+                                 IP address(es)
+                                 [01]: 164.67.38.227
+                                 [02]: fe80::69fd:79d9:eca0:91dc
+Hyper-V Requirements:      VM Monitor Mode Extensions: Yes
+                           Virtualization Enabled In Firmware: Yes
+                           Second Level Address Translation: Yes
+                           Data Execution Prevention Available: Yes
+
+----------SETTINGS----------
+
+Use Little Endian DCAM = 0
+Packet Timeout = 500
+Heartbeat Timeout = 1000
+Packet Retries = 1
+Disable Force IP = 0
+Disable Packet Resend = 0
+Preview Full Bit Depth = 0
+
+----------DYNAMIC LOADER PATH----------
+
+
+--------------------PATH--------------------
+
+C:\Program Files\MATLAB\R2017a\toolbox\imaq\imaqextern\drivers\win64\genicam\GenICam_v2_4\bin\Win64_x64
+C:\Program Files\Ocean Optics\OmniDriver\OOI_HOME
+C:\Program Files (x86)\Intel\iCLS Client\
+C:\Program Files\Intel\iCLS Client\
+C:\Windows\system32
+C:\Windows
+C:\Windows\System32\Wbem
+C:\Windows\System32\WindowsPowerShell\v1.0\
+C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL
+C:\Program Files\Intel\Intel(R) Management Engine Components\DAL
+C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT
+C:\Program Files\Intel\Intel(R) Management Engine Components\IPT
+C:\Program Files\MATLAB\R2017b\runtime\win64
+C:\Program Files\MATLAB\R2017b\bin
+C:\Program Files\MATLAB\R2017a\runtime\win64
+C:\Program Files\MATLAB\R2017a\bin
+C:\Program Files\Git\cmd
+C:\Users\dario\Anaconda2
+C:\Users\dario\Anaconda2\Scripts
+C:\Users\dario\Anaconda2\Library\bin
+C:\Users\dario\AppData\Local\Microsoft\WindowsApps
+
+----------ENVIRONMENT VARIABLES----------
+
+
+--------------------GENICAM--------------------
+
+GENICAM_CACHE_V2_4 = C:\Users\dario\AppData\Roaming\MathWorks\MATLAB\R2017a\GenICamXMLCache
+	 C:\Users\dario\AppData\Roaming\MathWorks\MATLAB\R2017a\GenICamXMLCache present.
+
+GENICAM_LOG_CONFIG_V2_4 = C:\Program Files\MATLAB\R2017a\toolbox\imaq\imaqextern\drivers\win64\genicam\GenICam_v2_4\log\config\DefaultLogging.properties
+	 C:\Program Files\MATLAB\R2017a\toolbox\imaq\imaqextern\drivers\win64\genicam\GenICam_v2_4\log\config\DefaultLogging.properties present.
+
+GENICAM_ROOT_V2_4 = C:\Program Files\MATLAB\R2017a\toolbox\imaq\imaqextern\drivers\win64\genicam\GenICam_v2_4
+	 C:\Program Files\MATLAB\R2017a\toolbox\imaq\imaqextern\drivers\win64\genicam\GenICam_v2_4 present.
+
+MWIMAQ_GENICAM_XML_FILES = 
+
+--------------------GENTL--------------------
+
+GENICAM_GENTL64_PATH = 
+
+--------------------END TEST--------------------
+
+This information has been saved in the text file: 
+imaqsupport.txt
+
+If any errors occurred, please e-mail this information to:
+support@mathworks.com

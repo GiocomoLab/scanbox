@@ -1,0 +1,27 @@
+% load dmd library
+
+function dmd_init(bf)
+
+if (libisloaded('PortabilityLayer'))
+    dmd_close
+end
+
+warning off
+if not(libisloaded('PortabilityLayer'))
+    loadlibrary('PortabilityLayer')
+    sts = calllib('PortabilityLayer','InitPortabilityLayer',0,0,0);
+    dmd_park;   % park dmd
+    dmd_runbatchfile(bf);
+    if(contains(bf,'1bit',bf))
+        'here'
+        dmd_writeimage('Welcome1',0);
+    else
+        'there'
+        dmd_writeimage('Welcome8',0);
+    end
+    dmd_writelut([0]);
+    dmd_display_first;
+    dmd_unpark;
+end
+warning on
+

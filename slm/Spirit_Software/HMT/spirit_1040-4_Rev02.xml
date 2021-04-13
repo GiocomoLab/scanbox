@@ -1,0 +1,2296 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Module type="A3">
+<Device>
+<Name>A3</Name>
+<Version>1.0</Version>
+</Device>
+<SubDevice name="Pdo">
+<ParameterSet>
+<Parameter index="1400" name="1. Receive PDO parameter" dataType="INT16" access="common" subIndex="none" type="none">
+<GuiType type="none">
+</GuiType>
+</Parameter>
+<Parameter index="1400" name="Largest Sub-Index supported" dataType="UINT8" access="common" subIndex="0" type="none">
+<GuiType type="none">
+</GuiType>
+</Parameter>
+<Parameter index="1400" name="COB-ID used by PDO 1" dataType="UINT32" access="common" subIndex="1" type="none">
+<GuiType type="none">
+</GuiType>
+</Parameter>
+<Parameter index="1400" name="Transmission Type" dataType="UINT8" access="common" subIndex="2" type="none">
+<GuiType type="none">
+</GuiType>
+</Parameter>
+<Parameter index="1600" name="1. Receive PDO Mapping" dataType="INT16" access="common" subIndex="none" type="none">
+<GuiType type="none">
+</GuiType>
+</Parameter>
+<Parameter index="1600" name="Number of mapped Application Objects" dataType="UINT8" access="common" subIndex="0" type="none">
+<GuiType type="none">
+</GuiType>
+</Parameter>
+<Parameter index="1600" name="1. mapped Object" dataType="UINT32" access="common" subIndex="1" type="none">
+<GuiType type="none">
+</GuiType>
+</Parameter>
+<Parameter index="1800" name="1. Transmit PDO parameter" dataType="INT16" access="common" subIndex="none" type="none">
+<GuiType type="none">
+</GuiType>
+</Parameter>
+<Parameter index="1800" name="Largest Sub-Index supported" dataType="UINT8" access="common" subIndex="0" type="none">
+<GuiType type="none">
+</GuiType>
+</Parameter>
+<Parameter index="1800" name="COB-ID used by PDO 1" dataType="UINT32" access="common" subIndex="1" type="none">
+<GuiType type="none">
+</GuiType>
+</Parameter>
+<Parameter index="1800" name="Transmission Type" dataType="UINT8" access="common" subIndex="2" type="none">
+<GuiType type="none">
+</GuiType>
+</Parameter>
+<Parameter index="1A00" name="1. Transmit PDO Mapping" dataType="INT16" access="common" subIndex="none" type="none">
+<GuiType type="none">
+</GuiType>
+</Parameter>
+<Parameter index="1A00" name="Number of mapped Application Objects" dataType="UINT8" access="common" subIndex="0" type="none">
+<GuiType type="none">
+</GuiType>
+</Parameter>
+<Parameter index="1A00" name="1. mapped Object" dataType="UINT32" access="common" subIndex="1" type="none">
+<GuiType type="none">
+</GuiType>
+</Parameter>
+<Parameter index="1A00" name="2. mapped Object" dataType="UINT32" access="common" subIndex="2" type="none">
+<GuiType type="none">
+</GuiType>
+</Parameter>
+<Parameter index="1A00" name="3. mapped Object" dataType="UINT32" access="common" subIndex="3" type="none">
+<GuiType type="none">
+</GuiType>
+</Parameter>
+</ParameterSet>
+</SubDevice>
+<SubDevice name="Overview">
+<ParameterSet>
+<Parameter index="2000" name="Control" dataType="UINT8" access="common" subIndex="none" type="setValue">
+<GuiType mask="0" ref="EType1" type="enum">
+</GuiType>
+</Parameter>
+<Parameter index="2000" name="Manual Mode" dataType="UINT8" access="service" subIndex="none" type="setValue">
+<GuiType value2send="3" type="actionButton" name="Manual Mode">
+</GuiType>
+</Parameter>
+<Parameter index="2500" name="PowerCtrl Attenuator Sp" dataType="UINT8" access="common" subIndex="none" type="setValue">
+<GuiType defaultValue="0" readonly="true" maxValue="100" step="1" decimalPlaces="0" minValue="0" type="numeric" clrRef="none">
+</GuiType>
+</Parameter>
+<Parameter index="2509" name="PowerCtrl Power Sp" dataType="UINT16" access="common" subIndex="1" type="setValue">
+<GuiType defaultValue="0" readonly="true" maxValue="60000" step="1" decimalPlaces="3" minValue="0" type="numeric" clrRef="none">
+</GuiType>
+</Parameter>
+<Parameter index="2502" name="Rep. Rate" dataType="BYTE" access="common" subIndex="none" type="setValue">
+<GuiType mask="0" ref="EType_reprate" type="enum">
+</GuiType>
+</Parameter>
+<Parameter index="2506" name="SwUnit Pulse Enable Set" dataType="UINT16" access="common" subIndex="none" type="setValue">
+<GuiType mask="0" ref="EType_pulse_picker_en" type="enum">
+</GuiType>
+</Parameter>
+<Parameter index="2505" name="SwUnit Analog In Enable" dataType="BYTE" access="common" subIndex="none" type="setValue">
+<GuiType mask="0" ref="EType_analog_en" type="enum">
+</GuiType>
+</Parameter>
+<Parameter index="2508" name="PowerCtrl Modus User" dataType="BYTE" access="common" subIndex="none" type="setValue">
+<GuiType mask="0" ref="EType_power_mod_user" type="enum">
+</GuiType>
+</Parameter>
+<Parameter index="2504" name="User PowerCtrl Shutter On" dataType="BYTE" access="common" subIndex="none" type="setValue">
+<GuiType mask="1.0" type="bit" clrRef="none">
+</GuiType>
+</Parameter>
+<Parameter index="3501" name="Osc Diode Cur Sp" dataType="UINT16" access="service" subIndex="none" type="setValue">
+<GuiType defaultValue="0" readonly="false" maxValue="6000" step="2" decimalPlaces="3" minValue="0" type="numeric" clrRef="none">
+</GuiType>
+</Parameter>
+<Parameter index="2001" name="Status" dataType="UINT8" access="common" subIndex="none" type="statusValue">
+<GuiType mask="0" ref="EType2" type="enum">
+</GuiType>
+</Parameter>
+<Parameter index="2312" name="PowerCtrl Powermeter Act" dataType="INT16" access="common" subIndex="none" type="actValue">
+<GuiType defaultValue="0" readonly="false" maxValue="10000" step="2" decimalPlaces="3" minValue="0" type="numeric" clrRef="none">
+</GuiType>
+</Parameter>
+<Parameter index="2311" name="Osc ML Detector Act" dataType="INT16" access="common" subIndex="none" type="actValue">
+<GuiType defaultValue="0" readonly="false" maxValue="10000" step="2" decimalPlaces="1" minValue="0" type="numeric" clrRef="none">
+</GuiType>
+</Parameter>
+<Parameter index="231E" name="SwUnit Pulse Enable Act" dataType="UINT16" access="common" subIndex="none" type="statusValue">
+<GuiType mask="0" ref="Etype_swunit_pulse_enable" type="enum">
+</GuiType>
+</Parameter>
+<Parameter index="2301" name="Osc Diode Cur Act" dataType="UINT16" access="common" subIndex="none" type="actValue">
+<GuiType defaultValue="0" readonly="false" maxValue="10000" step="2" decimalPlaces="3" minValue="0" type="numeric" clrRef="none">
+</GuiType>
+</Parameter>
+<Parameter index="2303" name="Osc Diode Temp Act" dataType="INT16" access="common" subIndex="none" type="actValue">
+<GuiType defaultValue="0" readonly="false" maxValue="10000" step="2" decimalPlaces="2" minValue="0" type="numeric" clrRef="none">
+</GuiType>
+</Parameter>
+<Parameter index="2306" name="SHG Xtal Temp Act" dataType="INT16" access="common" subIndex="none" type="actValue">
+<GuiType defaultValue="0" readonly="false" maxValue="10000" step="2" decimalPlaces="2" minValue="0" type="numeric" clrRef="none">
+</GuiType>
+</Parameter>
+<Parameter index="250A" name="Int Reprate act [kHz]" dataType="UINT16" access="common" subIndex="1" type="actValue">
+<GuiType defaultValue="0" readonly="false" maxValue="10000" step="1" decimalPlaces="1" minValue="0" type="numeric" clrRef="none">
+</GuiType>
+</Parameter>
+<Parameter index="3508" name="Amp Diode Temp Sp" dataType="INT16" access="service" subIndex="none" type="setValue">
+<GuiType defaultValue="0" readonly="false" maxValue="4000" step="2" decimalPlaces="2" minValue="1500" type="numeric" clrRef="none">
+</GuiType>
+</Parameter>
+<Parameter index="3509" name="Amp Xtal Temp Sp" dataType="INT16" access="service" subIndex="none" type="setValue">
+<GuiType defaultValue="0" readonly="false" maxValue="3000" step="2" decimalPlaces="2" minValue="1500" type="numeric" clrRef="none">
+</GuiType>
+</Parameter>
+<Parameter index="4203" name="Amp Diode Cur On" dataType="BYTE" access="manufacturer" subIndex="none" type="setValue">
+<GuiType mask="1.0" type="bit" clrRef="none">
+</GuiType>
+</Parameter>
+<Parameter index="4204" name="Amp Diode Temp On" dataType="BYTE" access="manufacturer" subIndex="none" type="setValue">
+<GuiType mask="1.0" type="bit" clrRef="none">
+</GuiType>
+</Parameter>
+<Parameter index="4205" name="Amp Xtal Temp On" dataType="BYTE" access="manufacturer" subIndex="none" type="setValue">
+<GuiType mask="1.0" type="bit" clrRef="none">
+</GuiType>
+</Parameter>
+<Parameter index="2101" name="Common Errors" dataType="UINT16" access="common" subIndex="none" type="statusValue">
+<GuiType mask="0" ref="etype_common_err" type="enum">
+</GuiType>
+</Parameter>
+<Parameter index="2102" name="Chiller Warnings" dataType="UINT16" access="common" subIndex="none" type="statusValue">
+<GuiType mask="0" ref="etype_chiller_err" type="enum">
+</GuiType>
+</Parameter>
+<Parameter index="2104" name="Osc Warnings" dataType="UINT16" access="common" subIndex="none" type="statusValue">
+<GuiType mask="0" ref="etype_osc_err" type="enum">
+</GuiType>
+</Parameter>
+<Parameter index="2106" name="Amp Warnings" dataType="UINT16" access="common" subIndex="none" type="statusValue">
+<GuiType mask="0" ref="EAmpError" type="enum">
+</GuiType>
+</Parameter>
+<Parameter index="2108" name="SwUnit Warnings" dataType="UINT16" access="common" subIndex="none" type="statusValue">
+<GuiType mask="0" ref="etype_swunit_err" type="enum">
+</GuiType>
+</Parameter>
+<Parameter index="210B" name="PowerCtrl Errors" dataType="UINT16" access="common" subIndex="none" type="statusValue">
+<GuiType mask="0" ref="etype_power_err" type="enum">
+</GuiType>
+</Parameter>
+<Parameter index="2509" name="PowerCtrl Modus Act" dataType="UINT8" access="service" subIndex="3" type="statusValue">
+<GuiType mask="0" ref="Etype_pwrctrl_power_mode" type="enum">
+</GuiType>
+</Parameter>
+<Parameter index="352B" name="AMP Loop State" dataType="UINT8" access="common" subIndex="none" type="statusValue">
+<GuiType mask="0" ref="EType5" type="enum">
+</GuiType>
+</Parameter>
+<Parameter index="3525" name="MLD Loop State" dataType="UINT8" access="common" subIndex="none" type="statusValue">
+<GuiType mask="0" ref="EType4" type="enum">
+</GuiType>
+</Parameter>
+<Parameter index="2309" name="Amp Diode Cur Act" dataType="UINT16" access="common" subIndex="none" type="actValue">
+<GuiType defaultValue="0" readonly="false" maxValue="10000" step="2" decimalPlaces="3" minValue="0" type="numeric" clrRef="none">
+</GuiType>
+</Parameter>
+<Parameter index="230B" name="Amp Diode Temp Act" dataType="INT16" access="common" subIndex="none" type="actValue">
+<GuiType defaultValue="0" readonly="false" maxValue="10000" step="2" decimalPlaces="2" minValue="0" type="numeric" clrRef="none">
+</GuiType>
+</Parameter>
+<Parameter index="230E" name="Amp Xtal Temp Act" dataType="INT16" access="common" subIndex="none" type="actValue">
+<GuiType defaultValue="0" readonly="false" maxValue="10000" step="2" decimalPlaces="2" minValue="0" type="numeric" clrRef="none">
+</GuiType>
+</Parameter>
+<Parameter index="353F" name="PowerCtrl Feedback Value  [%]" dataType="UINT16" access="common" subIndex="1" type="actValue">
+<GuiType defaultValue="0" readonly="false" maxValue="60000" step="1" decimalPlaces="2" minValue="0" type="numeric" clrRef="none">
+</GuiType>
+</Parameter>
+<Parameter index="3504" name="Osc Diode Temp Sp" dataType="INT16" access="service" subIndex="none" type="setValue">
+<GuiType defaultValue="0" readonly="false" maxValue="5900" step="2" decimalPlaces="2" minValue="1500" type="numeric" clrRef="none">
+</GuiType>
+</Parameter>
+<Parameter index="3505" name="SHG Xtal Temp Sp" dataType="INT16" access="service" subIndex="none" type="setValue">
+<GuiType defaultValue="0" readonly="false" maxValue="6000" step="2" decimalPlaces="2" minValue="1800" type="numeric" clrRef="none">
+</GuiType>
+</Parameter>
+<Parameter index="4200" name="Osc Diode Cur On" dataType="BYTE" access="manufacturer" subIndex="none" type="setValue">
+<GuiType mask="1.0" type="bit" clrRef="none">
+</GuiType>
+</Parameter>
+<Parameter index="4201" name="Osc Diode Temp On" dataType="BYTE" access="manufacturer" subIndex="none" type="setValue">
+<GuiType mask="1.0" type="bit" clrRef="none">
+</GuiType>
+</Parameter>
+<Parameter index="4202" name="SHG Xtal Temp On" dataType="BYTE" access="manufacturer" subIndex="none" type="setValue">
+<GuiType mask="1.0" type="bit" clrRef="none">
+</GuiType>
+</Parameter>
+<Parameter index="4206" name="SwUnit HV On" dataType="BYTE" access="manufacturer" subIndex="none" type="setValue">
+<GuiType mask="1.0" type="bit" clrRef="none">
+</GuiType>
+</Parameter>
+<Parameter index="4207" name="SwUnit Pdg On" dataType="BYTE" access="manufacturer" subIndex="none" type="setValue">
+<GuiType mask="1.0" type="bit" clrRef="none">
+</GuiType>
+</Parameter>
+<Parameter index="4209" name="Osc ML Detector Update" dataType="BYTE" access="manufacturer" subIndex="none" type="setValue">
+<GuiType value2send="1" type="actionButton" name="Update">
+</GuiType>
+</Parameter>
+</ParameterSet>
+</SubDevice>
+<SubDevice name="Common">
+<ParameterSet>
+<Parameter index="2000" name="Off State" dataType="UINT8" access="common" subIndex="none" type="setValue">
+<GuiType value2send="0" type="actionButton" name="Off State">
+</GuiType>
+</Parameter>
+<Parameter index="2000" name="Standby State" dataType="UINT8" access="common" subIndex="none" type="setValue">
+<GuiType value2send="1" type="actionButton" name="Standby State">
+</GuiType>
+</Parameter>
+<Parameter index="2000" name="On State" dataType="UINT8" access="common" subIndex="none" type="setValue">
+<GuiType value2send="2" type="actionButton" name="On State">
+</GuiType>
+</Parameter>
+<Parameter index="2000" name="Manual Mode" dataType="UINT8" access="manufacturer" subIndex="none" type="setValue">
+<GuiType value2send="3" type="actionButton" name="Manual Mode">
+</GuiType>
+</Parameter>
+<Parameter index="2001" name="Status" dataType="UINT8" access="common" subIndex="none" type="statusValue">
+<GuiType mask="0" ref="EType2" type="enum">
+</GuiType>
+</Parameter>
+<Parameter index="2002" name="Runtime" dataType="UINT32" access="common" subIndex="none" type="actValue">
+<GuiType defaultValue="0" readonly="false" maxValue="0" step="2" decimalPlaces="0" minValue="0" type="numeric" clrRef="none">
+</GuiType>
+</Parameter>
+<Parameter index="2003" name="OnOff Statistic" dataType="UINT32" access="common" subIndex="none" type="actValue">
+<GuiType defaultValue="0" readonly="false" maxValue="0" step="2" decimalPlaces="0" minValue="0" type="numeric" clrRef="none">
+</GuiType>
+</Parameter>
+</ParameterSet>
+</SubDevice>
+<SubDevice name="System Config">
+<ParameterSet>
+<Parameter index="2004" name="Baudrate" dataType="BYTE" access="common" subIndex="none" type="setValue">
+<GuiType mask="0" ref="EType3" type="enum">
+</GuiType>
+</Parameter>
+<Parameter index="2005" name="Master Off Shutdown Time" dataType="UINT16" access="common" subIndex="none" type="setValue">
+<GuiType defaultValue="0" readonly="true" maxValue="65535" step="2" decimalPlaces="3" minValue="0" type="numeric" clrRef="none">
+</GuiType>
+</Parameter>
+</ParameterSet>
+</SubDevice>
+<SubDevice name="Common">
+<ParameterSet>
+<Parameter index="2050" name="Controller Information" dataType="ACT_DELTA" access="common" subIndex="none" type="actValue">
+<GuiType type="none">
+</GuiType>
+</Parameter>
+<Parameter index="2050" name="Largest Sub-Index supported" dataType="UINT8" access="common" subIndex="0" type="actValue">
+<GuiType type="none">
+</GuiType>
+</Parameter>
+<Parameter index="2050" name="Controller Article Number" dataType="UINT32" access="common" subIndex="2" type="actValue">
+<GuiType defaultValue="0" readonly="false" maxValue="99999" step="1" decimalPlaces="0" minValue="0" type="numeric" clrRef="none">
+</GuiType>
+</Parameter>
+<Parameter index="2050" name="Controller Serial Number" dataType="UINT16" access="common" subIndex="3" type="actValue">
+<GuiType defaultValue="0" readonly="false" maxValue="9999" step="1" decimalPlaces="0" minValue="0" type="numeric" clrRef="none">
+</GuiType>
+</Parameter>
+</ParameterSet>
+</SubDevice>
+<SubDevice name="Device Info">
+<ParameterSet>
+<Parameter index="2051" name="LCR1 PCB Information" dataType="ACT_DELTA" access="common" subIndex="none" type="actValue">
+<GuiType type="none">
+</GuiType>
+</Parameter>
+<Parameter index="2051" name="Largest Sub-Index supported" dataType="UINT8" access="common" subIndex="0" type="actValue">
+<GuiType type="none">
+</GuiType>
+</Parameter>
+<Parameter index="2051" name="LCR1 PCB Art.Nr." dataType="UINT32" access="common" subIndex="1" type="actValue">
+<GuiType defaultValue="0" readonly="false" maxValue="65535" step="0" decimalPlaces="0" minValue="0" type="numeric" clrRef="none">
+</GuiType>
+</Parameter>
+<Parameter index="2051" name="LCR1 PCB Serial Nr." dataType="UINT16" access="common" subIndex="2" type="actValue">
+<GuiType defaultValue="0" readonly="false" maxValue="65535" step="0" decimalPlaces="0" minValue="0" type="numeric" clrRef="none">
+</GuiType>
+</Parameter>
+<Parameter index="2051" name="LCR1 PCB HW Rev" dataType="UINT16" access="common" subIndex="3" type="actValue">
+<GuiType defaultValue="0" readonly="false" maxValue="65535" step="0" decimalPlaces="0" minValue="0" type="numeric" clrRef="none">
+</GuiType>
+</Parameter>
+<Parameter index="2051" name="LCR1 PCB FW Rev" dataType="UINT16" access="common" subIndex="4" type="actValue">
+<GuiType defaultValue="0" readonly="false" maxValue="65535" step="0" decimalPlaces="0" minValue="0" type="numeric" clrRef="none">
+</GuiType>
+</Parameter>
+<Parameter index="2052" name="PDG PCB Information" dataType="ACT_DELTA" access="common" subIndex="none" type="actValue">
+<GuiType type="none">
+</GuiType>
+</Parameter>
+<Parameter index="2052" name="Largest Sub-Index supported" dataType="UINT8" access="common" subIndex="0" type="actValue">
+<GuiType type="none">
+</GuiType>
+</Parameter>
+<Parameter index="2052" name="PDG PCB Art.Nr." dataType="UINT32" access="common" subIndex="1" type="actValue">
+<GuiType defaultValue="0" readonly="false" maxValue="65535" step="0" decimalPlaces="0" minValue="0" type="numeric" clrRef="none">
+</GuiType>
+</Parameter>
+<Parameter index="2052" name="PDG PCB Serial Nr." dataType="UINT16" access="common" subIndex="2" type="actValue">
+<GuiType defaultValue="0" readonly="false" maxValue="65535" step="0" decimalPlaces="0" minValue="0" type="numeric" clrRef="none">
+</GuiType>
+</Parameter>
+<Parameter index="2052" name="PDG PCB HW Rev" dataType="UINT16" access="common" subIndex="3" type="actValue">
+<GuiType defaultValue="0" readonly="false" maxValue="65535" step="0" decimalPlaces="0" minValue="0" type="numeric" clrRef="none">
+</GuiType>
+</Parameter>
+<Parameter index="2052" name="PDG PCB FW Rev" dataType="UINT16" access="common" subIndex="4" type="actValue">
+<GuiType defaultValue="0" readonly="false" maxValue="65535" step="0" decimalPlaces="0" minValue="0" type="numeric" clrRef="none">
+</GuiType>
+</Parameter>
+<Parameter index="2054" name="DSAMP Information" dataType="ACT_DELTA" access="common" subIndex="none" type="actValue">
+<GuiType type="none">
+</GuiType>
+</Parameter>
+<Parameter index="2054" name="Largest Sub-Index supported" dataType="UINT8" access="common" subIndex="0" type="actValue">
+<GuiType type="none">
+</GuiType>
+</Parameter>
+<Parameter index="2054" name="DSAMP Serial Number" dataType="UINT16" access="common" subIndex="1" type="actValue">
+<GuiType defaultValue="0" readonly="false" maxValue="65535" step="0" decimalPlaces="0" minValue="0" type="numeric" clrRef="none">
+</GuiType>
+</Parameter>
+<Parameter index="2054" name="DSAMP FW Rev" dataType="UINT16" access="common" subIndex="2" type="actValue">
+<GuiType defaultValue="0" readonly="false" maxValue="65535" step="0" decimalPlaces="0" minValue="0" type="numeric" clrRef="none">
+</GuiType>
+</Parameter>
+<Parameter index="2055" name="DSOSC Information" dataType="ACT_DELTA" access="common" subIndex="none" type="actValue">
+<GuiType type="none">
+</GuiType>
+</Parameter>
+<Parameter index="2055" name="Largest Sub-Index supported" dataType="UINT8" access="common" subIndex="0" type="actValue">
+<GuiType type="none">
+</GuiType>
+</Parameter>
+<Parameter index="2055" name="DSOSC Serial Number" dataType="UINT16" access="common" subIndex="1" type="actValue">
+<GuiType defaultValue="0" readonly="false" maxValue="65535" step="0" decimalPlaces="0" minValue="0" type="numeric" clrRef="none">
+</GuiType>
+</Parameter>
+<Parameter index="2055" name="DSOSC FW Rev" dataType="UINT16" access="common" subIndex="2" type="actValue">
+<GuiType defaultValue="0" readonly="false" maxValue="65535" step="0" decimalPlaces="0" minValue="0" type="numeric" clrRef="none">
+</GuiType>
+</Parameter>
+<Parameter index="2056" name="PSXTAL Information" dataType="ACT_DELTA" access="common" subIndex="none" type="actValue">
+<GuiType type="none">
+</GuiType>
+</Parameter>
+<Parameter index="2056" name="Largest Sub-Index supported" dataType="UINT8" access="common" subIndex="0" type="actValue">
+<GuiType type="none">
+</GuiType>
+</Parameter>
+<Parameter index="2056" name="PSXTAL Serial Number" dataType="UINT16" access="common" subIndex="1" type="actValue">
+<GuiType defaultValue="0" readonly="false" maxValue="65535" step="0" decimalPlaces="0" minValue="0" type="numeric" clrRef="none">
+</GuiType>
+</Parameter>
+<Parameter index="2056" name="PSXTAL FW Rev" dataType="UINT16" access="common" subIndex="2" type="actValue">
+<GuiType defaultValue="0" readonly="false" maxValue="65535" step="0" decimalPlaces="0" minValue="0" type="numeric" clrRef="none">
+</GuiType>
+</Parameter>
+</ParameterSet>
+</SubDevice>
+<SubDevice name="Common">
+<ParameterSet>
+<Parameter index="2100" name="Common Warnings" dataType="UINT16" access="common" subIndex="none" type="statusValue">
+<GuiType mask="0" ref="etype_common_err" type="enum">
+</GuiType>
+</Parameter>
+<Parameter index="2101" name="Common Errors" dataType="UINT16" access="common" subIndex="none" type="statusValue">
+<GuiType mask="0" ref="etype_common_err" type="enum">
+</GuiType>
+</Parameter>
+</ParameterSet>
+</SubDevice>
+<SubDevice name="Chiller">
+<ParameterSet>
+<Parameter index="2102" name="Chiller Warnings" dataType="UINT16" access="common" subIndex="none" type="statusValue">
+<GuiType mask="0" ref="etype_chiller_err" type="enum">
+</GuiType>
+</Parameter>
+<Parameter index="2103" name="Chiller Errors" dataType="UINT16" access="common" subIndex="none" type="statusValue">
+<GuiType mask="0" ref="etype_chiller_err" type="enum">
+</GuiType>
+</Parameter>
+</ParameterSet>
+</SubDevice>
+<SubDevice name="Osc">
+<ParameterSet>
+<Parameter index="2104" name="Osc Warnings" dataType="UINT16" access="common" subIndex="none" type="statusValue">
+<GuiType mask="0" ref="etype_osc_err" type="enum">
+</GuiType>
+</Parameter>
+<Parameter index="2105" name="Osc Errors" dataType="UINT16" access="common" subIndex="none" type="statusValue">
+<GuiType mask="0" ref="etype_osc_err" type="enum">
+</GuiType>
+</Parameter>
+</ParameterSet>
+</SubDevice>
+<SubDevice name="Amp">
+<ParameterSet>
+<Parameter index="2106" name="Amp Warnings" dataType="UINT16" access="common" subIndex="none" type="statusValue">
+<GuiType mask="0" ref="EAmpError" type="enum">
+</GuiType>
+</Parameter>
+<Parameter index="2107" name="Amp Errors" dataType="UINT16" access="common" subIndex="none" type="statusValue">
+<GuiType mask="0" ref="EAmpError" type="enum">
+</GuiType>
+</Parameter>
+</ParameterSet>
+</SubDevice>
+<SubDevice name="Switching Unit">
+<ParameterSet>
+<Parameter index="2108" name="SwUnit Warnings" dataType="UINT16" access="common" subIndex="none" type="statusValue">
+<GuiType mask="0" ref="etype_swunit_err" type="enum">
+</GuiType>
+</Parameter>
+<Parameter index="2109" name="SwUnit Errors" dataType="UINT16" access="common" subIndex="none" type="statusValue">
+<GuiType mask="0" ref="etype_swunit_err" type="enum">
+</GuiType>
+</Parameter>
+</ParameterSet>
+</SubDevice>
+<SubDevice name="PowerCtrl">
+<ParameterSet>
+<Parameter index="210A" name="PowerCtrl Warnings" dataType="UINT16" access="common" subIndex="none" type="statusValue">
+<GuiType mask="0" ref="etype_power_err" type="enum">
+</GuiType>
+</Parameter>
+<Parameter index="210B" name="PowerCtrl Errors" dataType="UINT16" access="common" subIndex="none" type="statusValue">
+<GuiType mask="0" ref="etype_power_err" type="enum">
+</GuiType>
+</Parameter>
+</ParameterSet>
+</SubDevice>
+<SubDevice name="Ctrl">
+<ParameterSet>
+<Parameter index="210C" name="Ctrl Warnings" dataType="UINT16" access="common" subIndex="none" type="statusValue">
+<GuiType mask="0" ref="ECtrlError" type="enum">
+</GuiType>
+</Parameter>
+<Parameter index="210D" name="Ctrl Errors" dataType="UINT16" access="common" subIndex="none" type="statusValue">
+<GuiType mask="0" ref="ECtrlError" type="enum">
+</GuiType>
+</Parameter>
+</ParameterSet>
+</SubDevice>
+<SubDevice name="Chiller">
+<ParameterSet>
+<Parameter index="2300" name="Chiller Act" dataType="INT16" access="common" subIndex="none" type="actValue">
+<GuiType defaultValue="1" readonly="false" maxValue="10000" step="2" decimalPlaces="1" minValue="0" type="numeric" clrRef="none">
+</GuiType>
+</Parameter>
+</ParameterSet>
+</SubDevice>
+<SubDevice name="Osc">
+<ParameterSet>
+<Parameter index="2301" name="Osc Diode Cur Act" dataType="UINT16" access="common" subIndex="none" type="actValue">
+<GuiType defaultValue="0" readonly="false" maxValue="10000" step="2" decimalPlaces="3" minValue="0" type="numeric" clrRef="none">
+</GuiType>
+</Parameter>
+<Parameter index="2302" name="Osc Diode Cur Volt Act" dataType="INT16" access="common" subIndex="none" type="actValue">
+<GuiType defaultValue="0" readonly="false" maxValue="10000" step="2" decimalPlaces="2" minValue="0" type="numeric" clrRef="none">
+</GuiType>
+</Parameter>
+<Parameter index="2303" name="Osc Diode Temp Act" dataType="INT16" access="common" subIndex="none" type="actValue">
+<GuiType defaultValue="0" readonly="false" maxValue="10000" step="2" decimalPlaces="2" minValue="0" type="numeric" clrRef="none">
+</GuiType>
+</Parameter>
+<Parameter index="2304" name="Osc Diode Temp Cur Act" dataType="INT16" access="common" subIndex="none" type="actValue">
+<GuiType defaultValue="0" readonly="false" maxValue="10000" step="2" decimalPlaces="3" minValue="0" type="numeric" clrRef="none">
+</GuiType>
+</Parameter>
+<Parameter index="2305" name="Osc Diode Temp Volt Act" dataType="INT16" access="common" subIndex="none" type="actValue">
+<GuiType defaultValue="0" readonly="false" maxValue="10000" step="2" decimalPlaces="2" minValue="0" type="numeric" clrRef="none">
+</GuiType>
+</Parameter>
+<Parameter index="2306" name="SHG Temp Act" dataType="INT16" access="common" subIndex="none" type="actValue">
+<GuiType defaultValue="0" readonly="false" maxValue="10000" step="2" decimalPlaces="2" minValue="0" type="numeric" clrRef="none">
+</GuiType>
+</Parameter>
+<Parameter index="2307" name="SHG Xtal Temp Cur Act" dataType="INT16" access="common" subIndex="none" type="actValue">
+<GuiType defaultValue="0" readonly="false" maxValue="10000" step="2" decimalPlaces="3" minValue="0" type="numeric" clrRef="none">
+</GuiType>
+</Parameter>
+<Parameter index="2308" name="SHG Xtal Temp Volt Act" dataType="INT16" access="common" subIndex="none" type="actValue">
+<GuiType defaultValue="0" readonly="false" maxValue="10000" step="2" decimalPlaces="2" minValue="0" type="numeric" clrRef="none">
+</GuiType>
+</Parameter>
+</ParameterSet>
+</SubDevice>
+<SubDevice name="Amp">
+<ParameterSet>
+<Parameter index="2309" name="Amp Diode Cur Act" dataType="UINT16" access="common" subIndex="none" type="actValue">
+<GuiType defaultValue="0" readonly="false" maxValue="10000" step="2" decimalPlaces="3" minValue="0" type="numeric" clrRef="none">
+</GuiType>
+</Parameter>
+<Parameter index="230A" name="Amp Diode Cur Volt Act" dataType="INT16" access="common" subIndex="none" type="actValue">
+<GuiType defaultValue="0" readonly="false" maxValue="10000" step="2" decimalPlaces="2" minValue="0" type="numeric" clrRef="none">
+</GuiType>
+</Parameter>
+<Parameter index="230B" name="Amp Diode Temp Act" dataType="INT16" access="common" subIndex="none" type="actValue">
+<GuiType defaultValue="0" readonly="false" maxValue="10000" step="2" decimalPlaces="2" minValue="0" type="numeric" clrRef="none">
+</GuiType>
+</Parameter>
+<Parameter index="230C" name="Amp Diode Temp Cur Act" dataType="INT16" access="common" subIndex="none" type="actValue">
+<GuiType defaultValue="0" readonly="false" maxValue="10000" step="2" decimalPlaces="3" minValue="0" type="numeric" clrRef="none">
+</GuiType>
+</Parameter>
+<Parameter index="230D" name="Amp Diode Temp Volt Act" dataType="INT16" access="common" subIndex="none" type="actValue">
+<GuiType defaultValue="0" readonly="false" maxValue="10000" step="2" decimalPlaces="2" minValue="0" type="numeric" clrRef="none">
+</GuiType>
+</Parameter>
+<Parameter index="230E" name="Amp Xtal Temp Act" dataType="INT16" access="common" subIndex="none" type="actValue">
+<GuiType defaultValue="0" readonly="false" maxValue="10000" step="2" decimalPlaces="2" minValue="0" type="numeric" clrRef="none">
+</GuiType>
+</Parameter>
+<Parameter index="230F" name="Amp Xtal Temp Cur Act" dataType="INT16" access="common" subIndex="none" type="actValue">
+<GuiType defaultValue="0" readonly="false" maxValue="10000" step="2" decimalPlaces="3" minValue="0" type="numeric" clrRef="none">
+</GuiType>
+</Parameter>
+<Parameter index="2310" name="Amp Xtal Temp Volt Act" dataType="INT16" access="common" subIndex="none" type="actValue">
+<GuiType defaultValue="0" readonly="false" maxValue="10000" step="2" decimalPlaces="2" minValue="0" type="numeric" clrRef="none">
+</GuiType>
+</Parameter>
+</ParameterSet>
+</SubDevice>
+<SubDevice name="Osc">
+<ParameterSet>
+<Parameter index="2311" name="Osc ML Detector Act" dataType="INT16" access="common" subIndex="none" type="actValue">
+<GuiType defaultValue="0" readonly="false" maxValue="10000" step="2" decimalPlaces="1" minValue="0" type="numeric" clrRef="none">
+</GuiType>
+</Parameter>
+</ParameterSet>
+</SubDevice>
+<SubDevice name="PowerCtrl">
+<ParameterSet>
+<Parameter index="2312" name="PowerCtrl Powermeter Act" dataType="INT16" access="common" subIndex="none" type="actValue">
+<GuiType defaultValue="0" readonly="false" maxValue="65000" step="2" decimalPlaces="3" minValue="0" type="numeric" clrRef="none">
+</GuiType>
+</Parameter>
+<Parameter index="2313" name="PowerCtrl Shutter Act" dataType="BYTE" access="common" subIndex="none" type="actValue">
+<GuiType defaultValue="0" readonly="false" maxValue="1" step="2" decimalPlaces="0" minValue="0" type="numeric" clrRef="none">
+</GuiType>
+</Parameter>
+</ParameterSet>
+</SubDevice>
+<SubDevice name="Ctrl">
+<ParameterSet>
+<Parameter index="2314" name="Ctrl Supply" dataType="INT16" access="common" subIndex="none" type="actValue">
+<GuiType defaultValue="0" readonly="false" maxValue="65535" step="2" decimalPlaces="2" minValue="0" type="numeric" clrRef="none">
+</GuiType>
+</Parameter>
+<Parameter index="2315" name="Ctrl Temp" dataType="INT16" access="common" subIndex="none" type="actValue">
+<GuiType defaultValue="0" readonly="false" maxValue="65535" step="2" decimalPlaces="2" minValue="0" type="numeric" clrRef="none">
+</GuiType>
+</Parameter>
+<Parameter index="2316" name="Ctrl DSAMP Status" dataType="UINT16" access="common" subIndex="none" type="actValue">
+<GuiType defaultValue="0" readonly="false" maxValue="65535" step="2" decimalPlaces="0" minValue="0" type="numeric" clrRef="none">
+</GuiType>
+</Parameter>
+<Parameter index="2317" name="Ctrl DSAMP Head Temp" dataType="INT16" access="common" subIndex="none" type="actValue">
+<GuiType defaultValue="0" readonly="false" maxValue="65535" step="2" decimalPlaces="2" minValue="0" type="numeric" clrRef="none">
+</GuiType>
+</Parameter>
+<Parameter index="2318" name="Ctrl DSOSC Status" dataType="UINT16" access="common" subIndex="none" type="actValue">
+<GuiType defaultValue="0" readonly="false" maxValue="65535" step="2" decimalPlaces="0" minValue="0" type="numeric" clrRef="none">
+</GuiType>
+</Parameter>
+<Parameter index="2319" name="Ctrl DSOSC Head Temp" dataType="INT16" access="common" subIndex="none" type="actValue">
+<GuiType defaultValue="0" readonly="false" maxValue="65535" step="2" decimalPlaces="2" minValue="0" type="numeric" clrRef="none">
+</GuiType>
+</Parameter>
+<Parameter index="231A" name="Ctrl PSXTAL Status" dataType="UINT16" access="common" subIndex="none" type="actValue">
+<GuiType defaultValue="0" readonly="false" maxValue="65535" step="2" decimalPlaces="0" minValue="0" type="numeric" clrRef="none">
+</GuiType>
+</Parameter>
+<Parameter index="231B" name="Ctrl PSXTAL Head Temp" dataType="INT16" access="common" subIndex="none" type="actValue">
+<GuiType defaultValue="0" readonly="false" maxValue="65535" step="2" decimalPlaces="2" minValue="0" type="numeric" clrRef="none">
+</GuiType>
+</Parameter>
+</ParameterSet>
+</SubDevice>
+<SubDevice name="Osc">
+<ParameterSet>
+<Parameter index="231C" name="Osc Frequency" dataType="INT16" access="common" subIndex="none" type="actValue">
+<GuiType defaultValue="0" readonly="false" maxValue="10000" step="2" decimalPlaces="1" minValue="0" type="numeric" clrRef="none">
+</GuiType>
+</Parameter>
+</ParameterSet>
+</SubDevice>
+<SubDevice name="Switching Unit">
+<ParameterSet>
+<Parameter index="231D" name="SwUnit Peak Detector Level" dataType="UINT16" access="common" subIndex="none" type="actValue">
+<GuiType defaultValue="0" readonly="false" maxValue="10000" step="1" decimalPlaces="2" minValue="0" type="numeric" clrRef="none">
+</GuiType>
+</Parameter>
+<Parameter index="2311" name="Osc ML Detector Act" dataType="INT16" access="common" subIndex="none" type="actValue">
+<GuiType defaultValue="0" readonly="false" maxValue="10000" step="2" decimalPlaces="1" minValue="0" type="numeric" clrRef="none">
+</GuiType>
+</Parameter>
+<Parameter index="231E" name="SwUnit Pulse Enable Act" dataType="UINT16" access="common" subIndex="none" type="statusValue">
+<GuiType mask="0" ref="Etype_swunit_pulse_enable" type="enum">
+</GuiType>
+</Parameter>
+<Parameter index="231F" name="SwUnit PDG Config" dataType="UINT16" access="common" subIndex="none" type="actValue">
+<GuiType defaultValue="0" readonly="false" maxValue="10000" step="1" decimalPlaces="0" minValue="0" type="numeric" clrRef="none">
+</GuiType>
+</Parameter>
+</ParameterSet>
+</SubDevice>
+<SubDevice name="Ctrl">
+<ParameterSet>
+<Parameter index="2320" name="Ctrl AMP Diode Error" dataType="UINT16" access="common" subIndex="none" type="actValue">
+<GuiType defaultValue="0" readonly="false" maxValue="65535" step="2" decimalPlaces="0" minValue="0" type="numeric" clrRef="none">
+</GuiType>
+</Parameter>
+</ParameterSet>
+</SubDevice>
+<SubDevice name="Switching Unit">
+<ParameterSet>
+<Parameter index="2321" name="SwUnit Analog In Level" dataType="UINT16" access="common" subIndex="none" type="actValue">
+<GuiType defaultValue="0" readonly="false" maxValue="65535" step="1" decimalPlaces="2" minValue="0" type="numeric" clrRef="none">
+</GuiType>
+</Parameter>
+<Parameter index="250A" name="Int Reprate act [kHz]" dataType="UINT16" access="common" subIndex="1" type="actValue">
+<GuiType defaultValue="0" readonly="false" maxValue="10000" step="1" decimalPlaces="1" minValue="0" type="numeric" clrRef="none">
+</GuiType>
+</Parameter>
+</ParameterSet>
+</SubDevice>
+<SubDevice name="PowerCtrl">
+<ParameterSet>
+<Parameter index="2322" name="PowerCtrl relative Error" dataType="INT16" access="common" subIndex="none" type="actValue">
+<GuiType defaultValue="0" readonly="false" maxValue="10000" step="2" decimalPlaces="2" minValue="0" type="numeric" clrRef="none">
+</GuiType>
+</Parameter>
+</ParameterSet>
+</SubDevice>
+<SubDevice name="HV Unit">
+<ParameterSet>
+<Parameter index="4206" name="SwUnit HV On" dataType="BYTE" access="manufacturer" subIndex="none" type="setValue">
+<GuiType mask="1.0" type="bit" clrRef="none">
+</GuiType>
+</Parameter>
+<Parameter index="2323" name="HV_ACT" dataType="ACT_DELTA" access="common" subIndex="none" type="actValue">
+<GuiType type="none">
+</GuiType>
+</Parameter>
+<Parameter index="2323" name="Largest Sub-Index supported" dataType="UINT8" access="common" subIndex="0" type="actValue">
+<GuiType type="none">
+</GuiType>
+</Parameter>
+<Parameter index="2323" name="Hv measured current act" dataType="INT16" access="common" subIndex="1" type="actValue">
+<GuiType defaultValue="0" readonly="false" maxValue="10000" step="1" decimalPlaces="0" minValue="0" type="numeric" clrRef="none">
+</GuiType>
+</Parameter>
+<Parameter index="2323" name="Hv measured voltage act" dataType="INT16" access="common" subIndex="2" type="actValue">
+<GuiType defaultValue="0" readonly="false" maxValue="10000" step="1" decimalPlaces="0" minValue="0" type="numeric" clrRef="none">
+</GuiType>
+</Parameter>
+<Parameter index="2323" name="Hv measured target voltage act" dataType="INT16" access="common" subIndex="3" type="actValue">
+<GuiType defaultValue="0" readonly="false" maxValue="10000" step="1" decimalPlaces="0" minValue="0" type="numeric" clrRef="none">
+</GuiType>
+</Parameter>
+<Parameter index="2323" name="Hv status" dataType="UINT8" access="common" subIndex="4" type="statusValue">
+<GuiType mask="0" ref="Etype_hv_status" type="enum">
+</GuiType>
+</Parameter>
+</ParameterSet>
+</SubDevice>
+<SubDevice name="Chiller">
+<ParameterSet>
+<Parameter index="2324" name="CHILLER_ACT" dataType="ACT_DELTA" access="common" subIndex="none" type="actValue">
+<GuiType type="none">
+</GuiType>
+</Parameter>
+<Parameter index="2324" name="Largest Sub-Index supported" dataType="UINT8" access="common" subIndex="0" type="actValue">
+<GuiType type="none">
+</GuiType>
+</Parameter>
+<Parameter index="2324" name="Chiller temp voltage act" dataType="INT16" access="common" subIndex="1" type="actValue">
+<GuiType defaultValue="0" readonly="false" maxValue="10000" step="1" decimalPlaces="2" minValue="0" type="numeric" clrRef="none">
+</GuiType>
+</Parameter>
+<Parameter index="2324" name="Chiller temp current act" dataType="INT16" access="common" subIndex="2" type="actValue">
+<GuiType defaultValue="0" readonly="false" maxValue="10000" step="1" decimalPlaces="3" minValue="0" type="numeric" clrRef="none">
+</GuiType>
+</Parameter>
+<Parameter index="2324" name="Chiller ctrl temperature act" dataType="INT16" access="common" subIndex="3" type="actValue">
+<GuiType defaultValue="0" readonly="false" maxValue="10000" step="1" decimalPlaces="1" minValue="0" type="numeric" clrRef="none">
+</GuiType>
+</Parameter>
+<Parameter index="2324" name="Chiller output [%]" dataType="INT16" access="common" subIndex="4" type="actValue">
+<GuiType defaultValue="0" readonly="false" maxValue="100" step="1" decimalPlaces="0" minValue="-100" type="numeric" clrRef="none">
+</GuiType>
+</Parameter>
+</ParameterSet>
+</SubDevice>
+<SubDevice name="PowerCtrl">
+<ParameterSet>
+<Parameter index="2325" name="Shutter Safe Enable Act" dataType="BYTE" access="common" subIndex="none" type="actValue">
+<GuiType defaultValue="0" readonly="false" maxValue="1" step="0" decimalPlaces="0" minValue="0" type="numeric" clrRef="none">
+</GuiType>
+</Parameter>
+<Parameter index="2500" name="PowerCtrl Attenuator Sp" dataType="UINT8" access="common" subIndex="none" type="setValue">
+<GuiType defaultValue="0" readonly="true" maxValue="100" step="1" decimalPlaces="0" minValue="0" type="numeric" clrRef="none">
+</GuiType>
+</Parameter>
+</ParameterSet>
+</SubDevice>
+<SubDevice name="Switching Unit">
+<ParameterSet>
+<Parameter index="2501" name="SwUnit Pdg Pulse picker divider" dataType="UINT32" access="common" subIndex="none" type="setValue">
+<GuiType defaultValue="0" readonly="true" maxValue="10000" step="1" decimalPlaces="0" minValue="1" type="numeric" clrRef="none">
+</GuiType>
+</Parameter>
+<Parameter index="2502" name="Rep. Rate" dataType="BYTE" access="common" subIndex="none" type="setValue">
+<GuiType mask="0" ref="EType_reprate" type="enum">
+</GuiType>
+</Parameter>
+</ParameterSet>
+</SubDevice>
+<SubDevice name="PowerCtrl">
+<ParameterSet>
+<Parameter index="2503" name="Signal LED Volt Act" dataType="INT16" access="common" subIndex="none" type="actValue">
+<GuiType defaultValue="0" readonly="false" maxValue="10000" step="2" decimalPlaces="3" minValue="0" type="numeric" clrRef="none">
+</GuiType>
+</Parameter>
+<Parameter index="2504" name="User PowerCtrl Shutter On" dataType="BYTE" access="common" subIndex="none" type="setValue">
+<GuiType mask="1.0" type="bit" clrRef="none">
+</GuiType>
+</Parameter>
+</ParameterSet>
+</SubDevice>
+<SubDevice name="Switching Unit">
+<ParameterSet>
+<Parameter index="2505" name="SwUnit Analog In Enable" dataType="BYTE" access="common" subIndex="none" type="setValue">
+<GuiType mask="0" ref="EType_analog_en" type="enum">
+</GuiType>
+</Parameter>
+<Parameter index="2506" name="SwUnit Pulse Enable Set" dataType="UINT16" access="common" subIndex="none" type="setValue">
+<GuiType mask="0" ref="EType_pulse_picker_en" type="enum">
+</GuiType>
+</Parameter>
+</ParameterSet>
+</SubDevice>
+<SubDevice name="PowerCtrl">
+<ParameterSet>
+<Parameter index="2507" name="PowerCtrl Convolution Sp" dataType="UINT8" access="common" subIndex="none" type="setValue">
+<GuiType defaultValue="0" readonly="true" maxValue="100" step="1" decimalPlaces="0" minValue="0" type="numeric" clrRef="none">
+</GuiType>
+</Parameter>
+<Parameter index="2508" name="PowerCtrl Modus User" dataType="BYTE" access="common" subIndex="none" type="setValue">
+<GuiType mask="0" ref="EType_power_mod_user" type="enum">
+</GuiType>
+</Parameter>
+<Parameter index="2509" name="Power Ctrl Command" dataType="ACT_DELTA" access="common" subIndex="none" type="setValue">
+<GuiType type="none">
+</GuiType>
+</Parameter>
+<Parameter index="2509" name="Largest Sub-Index supported" dataType="UINT8" access="common" subIndex="0" type="setValue">
+<GuiType type="none">
+</GuiType>
+</Parameter>
+<Parameter index="2509" name="PowerCtrl Power Sp" dataType="UINT16" access="common" subIndex="1" type="setValue">
+<GuiType defaultValue="0" readonly="true" maxValue="60000" step="1" decimalPlaces="3" minValue="0" type="numeric" clrRef="none">
+</GuiType>
+</Parameter>
+<Parameter index="2509" name="PowerCtrl Feedback Control Mode" dataType="UINT8" access="service" subIndex="2" type="setValue">
+<GuiType mask="0" ref="Etype_pwrctrl_feedback" type="enum">
+</GuiType>
+</Parameter>
+<Parameter index="2509" name="PowerCtrl Modus Act" dataType="UINT8" access="common" subIndex="3" type="statusValue">
+<GuiType mask="0" ref="Etype_pwrctrl_power_mode" type="enum">
+</GuiType>
+</Parameter>
+</ParameterSet>
+</SubDevice>
+<SubDevice name="Device Info">
+<ParameterSet>
+<Parameter index="2600" name="Debug Reset Reason" dataType="UINT8" access="service" subIndex="none" type="actValue">
+<GuiType defaultValue="0" readonly="false" maxValue="255" step="0" decimalPlaces="0" minValue="0" type="numeric" clrRef="none">
+</GuiType>
+</Parameter>
+<Parameter index="2601" name="Debug Stack Pointer" dataType="UINT16" access="service" subIndex="none" type="actValue">
+<GuiType defaultValue="0" readonly="false" maxValue="65535" step="0" decimalPlaces="0" minValue="0" type="numeric" clrRef="none">
+</GuiType>
+</Parameter>
+</ParameterSet>
+</SubDevice>
+<SubDevice name="Chiller">
+<ParameterSet>
+<Parameter index="3500" name="Chiller Sp" dataType="INT16" access="service" subIndex="none" type="setValue">
+<GuiType defaultValue="0" readonly="false" maxValue="400" step="2" decimalPlaces="1" minValue="0" type="numeric" clrRef="none">
+</GuiType>
+</Parameter>
+</ParameterSet>
+</SubDevice>
+<SubDevice name="Osc">
+<ParameterSet>
+<Parameter index="3501" name="Osc Diode Cur Sp" dataType="UINT16" access="service" subIndex="none" type="setValue">
+<GuiType defaultValue="0" readonly="false" maxValue="8000" step="2" decimalPlaces="3" minValue="0" type="numeric" clrRef="none">
+</GuiType>
+</Parameter>
+</ParameterSet>
+</SubDevice>
+<SubDevice name="Osc">
+<ParameterSet>
+<Parameter index="3504" name="Osc Diode Temp Sp" dataType="INT16" access="service" subIndex="none" type="setValue">
+<GuiType defaultValue="0" readonly="false" maxValue="5900" step="2" decimalPlaces="2" minValue="1500" type="numeric" clrRef="none">
+</GuiType>
+</Parameter>
+<Parameter index="3505" name="SHG Temp Sp" dataType="INT16" access="service" subIndex="none" type="setValue">
+<GuiType defaultValue="0" readonly="false" maxValue="6000" step="2" decimalPlaces="2" minValue="1800" type="numeric" clrRef="none">
+</GuiType>
+</Parameter>
+<Parameter index="3506" name="Osc Ml Detector Hyst" dataType="INT16" access="service" subIndex="none" type="setValue">
+<GuiType defaultValue="0" readonly="false" maxValue="200" step="2" decimalPlaces="1" minValue="50" type="numeric" clrRef="none">
+</GuiType>
+</Parameter>
+</ParameterSet>
+</SubDevice>
+<SubDevice name="Amp">
+<ParameterSet>
+<Parameter index="3508" name="Amp Diode Temp Sp" dataType="INT16" access="service" subIndex="none" type="setValue">
+<GuiType defaultValue="0" readonly="false" maxValue="4000" step="2" decimalPlaces="2" minValue="1500" type="numeric" clrRef="none">
+</GuiType>
+</Parameter>
+<Parameter index="3509" name="Amp Xtal Temp Sp" dataType="INT16" access="service" subIndex="none" type="setValue">
+<GuiType defaultValue="0" readonly="false" maxValue="3000" step="2" decimalPlaces="2" minValue="1500" type="numeric" clrRef="none">
+</GuiType>
+</Parameter>
+</ParameterSet>
+</SubDevice>
+<SubDevice name="Switching Unit">
+<ParameterSet>
+<Parameter index="350F" name="SwUnit Pdg AOM" dataType="UINT16" access="service" subIndex="none" type="setValue">
+<GuiType defaultValue="0" readonly="false" maxValue="50" step="2" decimalPlaces="0" minValue="1" type="numeric" clrRef="none">
+</GuiType>
+</Parameter>
+</ParameterSet>
+</SubDevice>
+<SubDevice name="PowerCtrl">
+<ParameterSet>
+<Parameter index="3512" name="PowerCtrl Attenuator ServoPos" dataType="UINT16" access="service" subIndex="none" type="setValue">
+<GuiType defaultValue="0" readonly="false" maxValue="2000" step="2" decimalPlaces="0" minValue="0" type="numeric" clrRef="none">
+</GuiType>
+</Parameter>
+<Parameter index="3513" name="PowerCtrl Attenuator ServoMin" dataType="UINT16" access="service" subIndex="none" type="setValue">
+<GuiType defaultValue="0" readonly="false" maxValue="2000" step="2" decimalPlaces="0" minValue="0" type="numeric" clrRef="none">
+</GuiType>
+</Parameter>
+<Parameter index="3514" name="PowerCtrl Attenuator ServoMax" dataType="UINT16" access="service" subIndex="none" type="setValue">
+<GuiType defaultValue="0" readonly="false" maxValue="2000" step="2" decimalPlaces="0" minValue="0" type="numeric" clrRef="none">
+</GuiType>
+</Parameter>
+</ParameterSet>
+</SubDevice>
+<SubDevice name="Switching Unit">
+<ParameterSet>
+<Parameter index="3515" name="SwUnit Pdg AOM PP" dataType="INT16" access="service" subIndex="none" type="setValue">
+<GuiType defaultValue="0" readonly="false" maxValue="100" step="2" decimalPlaces="0" minValue="-100" type="numeric" clrRef="none">
+</GuiType>
+</Parameter>
+</ParameterSet>
+</SubDevice>
+<SubDevice name="System Config">
+<ParameterSet>
+<Parameter index="3516" name="PowerCtrl Modus" dataType="UINT8" access="service" subIndex="none" type="setValue">
+<GuiType mask="0" ref="EType_power_mod" type="enum">
+</GuiType>
+</Parameter>
+</ParameterSet>
+</SubDevice>
+<SubDevice name="Aom PP Unit">
+<ParameterSet>
+<Parameter index="3517" name="PowerCtrl AOM calibration constant" dataType="INT32" access="service" subIndex="none" type="setValue">
+<GuiType defaultValue="0" readonly="false" maxValue="2147483647" step="2" decimalPlaces="6" minValue="-2147483646" type="numeric" clrRef="none">
+</GuiType>
+</Parameter>
+</ParameterSet>
+</SubDevice>
+<SubDevice name="Switching Unit">
+<ParameterSet>
+<Parameter index="3518" name="SwUnit Gate ramp speed" dataType="UINT16" access="service" subIndex="none" type="setValue">
+<GuiType defaultValue="0" readonly="false" maxValue="65535" step="2" decimalPlaces="0" minValue="0" type="numeric" clrRef="none">
+</GuiType>
+</Parameter>
+</ParameterSet>
+</SubDevice>
+<SubDevice name="HV Unit">
+<ParameterSet>
+<Parameter index="3519" name="SwUnit HV ramp speed" dataType="UINT16" access="service" subIndex="none" type="setValue">
+<GuiType defaultValue="0" readonly="false" maxValue="65535" step="2" decimalPlaces="0" minValue="0" type="numeric" clrRef="none">
+</GuiType>
+</Parameter>
+<Parameter index="3530" name="SwUnit HV Sp0" dataType="UINT16" access="service" subIndex="5" type="setValue">
+<GuiType defaultValue="0" readonly="false" maxValue="1600" step="2" decimalPlaces="0" minValue="0" type="numeric" clrRef="none">
+</GuiType>
+</Parameter>
+<Parameter index="3531" name="SwUnit HV Sp1" dataType="UINT16" access="service" subIndex="5" type="setValue">
+<GuiType defaultValue="0" readonly="false" maxValue="1600" step="2" decimalPlaces="0" minValue="0" type="numeric" clrRef="none">
+</GuiType>
+</Parameter>
+<Parameter index="3532" name="SwUnit HV Sp2" dataType="UINT16" access="service" subIndex="5" type="setValue">
+<GuiType defaultValue="0" readonly="false" maxValue="1600" step="2" decimalPlaces="0" minValue="0" type="numeric" clrRef="none">
+</GuiType>
+</Parameter>
+<Parameter index="3533" name="SwUnit HV Sp3" dataType="UINT16" access="service" subIndex="5" type="setValue">
+<GuiType defaultValue="0" readonly="false" maxValue="1600" step="2" decimalPlaces="0" minValue="0" type="numeric" clrRef="none">
+</GuiType>
+</Parameter>
+<Parameter index="3534" name="SwUnit HV Sp4" dataType="UINT16" access="service" subIndex="5" type="setValue">
+<GuiType defaultValue="0" readonly="false" maxValue="1600" step="2" decimalPlaces="0" minValue="0" type="numeric" clrRef="none">
+</GuiType>
+</Parameter>
+</ParameterSet>
+</SubDevice>
+<SubDevice name="Aom PP Unit">
+<ParameterSet>
+<Parameter index="351A" name="PowerCtrl AOM calibration constant1" dataType="INT32" access="service" subIndex="none" type="setValue">
+<GuiType defaultValue="0" readonly="false" maxValue="2147483647" step="2" decimalPlaces="8" minValue="-2147483646" type="numeric" clrRef="none">
+</GuiType>
+</Parameter>
+<Parameter index="351B" name="PowerCtrl AOM calibration constant2" dataType="INT32" access="service" subIndex="none" type="setValue">
+<GuiType defaultValue="0" readonly="false" maxValue="2147483647" step="2" decimalPlaces="10" minValue="-2147483646" type="numeric" clrRef="none">
+</GuiType>
+</Parameter>
+<Parameter index="351C" name="PowerCtrl AOM_max_DAC" dataType="UINT16" access="service" subIndex="none" type="setValue">
+<GuiType defaultValue="0" readonly="false" maxValue="3768" step="2" decimalPlaces="0" minValue="0" type="numeric" clrRef="none">
+</GuiType>
+</Parameter>
+</ParameterSet>
+</SubDevice>
+<SubDevice name="Switching Unit">
+<ParameterSet>
+<Parameter index="351D" name="SwUnit Pdg AOM PP On-time" dataType="UINT16" access="service" subIndex="none" type="setValue">
+<GuiType defaultValue="0" readonly="false" maxValue="100" step="2" decimalPlaces="0" minValue="20" type="numeric" clrRef="none">
+</GuiType>
+</Parameter>
+</ParameterSet>
+</SubDevice>
+<SubDevice name="Aom PP Unit">
+<ParameterSet>
+<Parameter index="351E" name="PowerCtrl AOM calibration constant3" dataType="INT32" access="service" subIndex="none" type="setValue">
+<GuiType defaultValue="0" readonly="false" maxValue="2147483647" step="2" decimalPlaces="13" minValue="-2147483646" type="numeric" clrRef="none">
+</GuiType>
+</Parameter>
+</ParameterSet>
+</SubDevice>
+<SubDevice name="Switching Unit">
+<ParameterSet>
+<Parameter index="351F" name="SwUnit Pdg AOM On-time" dataType="UINT16" access="service" subIndex="none" type="setValue">
+<GuiType defaultValue="0" readonly="false" maxValue="400" step="2" decimalPlaces="0" minValue="6" type="numeric" clrRef="none">
+</GuiType>
+</Parameter>
+<Parameter index="3520" name="SwUnit Pdg Gate Start" dataType="UINT16" access="service" subIndex="none" type="setValue">
+<GuiType defaultValue="0" readonly="false" maxValue="400" step="2" decimalPlaces="0" minValue="0" type="numeric" clrRef="none">
+</GuiType>
+</Parameter>
+</ParameterSet>
+</SubDevice>
+<SubDevice name="Osc">
+<ParameterSet>
+<Parameter index="3521" name="MLD Loop Start Current" dataType="UINT16" access="service" subIndex="none" type="setValue">
+<GuiType defaultValue="0" readonly="false" maxValue="6000" step="2" decimalPlaces="3" minValue="0" type="numeric" clrRef="none">
+</GuiType>
+</Parameter>
+<Parameter index="3522" name="MLD Loop Maximum Current" dataType="UINT16" access="service" subIndex="none" type="setValue">
+<GuiType defaultValue="0" readonly="false" maxValue="8000" step="2" decimalPlaces="3" minValue="0" type="numeric" clrRef="none">
+</GuiType>
+</Parameter>
+<Parameter index="3523" name="MLD Loop Current Step" dataType="UINT16" access="service" subIndex="none" type="setValue">
+<GuiType defaultValue="0" readonly="false" maxValue="1000" step="2" decimalPlaces="3" minValue="0" type="numeric" clrRef="none">
+</GuiType>
+</Parameter>
+<Parameter index="3524" name="MLD Loop Clearance" dataType="INT16" access="service" subIndex="none" type="setValue">
+<GuiType defaultValue="0" readonly="false" maxValue="8000" step="2" decimalPlaces="3" minValue="0" type="numeric" clrRef="none">
+</GuiType>
+</Parameter>
+<Parameter index="3525" name="MLD Loop State" dataType="UINT8" access="common" subIndex="none" type="statusValue">
+<GuiType mask="0" ref="EType4" type="enum">
+</GuiType>
+</Parameter>
+<Parameter index="3526" name="MLD Loop Counter" dataType="UINT16" access="common" subIndex="none" type="actValue">
+<GuiType defaultValue="0" readonly="false" maxValue="65535" step="1" decimalPlaces="0" minValue="0" type="numeric" clrRef="none">
+</GuiType>
+</Parameter>
+</ParameterSet>
+</SubDevice>
+<SubDevice name="Amp">
+<ParameterSet>
+<Parameter index="3527" name="AMP Loop Minimum Power" dataType="INT16" access="service" subIndex="none" type="setValue">
+<GuiType defaultValue="0" readonly="false" maxValue="63000" step="2" decimalPlaces="2" minValue="0" type="numeric" clrRef="none">
+</GuiType>
+</Parameter>
+<Parameter index="3528" name="AMP Loop Current Step" dataType="UINT16" access="service" subIndex="none" type="setValue">
+<GuiType defaultValue="0" readonly="false" maxValue="10000" step="2" decimalPlaces="3" minValue="0" type="numeric" clrRef="none">
+</GuiType>
+</Parameter>
+<Parameter index="3529" name="AMP Loop Maximum Current" dataType="UINT16" access="service" subIndex="none" type="setValue">
+<GuiType defaultValue="0" readonly="false" maxValue="50000" step="2" decimalPlaces="3" minValue="0" type="numeric" clrRef="none">
+</GuiType>
+</Parameter>
+<Parameter index="352A" name="AMP Loop Clearance Power" dataType="INT16" access="service" subIndex="none" type="setValue">
+<GuiType defaultValue="0" readonly="false" maxValue="10000" step="2" decimalPlaces="3" minValue="0" type="numeric" clrRef="none">
+</GuiType>
+</Parameter>
+<Parameter index="352B" name="AMP Loop State" dataType="UINT8" access="common" subIndex="none" type="statusValue">
+<GuiType mask="0" ref="EType5" type="enum">
+</GuiType>
+</Parameter>
+<Parameter index="352C" name="AMP Loop Counter" dataType="UINT16" access="common" subIndex="none" type="actValue">
+<GuiType defaultValue="0" readonly="false" maxValue="65535" step="1" decimalPlaces="0" minValue="0" type="numeric" clrRef="none">
+</GuiType>
+</Parameter>
+<Parameter index="352D" name="AMP Loop Maximum Delta Current" dataType="UINT16" access="service" subIndex="none" type="setValue">
+<GuiType defaultValue="0" readonly="false" maxValue="20000" step="2" decimalPlaces="3" minValue="0" type="numeric" clrRef="none">
+</GuiType>
+</Parameter>
+</ParameterSet>
+</SubDevice>
+<SubDevice name="PowerCtrl">
+<ParameterSet>
+<Parameter index="352E" name="PowerCtrl Attenuator Factor" dataType="UINT8" access="service" subIndex="none" type="setValue">
+<GuiType defaultValue="0" readonly="false" maxValue="100" step="1" decimalPlaces="0" minValue="0" type="numeric" clrRef="none">
+</GuiType>
+</Parameter>
+</ParameterSet>
+</SubDevice>
+<SubDevice name="Rep. Rate 0">
+<ParameterSet>
+<Parameter index="3530" name="SwUnit Pdg0" dataType="ACT_DELTA" access="common" subIndex="none" type="setValue">
+<GuiType type="none">
+</GuiType>
+</Parameter>
+<Parameter index="3530" name="Largest Sub-Index supported0" dataType="UINT8" access="common" subIndex="0" type="setValue">
+<GuiType type="none">
+</GuiType>
+</Parameter>
+<Parameter index="3530" name="SwUnit Pdg Div0" dataType="UINT32" access="service" subIndex="1" type="setValue">
+<GuiType defaultValue="0" readonly="false" maxValue="660" step="2" decimalPlaces="0" minValue="55" type="numeric" clrRef="none">
+</GuiType>
+</Parameter>
+<Parameter index="3530" name="PowerCtrl Power calibrate 0" dataType="UINT16" access="service" subIndex="10" type="setValue">
+<GuiType defaultValue="0" readonly="false" maxValue="100000" step="1" decimalPlaces="2" minValue="0" type="numeric" clrRef="none">
+</GuiType>
+</Parameter>
+<Parameter index="3530" name="PowerCtrl Power calibrate GREEN 0" dataType="UINT16" access="service" subIndex="11" type="setValue">
+<GuiType defaultValue="0" readonly="false" maxValue="65535" step="1" decimalPlaces="2" minValue="0" type="numeric" clrRef="none">
+</GuiType>
+</Parameter>
+<Parameter index="3530" name="Lin Stage Pulse Duration Fit W2 0" dataType="UINT16" access="service" subIndex="12" type="setValue">
+<GuiType defaultValue="0" readonly="false" maxValue="65535" step="1" decimalPlaces="0" minValue="0" type="numeric" clrRef="none">
+</GuiType>
+</Parameter>
+<Parameter index="3530" name="SwUnit Pdg Gate0" dataType="UINT8" access="service" subIndex="2" type="setValue">
+<GuiType defaultValue="0" readonly="false" maxValue="80" step="2" decimalPlaces="0" minValue="1" type="numeric" clrRef="none">
+</GuiType>
+</Parameter>
+<Parameter index="3530" name="SwUnit Pdg OnDelay0" dataType="UINT16" access="service" subIndex="3" type="setValue">
+<GuiType defaultValue="0" readonly="false" maxValue="1023" step="2" decimalPlaces="0" minValue="0" type="numeric" clrRef="none">
+</GuiType>
+</Parameter>
+<Parameter index="3530" name="SwUnit Pdg OffDelay0" dataType="UINT16" access="service" subIndex="4" type="setValue">
+<GuiType defaultValue="0" readonly="false" maxValue="2046" step="2" decimalPlaces="0" minValue="0" type="numeric" clrRef="none">
+</GuiType>
+</Parameter>
+<Parameter index="3530" name="SwUnit HV Sp0" dataType="UINT16" access="service" subIndex="5" type="setValue">
+<GuiType defaultValue="0" readonly="false" maxValue="1600" step="2" decimalPlaces="0" minValue="0" type="numeric" clrRef="none">
+</GuiType>
+</Parameter>
+<Parameter index="3530" name="Amp Diode Cur Sp0" dataType="UINT16" access="service" subIndex="6" type="setValue">
+<GuiType defaultValue="0" readonly="false" maxValue="45000" step="2" decimalPlaces="3" minValue="0" type="numeric" clrRef="none">
+</GuiType>
+</Parameter>
+<Parameter index="3530" name="SwUnit Pdg Pulse picker divider 0" dataType="UINT16" access="service" subIndex="7" type="setValue">
+<GuiType defaultValue="0" readonly="false" maxValue="255" step="1" decimalPlaces="0" minValue="1" type="numeric" clrRef="none">
+</GuiType>
+</Parameter>
+<Parameter index="2312" name="PowerCtrl Powermeter Act" dataType="INT16" access="service" subIndex="none" type="actValue">
+<GuiType defaultValue="0" readonly="false" maxValue="10000" step="2" decimalPlaces="3" minValue="0" type="numeric" clrRef="none">
+</GuiType>
+</Parameter>
+<Parameter index="3530" name="Powermeter Cal Factor 0" dataType="INT16" access="service" subIndex="8" type="actValue">
+<GuiType defaultValue="0" readonly="false" maxValue="20000" step="2" decimalPlaces="3" minValue="0" type="numeric" clrRef="none">
+</GuiType>
+</Parameter>
+<Parameter index="3530" name="Powermeter Cal Factor gr 0" dataType="INT16" access="service" subIndex="9" type="actValue">
+<GuiType defaultValue="0" readonly="false" maxValue="20000" step="2" decimalPlaces="3" minValue="0" type="numeric" clrRef="none">
+</GuiType>
+</Parameter>
+<Parameter index="250A" name="Int Reprate act [kHz]" dataType="UINT16" access="service" subIndex="1" type="actValue">
+<GuiType defaultValue="0" readonly="false" maxValue="10000" step="1" decimalPlaces="1" minValue="0" type="numeric" clrRef="none">
+</GuiType>
+</Parameter>
+<Parameter index="2309" name="Amp Diode Cur Act" dataType="UINT16" access="service" subIndex="none" type="actValue">
+<GuiType defaultValue="0" readonly="false" maxValue="10000" step="2" decimalPlaces="3" minValue="0" type="numeric" clrRef="none">
+</GuiType>
+</Parameter>
+</ParameterSet>
+</SubDevice>
+<SubDevice name="Rep. Rate 1">
+<ParameterSet>
+<Parameter index="3531" name="SwUnit Pdg1" dataType="ACT_DELTA" access="common" subIndex="none" type="setValue">
+<GuiType type="none">
+</GuiType>
+</Parameter>
+<Parameter index="3531" name="Largest Sub-Index supported1" dataType="UINT8" access="common" subIndex="0" type="setValue">
+<GuiType type="none">
+</GuiType>
+</Parameter>
+<Parameter index="3531" name="SwUnit Pdg Div1" dataType="UINT32" access="service" subIndex="1" type="setValue">
+<GuiType defaultValue="0" readonly="false" maxValue="330" step="2" decimalPlaces="0" minValue="55" type="numeric" clrRef="none">
+</GuiType>
+</Parameter>
+<Parameter index="3531" name="PowerCtrl Power calibrate 1" dataType="UINT16" access="service" subIndex="10" type="setValue">
+<GuiType defaultValue="0" readonly="false" maxValue="100000" step="1" decimalPlaces="2" minValue="0" type="numeric" clrRef="none">
+</GuiType>
+</Parameter>
+<Parameter index="3531" name="PowerCtrl Power calibrate GREEN 1" dataType="UINT16" access="service" subIndex="11" type="setValue">
+<GuiType defaultValue="0" readonly="false" maxValue="65535" step="1" decimalPlaces="2" minValue="0" type="numeric" clrRef="none">
+</GuiType>
+</Parameter>
+<Parameter index="3531" name="Lin Stage Pulse Duration Fit W2 1" dataType="UINT16" access="service" subIndex="12" type="setValue">
+<GuiType defaultValue="0" readonly="false" maxValue="65535" step="1" decimalPlaces="0" minValue="0" type="numeric" clrRef="none">
+</GuiType>
+</Parameter>
+<Parameter index="3531" name="SwUnit Pdg Gate1" dataType="UINT8" access="service" subIndex="2" type="setValue">
+<GuiType defaultValue="0" readonly="false" maxValue="80" step="2" decimalPlaces="0" minValue="1" type="numeric" clrRef="none">
+</GuiType>
+</Parameter>
+<Parameter index="3531" name="SwUnit Pdg OnDelay1" dataType="UINT16" access="service" subIndex="3" type="setValue">
+<GuiType defaultValue="0" readonly="false" maxValue="1023" step="2" decimalPlaces="0" minValue="0" type="numeric" clrRef="none">
+</GuiType>
+</Parameter>
+<Parameter index="3531" name="SwUnit Pdg OffDelay1" dataType="UINT16" access="service" subIndex="4" type="setValue">
+<GuiType defaultValue="0" readonly="false" maxValue="2046" step="2" decimalPlaces="0" minValue="0" type="numeric" clrRef="none">
+</GuiType>
+</Parameter>
+<Parameter index="3531" name="SwUnit HV Sp1" dataType="UINT16" access="service" subIndex="5" type="setValue">
+<GuiType defaultValue="0" readonly="false" maxValue="1600" step="2" decimalPlaces="0" minValue="0" type="numeric" clrRef="none">
+</GuiType>
+</Parameter>
+<Parameter index="3531" name="Amp Diode Cur Sp1" dataType="UINT16" access="service" subIndex="6" type="setValue">
+<GuiType defaultValue="0" readonly="false" maxValue="45000" step="2" decimalPlaces="3" minValue="0" type="numeric" clrRef="none">
+</GuiType>
+</Parameter>
+<Parameter index="3531" name="SwUnit Pdg Pulse picker divider 1" dataType="UINT16" access="service" subIndex="7" type="setValue">
+<GuiType defaultValue="0" readonly="false" maxValue="255" step="1" decimalPlaces="0" minValue="1" type="numeric" clrRef="none">
+</GuiType>
+</Parameter>
+<Parameter index="2312" name="PowerCtrl Powermeter Act" dataType="INT16" access="service" subIndex="none" type="actValue">
+<GuiType defaultValue="0" readonly="false" maxValue="10000" step="2" decimalPlaces="3" minValue="0" type="numeric" clrRef="none">
+</GuiType>
+</Parameter>
+<Parameter index="3531" name="Powermeter Cal Factor 1" dataType="INT16" access="service" subIndex="8" type="actValue">
+<GuiType defaultValue="0" readonly="false" maxValue="20000" step="2" decimalPlaces="3" minValue="0" type="numeric" clrRef="none">
+</GuiType>
+</Parameter>
+<Parameter index="250A" name="Int Reprate act [kHz]" dataType="UINT16" access="service" subIndex="1" type="actValue">
+<GuiType defaultValue="0" readonly="false" maxValue="10000" step="1" decimalPlaces="1" minValue="0" type="numeric" clrRef="none">
+</GuiType>
+</Parameter>
+<Parameter index="2309" name="Amp Diode Cur Act" dataType="UINT16" access="service" subIndex="none" type="actValue">
+<GuiType defaultValue="0" readonly="false" maxValue="10000" step="2" decimalPlaces="3" minValue="0" type="numeric" clrRef="none">
+</GuiType>
+</Parameter>
+<Parameter index="3531" name="Powermeter Cal Factor gr 1" dataType="INT16" access="service" subIndex="9" type="actValue">
+<GuiType defaultValue="0" readonly="false" maxValue="20000" step="2" decimalPlaces="3" minValue="0" type="numeric" clrRef="none">
+</GuiType>
+</Parameter>
+</ParameterSet>
+</SubDevice>
+<SubDevice name="Rep. Rate 2">
+<ParameterSet>
+<Parameter index="3532" name="SwUnit Pdg2" dataType="ACT_DELTA" access="common" subIndex="none" type="setValue">
+<GuiType type="none">
+</GuiType>
+</Parameter>
+<Parameter index="3532" name="Largest Sub-Index supported2" dataType="UINT8" access="common" subIndex="0" type="setValue">
+<GuiType type="none">
+</GuiType>
+</Parameter>
+<Parameter index="3532" name="SwUnit Pdg Div2" dataType="UINT32" access="service" subIndex="1" type="setValue">
+<GuiType defaultValue="0" readonly="false" maxValue="330" step="2" decimalPlaces="0" minValue="55" type="numeric" clrRef="none">
+</GuiType>
+</Parameter>
+<Parameter index="3532" name="PowerCtrl Power calibrate 2" dataType="UINT16" access="service" subIndex="10" type="setValue">
+<GuiType defaultValue="0" readonly="false" maxValue="100000" step="1" decimalPlaces="2" minValue="0" type="numeric" clrRef="none">
+</GuiType>
+</Parameter>
+<Parameter index="3532" name="PowerCtrl Power calibrate GREEN 2" dataType="UINT16" access="service" subIndex="11" type="setValue">
+<GuiType defaultValue="0" readonly="false" maxValue="65535" step="1" decimalPlaces="2" minValue="0" type="numeric" clrRef="none">
+</GuiType>
+</Parameter>
+<Parameter index="3532" name="Lin Stage Pulse Duration Fit W2 2" dataType="UINT16" access="service" subIndex="12" type="setValue">
+<GuiType defaultValue="0" readonly="false" maxValue="65535" step="1" decimalPlaces="0" minValue="0" type="numeric" clrRef="none">
+</GuiType>
+</Parameter>
+<Parameter index="3532" name="SwUnit Pdg Gate2" dataType="UINT8" access="service" subIndex="2" type="setValue">
+<GuiType defaultValue="0" readonly="false" maxValue="80" step="2" decimalPlaces="0" minValue="1" type="numeric" clrRef="none">
+</GuiType>
+</Parameter>
+<Parameter index="3532" name="SwUnit Pdg OnDelay2" dataType="UINT16" access="service" subIndex="3" type="setValue">
+<GuiType defaultValue="0" readonly="false" maxValue="1023" step="2" decimalPlaces="0" minValue="0" type="numeric" clrRef="none">
+</GuiType>
+</Parameter>
+<Parameter index="3532" name="SwUnit Pdg OffDelay2" dataType="UINT16" access="service" subIndex="4" type="setValue">
+<GuiType defaultValue="0" readonly="false" maxValue="2046" step="2" decimalPlaces="0" minValue="0" type="numeric" clrRef="none">
+</GuiType>
+</Parameter>
+<Parameter index="3532" name="SwUnit HV Sp2" dataType="UINT16" access="service" subIndex="5" type="setValue">
+<GuiType defaultValue="0" readonly="false" maxValue="1600" step="2" decimalPlaces="0" minValue="0" type="numeric" clrRef="none">
+</GuiType>
+</Parameter>
+<Parameter index="3532" name="Amp Diode Cur Sp2" dataType="UINT16" access="service" subIndex="6" type="setValue">
+<GuiType defaultValue="0" readonly="false" maxValue="45000" step="2" decimalPlaces="3" minValue="0" type="numeric" clrRef="none">
+</GuiType>
+</Parameter>
+<Parameter index="3532" name="SwUnit Pdg Pulse picker divider 2" dataType="UINT16" access="service" subIndex="7" type="setValue">
+<GuiType defaultValue="0" readonly="false" maxValue="255" step="1" decimalPlaces="0" minValue="1" type="numeric" clrRef="none">
+</GuiType>
+</Parameter>
+<Parameter index="2312" name="PowerCtrl Powermeter Act" dataType="INT16" access="service" subIndex="none" type="actValue">
+<GuiType defaultValue="0" readonly="false" maxValue="10000" step="2" decimalPlaces="3" minValue="0" type="numeric" clrRef="none">
+</GuiType>
+</Parameter>
+<Parameter index="3532" name="Powermeter Cal Factor 2" dataType="INT16" access="service" subIndex="8" type="actValue">
+<GuiType defaultValue="0" readonly="false" maxValue="20000" step="2" decimalPlaces="3" minValue="0" type="numeric" clrRef="none">
+</GuiType>
+</Parameter>
+<Parameter index="3532" name="Powermeter Cal Factor gr 2" dataType="INT16" access="service" subIndex="9" type="actValue">
+<GuiType defaultValue="0" readonly="false" maxValue="20000" step="2" decimalPlaces="3" minValue="0" type="numeric" clrRef="none">
+</GuiType>
+</Parameter>
+<Parameter index="250A" name="Int Reprate act [kHz]" dataType="UINT16" access="service" subIndex="1" type="actValue">
+<GuiType defaultValue="0" readonly="false" maxValue="10000" step="1" decimalPlaces="1" minValue="0" type="numeric" clrRef="none">
+</GuiType>
+</Parameter>
+<Parameter index="2309" name="Amp Diode Cur Act" dataType="UINT16" access="service" subIndex="none" type="actValue">
+<GuiType defaultValue="0" readonly="false" maxValue="10000" step="2" decimalPlaces="3" minValue="0" type="numeric" clrRef="none">
+</GuiType>
+</Parameter>
+</ParameterSet>
+</SubDevice>
+<SubDevice name="Rep. Rate 3">
+<ParameterSet>
+<Parameter index="3533" name="SwUnit Pdg3" dataType="ACT_DELTA" access="common" subIndex="none" type="setValue">
+<GuiType type="none">
+</GuiType>
+</Parameter>
+<Parameter index="3533" name="Largest Sub-Index supported3" dataType="UINT8" access="common" subIndex="0" type="setValue">
+<GuiType type="none">
+</GuiType>
+</Parameter>
+<Parameter index="3533" name="SwUnit Pdg Div3" dataType="UINT32" access="service" subIndex="1" type="setValue">
+<GuiType defaultValue="0" readonly="false" maxValue="330" step="2" decimalPlaces="0" minValue="55" type="numeric" clrRef="none">
+</GuiType>
+</Parameter>
+<Parameter index="3533" name="PowerCtrl Power calibrate 3" dataType="UINT16" access="service" subIndex="10" type="setValue">
+<GuiType defaultValue="0" readonly="false" maxValue="100000" step="1" decimalPlaces="2" minValue="0" type="numeric" clrRef="none">
+</GuiType>
+</Parameter>
+<Parameter index="3533" name="PowerCtrl Power calibrate GREEN 3" dataType="UINT16" access="service" subIndex="11" type="setValue">
+<GuiType defaultValue="0" readonly="false" maxValue="65535" step="1" decimalPlaces="2" minValue="0" type="numeric" clrRef="none">
+</GuiType>
+</Parameter>
+<Parameter index="3533" name="Lin Stage Pulse Duration Fit W2 3" dataType="UINT16" access="service" subIndex="12" type="setValue">
+<GuiType defaultValue="0" readonly="false" maxValue="65535" step="1" decimalPlaces="0" minValue="0" type="numeric" clrRef="none">
+</GuiType>
+</Parameter>
+<Parameter index="3533" name="SwUnit Pdg Gate3" dataType="UINT8" access="service" subIndex="2" type="setValue">
+<GuiType defaultValue="0" readonly="false" maxValue="80" step="2" decimalPlaces="0" minValue="1" type="numeric" clrRef="none">
+</GuiType>
+</Parameter>
+<Parameter index="3533" name="SwUnit Pdg OnDelay3" dataType="UINT16" access="service" subIndex="3" type="setValue">
+<GuiType defaultValue="0" readonly="false" maxValue="1023" step="2" decimalPlaces="0" minValue="0" type="numeric" clrRef="none">
+</GuiType>
+</Parameter>
+<Parameter index="3533" name="SwUnit Pdg OffDelay3" dataType="UINT16" access="service" subIndex="4" type="setValue">
+<GuiType defaultValue="0" readonly="false" maxValue="2046" step="2" decimalPlaces="0" minValue="0" type="numeric" clrRef="none">
+</GuiType>
+</Parameter>
+<Parameter index="3533" name="SwUnit HV Sp3" dataType="UINT16" access="service" subIndex="5" type="setValue">
+<GuiType defaultValue="0" readonly="false" maxValue="1600" step="2" decimalPlaces="0" minValue="0" type="numeric" clrRef="none">
+</GuiType>
+</Parameter>
+<Parameter index="3533" name="Amp Diode Cur Sp3" dataType="UINT16" access="service" subIndex="6" type="setValue">
+<GuiType defaultValue="0" readonly="false" maxValue="45000" step="2" decimalPlaces="3" minValue="0" type="numeric" clrRef="none">
+</GuiType>
+</Parameter>
+<Parameter index="3533" name="SwUnit Pdg Pulse picker divider 3" dataType="UINT16" access="service" subIndex="7" type="setValue">
+<GuiType defaultValue="0" readonly="false" maxValue="255" step="1" decimalPlaces="0" minValue="1" type="numeric" clrRef="none">
+</GuiType>
+</Parameter>
+<Parameter index="2312" name="PowerCtrl Powermeter Act" dataType="INT16" access="service" subIndex="none" type="actValue">
+<GuiType defaultValue="0" readonly="false" maxValue="10000" step="2" decimalPlaces="3" minValue="0" type="numeric" clrRef="none">
+</GuiType>
+</Parameter>
+<Parameter index="3533" name="Powermeter Cal Factor 3" dataType="INT16" access="service" subIndex="8" type="actValue">
+<GuiType defaultValue="0" readonly="false" maxValue="20000" step="2" decimalPlaces="3" minValue="0" type="numeric" clrRef="none">
+</GuiType>
+</Parameter>
+<Parameter index="3533" name="Powermeter Cal Factor gr 3" dataType="INT16" access="service" subIndex="9" type="actValue">
+<GuiType defaultValue="0" readonly="false" maxValue="20000" step="2" decimalPlaces="3" minValue="0" type="numeric" clrRef="none">
+</GuiType>
+</Parameter>
+<Parameter index="250A" name="Int Reprate act [kHz]" dataType="UINT16" access="service" subIndex="1" type="actValue">
+<GuiType defaultValue="0" readonly="false" maxValue="10000" step="1" decimalPlaces="1" minValue="0" type="numeric" clrRef="none">
+</GuiType>
+</Parameter>
+<Parameter index="2309" name="Amp Diode Cur Act" dataType="UINT16" access="service" subIndex="none" type="actValue">
+<GuiType defaultValue="0" readonly="false" maxValue="10000" step="2" decimalPlaces="3" minValue="0" type="numeric" clrRef="none">
+</GuiType>
+</Parameter>
+</ParameterSet>
+</SubDevice>
+<SubDevice name="Rep. Rate 4">
+<ParameterSet>
+<Parameter index="3534" name="SwUnit Pdg4" dataType="ACT_DELTA" access="common" subIndex="none" type="setValue">
+<GuiType type="none">
+</GuiType>
+</Parameter>
+<Parameter index="3534" name="Largest Sub-Index supported4" dataType="UINT8" access="common" subIndex="0" type="setValue">
+<GuiType type="none">
+</GuiType>
+</Parameter>
+<Parameter index="3534" name="SwUnit Pdg Div4" dataType="UINT32" access="service" subIndex="1" type="setValue">
+<GuiType defaultValue="0" readonly="false" maxValue="330" step="2" decimalPlaces="0" minValue="55" type="numeric" clrRef="none">
+</GuiType>
+</Parameter>
+<Parameter index="3534" name="PowerCtrl Power calibrate 4" dataType="UINT16" access="service" subIndex="10" type="setValue">
+<GuiType defaultValue="0" readonly="false" maxValue="100000" step="1" decimalPlaces="2" minValue="0" type="numeric" clrRef="none">
+</GuiType>
+</Parameter>
+<Parameter index="3534" name="PowerCtrl Power calibrate GREEN 4" dataType="UINT16" access="service" subIndex="11" type="setValue">
+<GuiType defaultValue="0" readonly="false" maxValue="65535" step="1" decimalPlaces="2" minValue="0" type="numeric" clrRef="none">
+</GuiType>
+</Parameter>
+<Parameter index="3534" name="Lin Stage Pulse Duration Fit W2 4" dataType="UINT16" access="service" subIndex="12" type="setValue">
+<GuiType defaultValue="0" readonly="false" maxValue="65535" step="1" decimalPlaces="0" minValue="0" type="numeric" clrRef="none">
+</GuiType>
+</Parameter>
+<Parameter index="3534" name="SwUnit Pdg Gate4" dataType="UINT8" access="service" subIndex="2" type="setValue">
+<GuiType defaultValue="0" readonly="false" maxValue="80" step="2" decimalPlaces="0" minValue="1" type="numeric" clrRef="none">
+</GuiType>
+</Parameter>
+<Parameter index="3534" name="SwUnit Pdg OnDelay4" dataType="UINT16" access="service" subIndex="3" type="setValue">
+<GuiType defaultValue="0" readonly="false" maxValue="1023" step="2" decimalPlaces="0" minValue="0" type="numeric" clrRef="none">
+</GuiType>
+</Parameter>
+<Parameter index="3534" name="SwUnit Pdg OffDelay4" dataType="UINT16" access="service" subIndex="4" type="setValue">
+<GuiType defaultValue="0" readonly="false" maxValue="2046" step="2" decimalPlaces="0" minValue="0" type="numeric" clrRef="none">
+</GuiType>
+</Parameter>
+<Parameter index="3534" name="SwUnit HV Sp4" dataType="UINT16" access="service" subIndex="5" type="setValue">
+<GuiType defaultValue="0" readonly="false" maxValue="1600" step="2" decimalPlaces="0" minValue="0" type="numeric" clrRef="none">
+</GuiType>
+</Parameter>
+<Parameter index="3534" name="Amp Diode Cur Sp4" dataType="UINT16" access="service" subIndex="6" type="setValue">
+<GuiType defaultValue="0" readonly="false" maxValue="45000" step="2" decimalPlaces="3" minValue="0" type="numeric" clrRef="none">
+</GuiType>
+</Parameter>
+<Parameter index="3534" name="SwUnit Pdg Pulse picker divider 4" dataType="UINT16" access="service" subIndex="7" type="setValue">
+<GuiType defaultValue="0" readonly="false" maxValue="255" step="1" decimalPlaces="0" minValue="1" type="numeric" clrRef="none">
+</GuiType>
+</Parameter>
+<Parameter index="2312" name="PowerCtrl Powermeter Act" dataType="INT16" access="service" subIndex="none" type="actValue">
+<GuiType defaultValue="0" readonly="false" maxValue="10000" step="2" decimalPlaces="3" minValue="0" type="numeric" clrRef="none">
+</GuiType>
+</Parameter>
+<Parameter index="3534" name="Powermeter Cal Factor 4" dataType="INT16" access="service" subIndex="8" type="actValue">
+<GuiType defaultValue="0" readonly="false" maxValue="20000" step="2" decimalPlaces="3" minValue="0" type="numeric" clrRef="none">
+</GuiType>
+</Parameter>
+<Parameter index="3534" name="Powermeter Cal Factor gr 4" dataType="INT16" access="service" subIndex="9" type="actValue">
+<GuiType defaultValue="0" readonly="false" maxValue="20000" step="2" decimalPlaces="3" minValue="0" type="numeric" clrRef="none">
+</GuiType>
+</Parameter>
+<Parameter index="250A" name="Int Reprate act [kHz]" dataType="UINT16" access="service" subIndex="1" type="actValue">
+<GuiType defaultValue="0" readonly="false" maxValue="10000" step="1" decimalPlaces="1" minValue="0" type="numeric" clrRef="none">
+</GuiType>
+</Parameter>
+<Parameter index="2309" name="Amp Diode Cur Act" dataType="UINT16" access="service" subIndex="none" type="actValue">
+<GuiType defaultValue="0" readonly="false" maxValue="10000" step="2" decimalPlaces="3" minValue="0" type="numeric" clrRef="none">
+</GuiType>
+</Parameter>
+</ParameterSet>
+</SubDevice>
+<SubDevice name="Switching Unit">
+<ParameterSet>
+<Parameter index="3538" name="SwUnit PDG Config Set" dataType="UINT16" access="service" subIndex="none" type="setValue">
+<GuiType defaultValue="0" readonly="false" maxValue="10000" step="2" decimalPlaces="0" minValue="0" type="numeric" clrRef="none">
+</GuiType>
+</Parameter>
+</ParameterSet>
+</SubDevice>
+<SubDevice name="System Config">
+<ParameterSet>
+<Parameter index="3539" name="SwUnit PDG Input Filter" dataType="UINT8" access="service" subIndex="none" type="setValue">
+<GuiType defaultValue="0" readonly="false" maxValue="3" step="2" decimalPlaces="0" minValue="0" type="numeric" clrRef="none">
+</GuiType>
+</Parameter>
+</ParameterSet>
+</SubDevice>
+<SubDevice name="PowerCtrl">
+<ParameterSet>
+<Parameter index="3511" name="PowerCtrl Powermeter Cal Offset" dataType="INT16" access="service" subIndex="none" type="setValue">
+<GuiType defaultValue="0" readonly="false" maxValue="10000" step="2" decimalPlaces="3" minValue="0" type="numeric" clrRef="none">
+</GuiType>
+</Parameter>
+<Parameter index="353E" name="PowerCtrl Powermeter Cal Offset 2" dataType="INT16" access="manufacturer" subIndex="none" type="setValue">
+<GuiType defaultValue="0" readonly="false" maxValue="10000" step="2" decimalPlaces="3" minValue="0" type="numeric" clrRef="none">
+</GuiType>
+</Parameter>
+<Parameter index="353F" name="PowerCtrl Feedback Control" dataType="ACT_DELTA" access="common" subIndex="none" type="setValue">
+<GuiType type="none">
+</GuiType>
+</Parameter>
+<Parameter index="353F" name="Largest Sub-Index supported" dataType="UINT8" access="common" subIndex="0" type="setValue">
+<GuiType type="none">
+</GuiType>
+</Parameter>
+<Parameter index="353F" name="PowerCtrl Feedback Value  [%]" dataType="UINT16" access="common" subIndex="1" type="actValue">
+<GuiType defaultValue="0" readonly="false" maxValue="60000" step="1" decimalPlaces="2" minValue="0" type="numeric" clrRef="none">
+</GuiType>
+</Parameter>
+</ParameterSet>
+</SubDevice>
+<SubDevice name="System Config">
+<ParameterSet>
+<Parameter index="353F" name="PowerCtrl Feedback P Value" dataType="UINT16" access="manufacturer" subIndex="2" type="setValue">
+<GuiType defaultValue="0" readonly="false" maxValue="60000" step="1" decimalPlaces="2" minValue="0" type="numeric" clrRef="none">
+</GuiType>
+</Parameter>
+<Parameter index="353F" name="PowerCtrl Feedback I Value" dataType="UINT16" access="manufacturer" subIndex="3" type="setValue">
+<GuiType defaultValue="0" readonly="false" maxValue="60000" step="1" decimalPlaces="2" minValue="0" type="numeric" clrRef="none">
+</GuiType>
+</Parameter>
+<Parameter index="353F" name="PowerCtrl Feedback D Value" dataType="UINT16" access="manufacturer" subIndex="4" type="setValue">
+<GuiType defaultValue="0" readonly="false" maxValue="60000" step="1" decimalPlaces="2" minValue="0" type="numeric" clrRef="none">
+</GuiType>
+</Parameter>
+<Parameter index="353F" name="PowerCtrl Feedback Dead Band" dataType="UINT16" access="manufacturer" subIndex="5" type="setValue">
+<GuiType defaultValue="0" readonly="false" maxValue="60000" step="1" decimalPlaces="2" minValue="0" type="numeric" clrRef="none">
+</GuiType>
+</Parameter>
+<Parameter index="353F" name="PowerCtrl Feedback Limit" dataType="UINT16" access="manufacturer" subIndex="6" type="setValue">
+<GuiType defaultValue="0" readonly="false" maxValue="60000" step="1" decimalPlaces="2" minValue="0" type="numeric" clrRef="none">
+</GuiType>
+</Parameter>
+</ParameterSet>
+</SubDevice>
+<SubDevice name="LinStage">
+<ParameterSet>
+<Parameter index="250B" name="STAGE_ACT" dataType="ACT_DELTA" access="service" subIndex="none" type="setValue">
+<GuiType type="none">
+</GuiType>
+</Parameter>
+<Parameter index="250B" name="Largest Sub-Index supported" dataType="UINT8" access="common" subIndex="0" type="setValue">
+<GuiType type="none">
+</GuiType>
+</Parameter>
+<Parameter index="250B" name="Lin Stage Position Act" dataType="INT32" access="service" subIndex="1" type="actValue">
+<GuiType defaultValue="0" readonly="false" maxValue="60000" step="1" decimalPlaces="0" minValue="-60000" type="numeric" clrRef="none">
+</GuiType>
+</Parameter>
+<Parameter index="250B" name="Lin Stage Calibration" dataType="BYTE" access="service" subIndex="2" type="setValue">
+<GuiType value2send="1" type="actionButton" name="Lin Stage Calibrate">
+</GuiType>
+</Parameter>
+<Parameter index="250B" name="Lin Stage State" dataType="UINT8" access="service" subIndex="3" type="statusValue">
+<GuiType mask="0" ref="Etype_linstage_state" type="enum">
+</GuiType>
+</Parameter>
+<Parameter index="250B" name="Pulse Duration" dataType="UINT16" access="service" subIndex="4" type="setValue">
+<GuiType defaultValue="0" readonly="true" maxValue="60000" step="1" decimalPlaces="2" minValue="0" type="numeric" clrRef="none">
+</GuiType>
+</Parameter>
+<Parameter index="3540" name="STAGE_SP" dataType="ACT_DELTA" access="common" subIndex="none" type="setValue">
+<GuiType type="none">
+</GuiType>
+</Parameter>
+<Parameter index="3540" name="Largest Sub-Index supported1" dataType="UINT8" access="common" subIndex="0" type="setValue">
+<GuiType type="none">
+</GuiType>
+</Parameter>
+<Parameter index="3540" name="Lin Stage Position Sp" dataType="INT32" access="service" subIndex="1" type="setValue">
+<GuiType defaultValue="0" readonly="false" maxValue="60000" step="2" decimalPlaces="0" minValue="-60000" type="numeric" clrRef="none">
+</GuiType>
+</Parameter>
+<Parameter index="3541" name="Lin Stage Pulse Duration Fit W0" dataType="INT32" access="service" subIndex="2" type="setValue">
+<GuiType defaultValue="0" readonly="false" maxValue="60000" step="2" decimalPlaces="6" minValue="-60000" type="numeric" clrRef="none">
+</GuiType>
+</Parameter>
+<Parameter index="3541" name="Lin Stage Pulse Duration Fit W1" dataType="UINT16" access="service" subIndex="3" type="setValue">
+<GuiType defaultValue="0" readonly="false" maxValue="60000" step="2" decimalPlaces="4" minValue="0" type="numeric" clrRef="none">
+</GuiType>
+</Parameter>
+<Parameter index="3541" name="Lin Stage Pulse Duration Fit W3" dataType="UINT32" access="service" subIndex="4" type="setValue">
+<GuiType defaultValue="0" readonly="false" maxValue="1000000" step="2" decimalPlaces="3" minValue="0" type="numeric" clrRef="none">
+</GuiType>
+</Parameter>
+<Parameter index="3530" name="Lin Stage Pulse Duration Fit W2 0" dataType="UINT16" access="service" subIndex="12" type="setValue">
+<GuiType defaultValue="0" readonly="false" maxValue="65535" step="1" decimalPlaces="0" minValue="0" type="numeric" clrRef="none">
+</GuiType>
+</Parameter>
+<Parameter index="3531" name="Lin Stage Pulse Duration Fit W2 1" dataType="UINT16" access="service" subIndex="12" type="setValue">
+<GuiType defaultValue="0" readonly="false" maxValue="65535" step="1" decimalPlaces="0" minValue="0" type="numeric" clrRef="none">
+</GuiType>
+</Parameter>
+<Parameter index="3532" name="Lin Stage Pulse Duration Fit W2 2" dataType="UINT16" access="service" subIndex="12" type="setValue">
+<GuiType defaultValue="0" readonly="false" maxValue="65535" step="1" decimalPlaces="0" minValue="0" type="numeric" clrRef="none">
+</GuiType>
+</Parameter>
+<Parameter index="3533" name="Lin Stage Pulse Duration Fit W2 3" dataType="UINT16" access="service" subIndex="12" type="setValue">
+<GuiType defaultValue="0" readonly="false" maxValue="65535" step="1" decimalPlaces="0" minValue="0" type="numeric" clrRef="none">
+</GuiType>
+</Parameter>
+<Parameter index="3534" name="Lin Stage Pulse Duration Fit W2 4" dataType="UINT16" access="service" subIndex="12" type="setValue">
+<GuiType defaultValue="0" readonly="false" maxValue="65535" step="1" decimalPlaces="0" minValue="0" type="numeric" clrRef="none">
+</GuiType>
+</Parameter>
+</ParameterSet>
+</SubDevice>
+<SubDevice name="Common">
+<ParameterSet>
+<Parameter index="4000" name="Reset Runtime, OnOff Statistic" dataType="BYTE" access="manufacturer" subIndex="none" type="setValue">
+<GuiType value2send="1" type="actionButton" name="Reset">
+</GuiType>
+</Parameter>
+</ParameterSet>
+</SubDevice>
+<SubDevice name="Osc">
+<ParameterSet>
+<Parameter index="4200" name="Osc Diode Cur On" dataType="BYTE" access="manufacturer" subIndex="none" type="setValue">
+<GuiType mask="1.0" type="bit" clrRef="none">
+</GuiType>
+</Parameter>
+<Parameter index="4201" name="Osc Diode Temp On" dataType="BYTE" access="manufacturer" subIndex="none" type="setValue">
+<GuiType mask="1.0" type="bit" clrRef="none">
+</GuiType>
+</Parameter>
+<Parameter index="4202" name="SHG Xtal Temp On" dataType="BYTE" access="manufacturer" subIndex="none" type="setValue">
+<GuiType mask="1.0" type="bit" clrRef="none">
+</GuiType>
+</Parameter>
+</ParameterSet>
+</SubDevice>
+<SubDevice name="Amp">
+<ParameterSet>
+<Parameter index="4203" name="Amp Diode Cur On" dataType="BYTE" access="manufacturer" subIndex="none" type="setValue">
+<GuiType mask="1.0" type="bit" clrRef="none">
+</GuiType>
+</Parameter>
+<Parameter index="4204" name="Amp Diode Temp On" dataType="BYTE" access="manufacturer" subIndex="none" type="setValue">
+<GuiType mask="1.0" type="bit" clrRef="none">
+</GuiType>
+</Parameter>
+<Parameter index="4205" name="Amp Xtal Temp On" dataType="BYTE" access="manufacturer" subIndex="none" type="setValue">
+<GuiType mask="1.0" type="bit" clrRef="none">
+</GuiType>
+</Parameter>
+</ParameterSet>
+</SubDevice>
+<SubDevice name="Switching Unit">
+<ParameterSet>
+<Parameter index="4206" name="SwUnit HV On" dataType="BYTE" access="manufacturer" subIndex="none" type="setValue">
+<GuiType mask="1.0" type="bit" clrRef="none">
+</GuiType>
+</Parameter>
+<Parameter index="4207" name="SwUnit Pdg On" dataType="BYTE" access="manufacturer" subIndex="none" type="setValue">
+<GuiType mask="1.0" type="bit" clrRef="none">
+</GuiType>
+</Parameter>
+</ParameterSet>
+</SubDevice>
+<SubDevice name="PowerCtrl">
+<ParameterSet>
+<Parameter index="4208" name="PowerCtrl Shutter On" dataType="BYTE" access="manufacturer" subIndex="none" type="setValue">
+<GuiType mask="1.0" type="bit" clrRef="none">
+</GuiType>
+</Parameter>
+</ParameterSet>
+</SubDevice>
+<SubDevice name="Osc">
+<ParameterSet>
+<Parameter index="4209" name="Osc ML Detector Update" dataType="BYTE" access="manufacturer" subIndex="none" type="setValue">
+<GuiType value2send="1" type="actionButton" name="Update">
+</GuiType>
+</Parameter>
+</ParameterSet>
+</SubDevice>
+<SubDevice name="Switching Unit">
+<ParameterSet>
+<Parameter index="420A" name="SwUnit Pdg AOM always on" dataType="BYTE" access="manufacturer" subIndex="none" type="setValue">
+<GuiType mask="1.0" type="bit" clrRef="none">
+</GuiType>
+</Parameter>
+</ParameterSet>
+</SubDevice>
+<SubDevice name="System Config">
+<ParameterSet>
+<Parameter index="4400" name="Chiller ActDelta" dataType="ACT_DELTA" access="common" subIndex="none" type="setValue">
+<GuiType type="none">
+</GuiType>
+</Parameter>
+<Parameter index="4400" name="Largest Sub-Index supported" dataType="UINT8" access="common" subIndex="0" type="setValue">
+<GuiType type="none">
+</GuiType>
+</Parameter>
+<Parameter index="4400" name="Chiller ActDelta NegWarn" dataType="INT16" access="manufacturer" subIndex="1" type="setValue">
+<GuiType defaultValue="0" readonly="false" maxValue="1000" step="2" decimalPlaces="1" minValue="0" type="numeric" clrRef="none">
+</GuiType>
+</Parameter>
+<Parameter index="4400" name="Chiller ActDelta PosWarn" dataType="INT16" access="manufacturer" subIndex="2" type="setValue">
+<GuiType defaultValue="0" readonly="false" maxValue="1000" step="2" decimalPlaces="1" minValue="0" type="numeric" clrRef="none">
+</GuiType>
+</Parameter>
+<Parameter index="4400" name="Chiller ActDelta NegError" dataType="INT16" access="manufacturer" subIndex="3" type="setValue">
+<GuiType defaultValue="0" readonly="false" maxValue="1000" step="2" decimalPlaces="1" minValue="0" type="numeric" clrRef="none">
+</GuiType>
+</Parameter>
+<Parameter index="4400" name="Chiller ActDelta PosError" dataType="INT16" access="manufacturer" subIndex="4" type="setValue">
+<GuiType defaultValue="0" readonly="false" maxValue="1000" step="2" decimalPlaces="1" minValue="0" type="numeric" clrRef="none">
+</GuiType>
+</Parameter>
+<Parameter index="4401" name="Osc Diode Cur ActDelta" dataType="ACT_DELTA" access="common" subIndex="none" type="setValue">
+<GuiType type="none">
+</GuiType>
+</Parameter>
+<Parameter index="4401" name="Largest Sub-Index supported" dataType="UINT8" access="common" subIndex="0" type="setValue">
+<GuiType type="none">
+</GuiType>
+</Parameter>
+<Parameter index="4401" name="Osc Diode Cur ActDelta NegWarn" dataType="UINT16" access="manufacturer" subIndex="1" type="setValue">
+<GuiType defaultValue="0" readonly="false" maxValue="10000" step="2" decimalPlaces="3" minValue="0" type="numeric" clrRef="none">
+</GuiType>
+</Parameter>
+<Parameter index="4401" name="Osc Diode Cur ActDelta PosWarn" dataType="UINT16" access="manufacturer" subIndex="2" type="setValue">
+<GuiType defaultValue="0" readonly="false" maxValue="10000" step="2" decimalPlaces="3" minValue="0" type="numeric" clrRef="none">
+</GuiType>
+</Parameter>
+<Parameter index="4401" name="Osc Diode Cur ActDelta NegError" dataType="UINT16" access="manufacturer" subIndex="3" type="setValue">
+<GuiType defaultValue="0" readonly="false" maxValue="10000" step="2" decimalPlaces="3" minValue="0" type="numeric" clrRef="none">
+</GuiType>
+</Parameter>
+<Parameter index="4401" name="Osc Diode Cur ActDelta PosError" dataType="UINT16" access="manufacturer" subIndex="4" type="setValue">
+<GuiType defaultValue="0" readonly="false" maxValue="10000" step="2" decimalPlaces="3" minValue="0" type="numeric" clrRef="none">
+</GuiType>
+</Parameter>
+<Parameter index="4402" name="Osc Diode Cur Volt ActRange" dataType="ACT_DELTA" access="common" subIndex="none" type="setValue">
+<GuiType type="none">
+</GuiType>
+</Parameter>
+<Parameter index="4402" name="Largest Sub-Index supported" dataType="UINT8" access="common" subIndex="0" type="setValue">
+<GuiType type="none">
+</GuiType>
+</Parameter>
+<Parameter index="4402" name="Osc Diode Cur Volt ActRange MinWarn" dataType="INT16" access="manufacturer" subIndex="1" type="setValue">
+<GuiType defaultValue="0" readonly="false" maxValue="600" step="2" decimalPlaces="2" minValue="0" type="numeric" clrRef="none">
+</GuiType>
+</Parameter>
+<Parameter index="4402" name="Osc Diode Cur Volt ActRange MaxWarn" dataType="INT16" access="manufacturer" subIndex="2" type="setValue">
+<GuiType defaultValue="0" readonly="false" maxValue="600" step="2" decimalPlaces="2" minValue="0" type="numeric" clrRef="none">
+</GuiType>
+</Parameter>
+<Parameter index="4402" name="Osc Diode Cur Volt ActRange MinError" dataType="INT16" access="manufacturer" subIndex="3" type="setValue">
+<GuiType defaultValue="0" readonly="false" maxValue="600" step="2" decimalPlaces="2" minValue="0" type="numeric" clrRef="none">
+</GuiType>
+</Parameter>
+<Parameter index="4402" name="Osc Diode Cur Volt ActRange MaxError" dataType="INT16" access="manufacturer" subIndex="4" type="setValue">
+<GuiType defaultValue="0" readonly="false" maxValue="600" step="2" decimalPlaces="2" minValue="0" type="numeric" clrRef="none">
+</GuiType>
+</Parameter>
+<Parameter index="4403" name="Osc Diode Temp ActDelta" dataType="ACT_DELTA" access="common" subIndex="none" type="setValue">
+<GuiType type="none">
+</GuiType>
+</Parameter>
+<Parameter index="4403" name="Largest Sub-Index supported" dataType="UINT8" access="common" subIndex="0" type="setValue">
+<GuiType type="none">
+</GuiType>
+</Parameter>
+<Parameter index="4403" name="Osc Diode Temp ActDelta NegWarn" dataType="INT16" access="manufacturer" subIndex="1" type="setValue">
+<GuiType defaultValue="0" readonly="false" maxValue="10000" step="2" decimalPlaces="2" minValue="0" type="numeric" clrRef="none">
+</GuiType>
+</Parameter>
+<Parameter index="4403" name="Osc Diode Temp ActDelta PosWarn" dataType="INT16" access="manufacturer" subIndex="2" type="setValue">
+<GuiType defaultValue="0" readonly="false" maxValue="10000" step="2" decimalPlaces="2" minValue="0" type="numeric" clrRef="none">
+</GuiType>
+</Parameter>
+<Parameter index="4403" name="Osc Diode Temp ActDelta NegError" dataType="INT16" access="manufacturer" subIndex="3" type="setValue">
+<GuiType defaultValue="0" readonly="false" maxValue="10000" step="2" decimalPlaces="2" minValue="0" type="numeric" clrRef="none">
+</GuiType>
+</Parameter>
+<Parameter index="4403" name="Osc Diode Temp ActDelta PosError" dataType="INT16" access="manufacturer" subIndex="4" type="setValue">
+<GuiType defaultValue="0" readonly="false" maxValue="10000" step="2" decimalPlaces="2" minValue="0" type="numeric" clrRef="none">
+</GuiType>
+</Parameter>
+<Parameter index="4404" name="SHG Xtal Temp ActDelta" dataType="ACT_DELTA" access="common" subIndex="none" type="setValue">
+<GuiType type="none">
+</GuiType>
+</Parameter>
+<Parameter index="4404" name="Largest Sub-Index supported" dataType="UINT8" access="common" subIndex="0" type="setValue">
+<GuiType type="none">
+</GuiType>
+</Parameter>
+<Parameter index="4404" name="SHG Xtal Temp ActDelta NegWarn" dataType="INT16" access="manufacturer" subIndex="1" type="setValue">
+<GuiType defaultValue="0" readonly="false" maxValue="10000" step="2" decimalPlaces="2" minValue="0" type="numeric" clrRef="none">
+</GuiType>
+</Parameter>
+<Parameter index="4404" name="SHG Xtal Temp ActDelta PosWarn" dataType="INT16" access="manufacturer" subIndex="2" type="setValue">
+<GuiType defaultValue="0" readonly="false" maxValue="10000" step="2" decimalPlaces="2" minValue="0" type="numeric" clrRef="none">
+</GuiType>
+</Parameter>
+<Parameter index="4404" name="SHG Xtal Temp ActDelta NegError" dataType="INT16" access="manufacturer" subIndex="3" type="setValue">
+<GuiType defaultValue="0" readonly="false" maxValue="10000" step="2" decimalPlaces="2" minValue="0" type="numeric" clrRef="none">
+</GuiType>
+</Parameter>
+<Parameter index="4404" name="SHG Xtal Temp ActDelta PosError" dataType="INT16" access="manufacturer" subIndex="4" type="setValue">
+<GuiType defaultValue="0" readonly="false" maxValue="10000" step="2" decimalPlaces="2" minValue="0" type="numeric" clrRef="none">
+</GuiType>
+</Parameter>
+<Parameter index="4405" name="Osc ML Detector ActRange" dataType="ACT_DELTA" access="common" subIndex="none" type="setValue">
+<GuiType type="none">
+</GuiType>
+</Parameter>
+<Parameter index="4405" name="Largest Sub-Index supported" dataType="UINT8" access="common" subIndex="0" type="setValue">
+<GuiType type="none">
+</GuiType>
+</Parameter>
+<Parameter index="4405" name="Osc ML Detector ActRange MinWarn" dataType="INT16" access="manufacturer" subIndex="1" type="setValue">
+<GuiType defaultValue="0" readonly="false" maxValue="1000" step="2" decimalPlaces="1" minValue="-1000" type="numeric" clrRef="none">
+</GuiType>
+</Parameter>
+<Parameter index="4405" name="Osc ML Detector ActRange MaxWarn" dataType="INT16" access="manufacturer" subIndex="2" type="setValue">
+<GuiType defaultValue="0" readonly="false" maxValue="1000" step="2" decimalPlaces="1" minValue="-1000" type="numeric" clrRef="none">
+</GuiType>
+</Parameter>
+<Parameter index="4405" name="Osc ML Detector ActRange MinError" dataType="INT16" access="manufacturer" subIndex="3" type="setValue">
+<GuiType defaultValue="0" readonly="false" maxValue="1000" step="2" decimalPlaces="1" minValue="-1000" type="numeric" clrRef="none">
+</GuiType>
+</Parameter>
+<Parameter index="4405" name="Osc ML Detector ActRange MaxError" dataType="INT16" access="manufacturer" subIndex="4" type="setValue">
+<GuiType defaultValue="0" readonly="false" maxValue="1000" step="2" decimalPlaces="1" minValue="-1000" type="numeric" clrRef="none">
+</GuiType>
+</Parameter>
+<Parameter index="4406" name="Amp Diode Cur ActDelta" dataType="ACT_DELTA" access="common" subIndex="none" type="setValue">
+<GuiType type="none">
+</GuiType>
+</Parameter>
+<Parameter index="4406" name="Largest Sub-Index supported" dataType="UINT8" access="common" subIndex="0" type="setValue">
+<GuiType type="none">
+</GuiType>
+</Parameter>
+<Parameter index="4406" name="Amp Diode Cur ActDelta NegWarn" dataType="UINT16" access="manufacturer" subIndex="1" type="setValue">
+<GuiType defaultValue="0" readonly="false" maxValue="10000" step="2" decimalPlaces="3" minValue="0" type="numeric" clrRef="none">
+</GuiType>
+</Parameter>
+<Parameter index="4406" name="Amp Diode Cur ActDelta PosWarn" dataType="UINT16" access="manufacturer" subIndex="2" type="setValue">
+<GuiType defaultValue="0" readonly="false" maxValue="10000" step="2" decimalPlaces="3" minValue="0" type="numeric" clrRef="none">
+</GuiType>
+</Parameter>
+<Parameter index="4406" name="Amp Diode Cur ActDelta NegError" dataType="UINT16" access="manufacturer" subIndex="3" type="setValue">
+<GuiType defaultValue="0" readonly="false" maxValue="10000" step="2" decimalPlaces="3" minValue="0" type="numeric" clrRef="none">
+</GuiType>
+</Parameter>
+<Parameter index="4406" name="Amp Diode Cur ActDelta PosError" dataType="UINT16" access="manufacturer" subIndex="4" type="setValue">
+<GuiType defaultValue="0" readonly="false" maxValue="10000" step="2" decimalPlaces="3" minValue="0" type="numeric" clrRef="none">
+</GuiType>
+</Parameter>
+<Parameter index="4407" name="Amp Diode Cur Volt ActRange" dataType="ACT_DELTA" access="common" subIndex="none" type="setValue">
+<GuiType type="none">
+</GuiType>
+</Parameter>
+<Parameter index="4407" name="Largest Sub-Index supported" dataType="UINT8" access="common" subIndex="0" type="setValue">
+<GuiType type="none">
+</GuiType>
+</Parameter>
+<Parameter index="4407" name="Amp Diode Cur Volt ActRange MinWarn" dataType="INT16" access="manufacturer" subIndex="1" type="setValue">
+<GuiType defaultValue="0" readonly="false" maxValue="400" step="2" decimalPlaces="2" minValue="0" type="numeric" clrRef="none">
+</GuiType>
+</Parameter>
+<Parameter index="4407" name="Amp Diode Cur Volt ActRange MaxWarn" dataType="INT16" access="manufacturer" subIndex="2" type="setValue">
+<GuiType defaultValue="0" readonly="false" maxValue="400" step="2" decimalPlaces="2" minValue="0" type="numeric" clrRef="none">
+</GuiType>
+</Parameter>
+<Parameter index="4407" name="Amp Diode Cur Volt ActRange MinError" dataType="INT16" access="manufacturer" subIndex="3" type="setValue">
+<GuiType defaultValue="0" readonly="false" maxValue="400" step="2" decimalPlaces="2" minValue="0" type="numeric" clrRef="none">
+</GuiType>
+</Parameter>
+<Parameter index="4407" name="Amp Diode Cur Volt ActRange MaxError" dataType="INT16" access="manufacturer" subIndex="4" type="setValue">
+<GuiType defaultValue="0" readonly="false" maxValue="400" step="2" decimalPlaces="2" minValue="0" type="numeric" clrRef="none">
+</GuiType>
+</Parameter>
+<Parameter index="4408" name="Amp Diode Temp ActDelta" dataType="ACT_DELTA" access="common" subIndex="none" type="setValue">
+<GuiType type="none">
+</GuiType>
+</Parameter>
+<Parameter index="4408" name="Largest Sub-Index supported" dataType="UINT8" access="common" subIndex="0" type="setValue">
+<GuiType type="none">
+</GuiType>
+</Parameter>
+<Parameter index="4408" name="Amp Diode Temp ActDelta DeltaNegWarn" dataType="INT16" access="manufacturer" subIndex="1" type="setValue">
+<GuiType defaultValue="0" readonly="false" maxValue="10000" step="2" decimalPlaces="2" minValue="0" type="numeric" clrRef="none">
+</GuiType>
+</Parameter>
+<Parameter index="4408" name="Amp Diode Temp ActDelta DeltaPosWarn" dataType="INT16" access="manufacturer" subIndex="2" type="setValue">
+<GuiType defaultValue="0" readonly="false" maxValue="10000" step="2" decimalPlaces="2" minValue="0" type="numeric" clrRef="none">
+</GuiType>
+</Parameter>
+<Parameter index="4408" name="Amp Diode Temp ActDelta DeltaNegError" dataType="INT16" access="manufacturer" subIndex="3" type="setValue">
+<GuiType defaultValue="0" readonly="false" maxValue="10000" step="2" decimalPlaces="2" minValue="0" type="numeric" clrRef="none">
+</GuiType>
+</Parameter>
+<Parameter index="4408" name="Amp Diode Temp ActDelta DeltaPosError" dataType="INT16" access="manufacturer" subIndex="4" type="setValue">
+<GuiType defaultValue="0" readonly="false" maxValue="10000" step="2" decimalPlaces="2" minValue="0" type="numeric" clrRef="none">
+</GuiType>
+</Parameter>
+<Parameter index="4409" name="Amp Xtal Temp ActDelta" dataType="ACT_DELTA" access="common" subIndex="none" type="setValue">
+<GuiType type="none">
+</GuiType>
+</Parameter>
+<Parameter index="4409" name="Largest Sub-Index supported" dataType="UINT8" access="common" subIndex="0" type="setValue">
+<GuiType type="none">
+</GuiType>
+</Parameter>
+<Parameter index="4409" name="Amp Xtal Temp ActDelta NegWarn" dataType="INT16" access="manufacturer" subIndex="1" type="setValue">
+<GuiType defaultValue="0" readonly="false" maxValue="10000" step="2" decimalPlaces="2" minValue="0" type="numeric" clrRef="none">
+</GuiType>
+</Parameter>
+<Parameter index="4409" name="Amp Xtal Temp ActDelta PosWarn" dataType="INT16" access="manufacturer" subIndex="2" type="setValue">
+<GuiType defaultValue="0" readonly="false" maxValue="10000" step="2" decimalPlaces="2" minValue="0" type="numeric" clrRef="none">
+</GuiType>
+</Parameter>
+<Parameter index="4409" name="Amp Xtal Temp ActDelta NegError" dataType="INT16" access="manufacturer" subIndex="3" type="setValue">
+<GuiType defaultValue="0" readonly="false" maxValue="10000" step="2" decimalPlaces="2" minValue="0" type="numeric" clrRef="none">
+</GuiType>
+</Parameter>
+<Parameter index="4409" name="Amp Xtal Temp ActDelta PosError" dataType="INT16" access="manufacturer" subIndex="4" type="setValue">
+<GuiType defaultValue="0" readonly="false" maxValue="10000" step="2" decimalPlaces="2" minValue="0" type="numeric" clrRef="none">
+</GuiType>
+</Parameter>
+<Parameter index="440A" name="Ctrl Supply ActRange" dataType="ACT_DELTA" access="common" subIndex="none" type="setValue">
+<GuiType type="none">
+</GuiType>
+</Parameter>
+<Parameter index="440A" name="Largest Sub-Index supported" dataType="UINT8" access="common" subIndex="0" type="setValue">
+<GuiType type="none">
+</GuiType>
+</Parameter>
+<Parameter index="440A" name="Ctrl Supply ActRange MinWarn" dataType="INT16" access="manufacturer" subIndex="1" type="setValue">
+<GuiType defaultValue="0" readonly="false" maxValue="10000" step="2" decimalPlaces="2" minValue="0" type="numeric" clrRef="none">
+</GuiType>
+</Parameter>
+<Parameter index="440A" name="Ctrl Supply ActRange MaxWarn" dataType="INT16" access="manufacturer" subIndex="2" type="setValue">
+<GuiType defaultValue="0" readonly="false" maxValue="10000" step="2" decimalPlaces="2" minValue="0" type="numeric" clrRef="none">
+</GuiType>
+</Parameter>
+<Parameter index="440A" name="Ctrl Supply ActRange MinError" dataType="INT16" access="manufacturer" subIndex="3" type="setValue">
+<GuiType defaultValue="0" readonly="false" maxValue="10000" step="2" decimalPlaces="2" minValue="0" type="numeric" clrRef="none">
+</GuiType>
+</Parameter>
+<Parameter index="440A" name="Ctrl Supply ActRange MaxError" dataType="INT16" access="manufacturer" subIndex="4" type="setValue">
+<GuiType defaultValue="0" readonly="false" maxValue="10000" step="2" decimalPlaces="2" minValue="0" type="numeric" clrRef="none">
+</GuiType>
+</Parameter>
+<Parameter index="440B" name="Ctrl Temp ActRange" dataType="ACT_DELTA" access="common" subIndex="none" type="setValue">
+<GuiType type="none">
+</GuiType>
+</Parameter>
+<Parameter index="440B" name="Largest Sub-Index supported" dataType="UINT8" access="common" subIndex="0" type="setValue">
+<GuiType type="none">
+</GuiType>
+</Parameter>
+<Parameter index="440B" name="Ctrl Temp ActRange MinWarn" dataType="INT16" access="manufacturer" subIndex="1" type="setValue">
+<GuiType defaultValue="0" readonly="false" maxValue="10000" step="2" decimalPlaces="2" minValue="0" type="numeric" clrRef="none">
+</GuiType>
+</Parameter>
+<Parameter index="440B" name="Ctrl Temp ActRange MaxWarn" dataType="INT16" access="manufacturer" subIndex="2" type="setValue">
+<GuiType defaultValue="0" readonly="false" maxValue="10000" step="2" decimalPlaces="2" minValue="0" type="numeric" clrRef="none">
+</GuiType>
+</Parameter>
+<Parameter index="440B" name="Ctrl Temp ActRange MinError" dataType="INT16" access="manufacturer" subIndex="3" type="setValue">
+<GuiType defaultValue="0" readonly="false" maxValue="10000" step="2" decimalPlaces="2" minValue="0" type="numeric" clrRef="none">
+</GuiType>
+</Parameter>
+<Parameter index="440B" name="Ctrl Temp ActRange MaxError" dataType="INT16" access="manufacturer" subIndex="4" type="setValue">
+<GuiType defaultValue="0" readonly="false" maxValue="10000" step="2" decimalPlaces="2" minValue="0" type="numeric" clrRef="none">
+</GuiType>
+</Parameter>
+<Parameter index="440C" name="Ctrl DSAMP Temp ActRange" dataType="ACT_DELTA" access="common" subIndex="none" type="setValue">
+<GuiType type="none">
+</GuiType>
+</Parameter>
+<Parameter index="440C" name="Largest Sub-Index supported" dataType="UINT8" access="common" subIndex="0" type="setValue">
+<GuiType type="none">
+</GuiType>
+</Parameter>
+<Parameter index="440C" name="Ctrl DS PS Head Temp ActRange MinWarn" dataType="INT16" access="manufacturer" subIndex="1" type="setValue">
+<GuiType defaultValue="0" readonly="false" maxValue="10000" step="2" decimalPlaces="2" minValue="0" type="numeric" clrRef="none">
+</GuiType>
+</Parameter>
+<Parameter index="440C" name="Ctrl DS PS Head Temp ActRange MaxWarn" dataType="INT16" access="manufacturer" subIndex="2" type="setValue">
+<GuiType defaultValue="0" readonly="false" maxValue="10000" step="2" decimalPlaces="2" minValue="0" type="numeric" clrRef="none">
+</GuiType>
+</Parameter>
+<Parameter index="440C" name="Ctrl DS PS Head Temp ActRange MinError" dataType="INT16" access="manufacturer" subIndex="3" type="setValue">
+<GuiType defaultValue="0" readonly="false" maxValue="10000" step="2" decimalPlaces="2" minValue="0" type="numeric" clrRef="none">
+</GuiType>
+</Parameter>
+<Parameter index="440C" name="Ctrl DS PS Head Temp ActRange MaxError" dataType="INT16" access="manufacturer" subIndex="4" type="setValue">
+<GuiType defaultValue="0" readonly="false" maxValue="10000" step="2" decimalPlaces="2" minValue="0" type="numeric" clrRef="none">
+</GuiType>
+</Parameter>
+<Parameter index="440D" name="Signal LED Volt ActRange" dataType="ACT_DELTA" access="common" subIndex="none" type="setValue">
+<GuiType type="none">
+</GuiType>
+</Parameter>
+<Parameter index="440D" name="Largest Sub-Index supported" dataType="UINT8" access="common" subIndex="0" type="setValue">
+<GuiType type="none">
+</GuiType>
+</Parameter>
+<Parameter index="440D" name="Signal LED Volt ActRange MinWarn" dataType="INT16" access="manufacturer" subIndex="1" type="setValue">
+<GuiType defaultValue="0" readonly="false" maxValue="10000" step="2" decimalPlaces="3" minValue="0" type="numeric" clrRef="none">
+</GuiType>
+</Parameter>
+<Parameter index="440D" name="Signal LED Volt ActRange MaxWarn" dataType="INT16" access="manufacturer" subIndex="2" type="setValue">
+<GuiType defaultValue="0" readonly="false" maxValue="10000" step="2" decimalPlaces="3" minValue="0" type="numeric" clrRef="none">
+</GuiType>
+</Parameter>
+<Parameter index="440D" name="Signal LED Volt ActRange MinError" dataType="INT16" access="manufacturer" subIndex="3" type="setValue">
+<GuiType defaultValue="0" readonly="false" maxValue="10000" step="2" decimalPlaces="3" minValue="0" type="numeric" clrRef="none">
+</GuiType>
+</Parameter>
+<Parameter index="440D" name="Signal LED Volt ActRange MaxError" dataType="INT16" access="manufacturer" subIndex="4" type="setValue">
+<GuiType defaultValue="0" readonly="false" maxValue="10000" step="2" decimalPlaces="3" minValue="0" type="numeric" clrRef="none">
+</GuiType>
+</Parameter>
+</ParameterSet>
+</SubDevice>
+<SubDevice name="Osc">
+<ParameterSet>
+<Parameter index="4500" name="Osc Diode Temp PGain" dataType="INT16" access="manufacturer" subIndex="none" type="setValue">
+<GuiType defaultValue="0" readonly="false" maxValue="1000" step="2" decimalPlaces="2" minValue="0" type="numeric" clrRef="none">
+</GuiType>
+</Parameter>
+<Parameter index="4501" name="Osc Diode Temp Itime" dataType="INT16" access="manufacturer" subIndex="none" type="setValue">
+<GuiType defaultValue="0" readonly="false" maxValue="3000" step="2" decimalPlaces="2" minValue="0" type="numeric" clrRef="none">
+</GuiType>
+</Parameter>
+<Parameter index="4502" name="Osc Diode Temp DTime" dataType="INT16" access="manufacturer" subIndex="none" type="setValue">
+<GuiType defaultValue="0" readonly="false" maxValue="1000" step="2" decimalPlaces="2" minValue="0" type="numeric" clrRef="none">
+</GuiType>
+</Parameter>
+<Parameter index="4503" name="SHG Xtal Temp PGain" dataType="INT16" access="manufacturer" subIndex="none" type="setValue">
+<GuiType defaultValue="0" readonly="false" maxValue="1000" step="2" decimalPlaces="2" minValue="0" type="numeric" clrRef="none">
+</GuiType>
+</Parameter>
+<Parameter index="4504" name="SHG Xtal Temp ITime" dataType="INT16" access="manufacturer" subIndex="none" type="setValue">
+<GuiType defaultValue="0" readonly="false" maxValue="3000" step="2" decimalPlaces="2" minValue="0" type="numeric" clrRef="none">
+</GuiType>
+</Parameter>
+<Parameter index="4505" name="SHG Xtal Temp DTime" dataType="INT16" access="manufacturer" subIndex="none" type="setValue">
+<GuiType defaultValue="0" readonly="false" maxValue="1000" step="2" decimalPlaces="2" minValue="0" type="numeric" clrRef="none">
+</GuiType>
+</Parameter>
+</ParameterSet>
+</SubDevice>
+<SubDevice name="Amp">
+<ParameterSet>
+<Parameter index="4506" name="Amp Diode Temp PGain" dataType="INT16" access="manufacturer" subIndex="none" type="setValue">
+<GuiType defaultValue="0" readonly="false" maxValue="30000" step="2" decimalPlaces="2" minValue="0" type="numeric" clrRef="none">
+</GuiType>
+</Parameter>
+<Parameter index="4507" name="Amp Diode Temp ITime" dataType="INT16" access="manufacturer" subIndex="none" type="setValue">
+<GuiType defaultValue="0" readonly="false" maxValue="3000" step="2" decimalPlaces="2" minValue="0" type="numeric" clrRef="none">
+</GuiType>
+</Parameter>
+<Parameter index="4508" name="Amp Diode  Temp DTime" dataType="INT16" access="manufacturer" subIndex="none" type="setValue">
+<GuiType defaultValue="0" readonly="false" maxValue="1000" step="2" decimalPlaces="2" minValue="0" type="numeric" clrRef="none">
+</GuiType>
+</Parameter>
+<Parameter index="4509" name="Amp Xtal Temp PGain" dataType="INT16" access="manufacturer" subIndex="none" type="setValue">
+<GuiType defaultValue="0" readonly="false" maxValue="1000" step="2" decimalPlaces="2" minValue="0" type="numeric" clrRef="none">
+</GuiType>
+</Parameter>
+<Parameter index="450A" name="Amp Xtal Temp ITime" dataType="INT16" access="manufacturer" subIndex="none" type="setValue">
+<GuiType defaultValue="0" readonly="false" maxValue="3000" step="2" decimalPlaces="2" minValue="0" type="numeric" clrRef="none">
+</GuiType>
+</Parameter>
+<Parameter index="450B" name="Amp Xtal Temp DTime" dataType="INT16" access="manufacturer" subIndex="none" type="setValue">
+<GuiType defaultValue="0" readonly="false" maxValue="1000" step="2" decimalPlaces="2" minValue="0" type="numeric" clrRef="none">
+</GuiType>
+</Parameter>
+</ParameterSet>
+</SubDevice>
+<SubDevice name="System Config">
+<ParameterSet>
+<Parameter index="450C" name="Osc Diode Temp Curlimit" dataType="INT16" access="manufacturer" subIndex="none" type="setValue">
+<GuiType defaultValue="0" readonly="false" maxValue="6000" step="2" decimalPlaces="3" minValue="0" type="numeric" clrRef="none">
+</GuiType>
+</Parameter>
+<Parameter index="450D" name="SHG Xtal Temp Curlimit" dataType="INT16" access="manufacturer" subIndex="none" type="setValue">
+<GuiType defaultValue="0" readonly="false" maxValue="6000" step="2" decimalPlaces="3" minValue="0" type="numeric" clrRef="none">
+</GuiType>
+</Parameter>
+<Parameter index="450E" name="Amp Diode Temp Curlimit" dataType="INT16" access="manufacturer" subIndex="none" type="setValue">
+<GuiType defaultValue="0" readonly="false" maxValue="10000" step="2" decimalPlaces="3" minValue="0" type="numeric" clrRef="none">
+</GuiType>
+</Parameter>
+<Parameter index="450F" name="Amp Xtal Temp Curlimit" dataType="INT16" access="manufacturer" subIndex="none" type="setValue">
+<GuiType defaultValue="0" readonly="false" maxValue="5000" step="2" decimalPlaces="3" minValue="0" type="numeric" clrRef="none">
+</GuiType>
+</Parameter>
+<Parameter index="4510" name="Analog In Voltage Range" dataType="UINT16" access="manufacturer" subIndex="none" type="setValue">
+<GuiType defaultValue="0" readonly="false" maxValue="4095" step="1" decimalPlaces="0" minValue="0" type="numeric" clrRef="none">
+</GuiType>
+</Parameter>
+<Parameter index="4511" name="Chiller ActDelta2" dataType="ACT_DELTA" access="common" subIndex="none" type="setValue">
+<GuiType type="none">
+</GuiType>
+</Parameter>
+<Parameter index="4511" name="Largest Sub-Index supported" dataType="UINT8" access="common" subIndex="0" type="setValue">
+<GuiType type="none">
+</GuiType>
+</Parameter>
+<Parameter index="4511" name="Chiller CurLimit" dataType="UINT16" access="manufacturer" subIndex="1" type="setValue">
+<GuiType defaultValue="0" readonly="false" maxValue="10000" step="2" decimalPlaces="2" minValue="0" type="numeric" clrRef="none">
+</GuiType>
+</Parameter>
+<Parameter index="4511" name="Chiller Temp Pgain" dataType="INT16" access="manufacturer" subIndex="2" type="setValue">
+<GuiType defaultValue="0" readonly="false" maxValue="10000" step="2" decimalPlaces="2" minValue="0" type="numeric" clrRef="none">
+</GuiType>
+</Parameter>
+<Parameter index="4511" name="Chiller Temp Itime" dataType="INT16" access="manufacturer" subIndex="3" type="setValue">
+<GuiType defaultValue="0" readonly="false" maxValue="10000" step="2" decimalPlaces="2" minValue="0" type="numeric" clrRef="none">
+</GuiType>
+</Parameter>
+<Parameter index="4511" name="Chiller Temp Dtime" dataType="INT16" access="manufacturer" subIndex="4" type="setValue">
+<GuiType defaultValue="0" readonly="false" maxValue="10000" step="2" decimalPlaces="2" minValue="0" type="numeric" clrRef="none">
+</GuiType>
+</Parameter>
+<Parameter index="4511" name="Chiller selection" dataType="UINT8" access="manufacturer" subIndex="5" type="setValue">
+<GuiType mask="0" ref="EType_chiller_select" type="enum">
+</GuiType>
+</Parameter>
+</ParameterSet>
+</SubDevice>
+<SubDevice name="Device Info">
+<ParameterSet>
+<Parameter index="4600" name="Debug Reset Reason" dataType="BYTE" access="service" subIndex="none" type="setValue">
+<GuiType value2send="1" type="actionButton" name="Update">
+</GuiType>
+</Parameter>
+<Parameter index="5F00" name="Controller Information" dataType="ACT_DELTA" access="common" subIndex="none" type="none">
+<GuiType type="none">
+</GuiType>
+</Parameter>
+<Parameter index="5F00" name="Largest Sub-Index supported" dataType="UINT8" access="common" subIndex="0" type="none">
+<GuiType type="none">
+</GuiType>
+</Parameter>
+<Parameter index="5F00" name="Controller Article Number" dataType="UINT32" access="manufacturer" subIndex="1" type="setValue">
+<GuiType defaultValue="0" readonly="false" maxValue="99999" step="0" decimalPlaces="0" minValue="0" type="numeric" clrRef="none">
+</GuiType>
+</Parameter>
+<Parameter index="5F00" name="Controller Serial Number" dataType="UINT16" access="manufacturer" subIndex="2" type="setValue">
+<GuiType defaultValue="0" readonly="false" maxValue="9999" step="0" decimalPlaces="0" minValue="0" type="numeric" clrRef="none">
+</GuiType>
+</Parameter>
+</ParameterSet>
+</SubDevice>
+<SubDevice name="None">
+<ParameterSet>
+<Parameter index="5F01" name="LCR1 PCB Information" dataType="ACT_DELTA" access="common" subIndex="none" type="none">
+<GuiType type="none">
+</GuiType>
+</Parameter>
+<Parameter index="5F01" name="Largest Sub-Index supported" dataType="UINT8" access="common" subIndex="0" type="none">
+<GuiType type="none">
+</GuiType>
+</Parameter>
+<Parameter index="5F01" name="LCR1 PCB Art.Nr." dataType="UINT32" access="manufacturer" subIndex="1" type="none">
+<GuiType defaultValue="0" readonly="false" maxValue="65535" step="0" decimalPlaces="0" minValue="0" type="numeric" clrRef="none">
+</GuiType>
+</Parameter>
+<Parameter index="5F01" name="LCR1 PCB Serial Nr." dataType="UINT16" access="manufacturer" subIndex="2" type="none">
+<GuiType defaultValue="0" readonly="false" maxValue="65535" step="0" decimalPlaces="0" minValue="0" type="numeric" clrRef="none">
+</GuiType>
+</Parameter>
+<Parameter index="5F01" name="LCR1 PCB HW Rev" dataType="UINT16" access="manufacturer" subIndex="3" type="none">
+<GuiType defaultValue="0" readonly="false" maxValue="65535" step="0" decimalPlaces="0" minValue="0" type="numeric" clrRef="none">
+</GuiType>
+</Parameter>
+</ParameterSet>
+</SubDevice>
+<SubDevice name="Common">
+<ParameterSet>
+<Parameter index="5F02" name="enter Bootloader Mode" dataType="UINT8" access="common" subIndex="none" type="none">
+<GuiType value2send="1" type="actionButton" name="none">
+</GuiType>
+</Parameter>
+<Parameter index="5FFF" name="Bitmask" dataType="UINT32" access="common" subIndex="none" type="setValue">
+<GuiType type="bitMask">
+</GuiType>
+</Parameter>
+</ParameterSet>
+</SubDevice>
+<SubDevice name="Power Calibration">
+<ParameterSet>
+<Parameter index="2500" name="PowerCtrl Attenuator Sp" dataType="UINT8" access="service" subIndex="none" type="setValue">
+<GuiType defaultValue="0" readonly="true" maxValue="100" step="1" decimalPlaces="0" minValue="0" type="numeric" clrRef="none">
+</GuiType>
+</Parameter>
+<Parameter index="2312" name="PowerCtrl Powermeter Act" dataType="INT16" access="service" subIndex="none" type="statusValue">
+<GuiType defaultValue="0" readonly="false" maxValue="10000" step="2" decimalPlaces="3" minValue="0" type="numeric" clrRef="none">
+</GuiType>
+</Parameter>
+<Parameter index="3530" name="Powermeter Cal Factor 0" dataType="INT16" access="service" subIndex="8" type="actValue">
+<GuiType defaultValue="0" readonly="false" maxValue="20000" step="2" decimalPlaces="3" minValue="0" type="numeric" clrRef="none">
+</GuiType>
+</Parameter>
+<Parameter index="3531" name="Powermeter Cal Factor 1" dataType="INT16" access="service" subIndex="8" type="actValue">
+<GuiType defaultValue="0" readonly="false" maxValue="20000" step="2" decimalPlaces="3" minValue="0" type="numeric" clrRef="none">
+</GuiType>
+</Parameter>
+<Parameter index="3532" name="Powermeter Cal Factor 2" dataType="INT16" access="service" subIndex="8" type="actValue">
+<GuiType defaultValue="0" readonly="false" maxValue="20000" step="2" decimalPlaces="3" minValue="0" type="numeric" clrRef="none">
+</GuiType>
+</Parameter>
+<Parameter index="3533" name="Powermeter Cal Factor 3" dataType="INT16" access="service" subIndex="8" type="actValue">
+<GuiType defaultValue="0" readonly="false" maxValue="20000" step="2" decimalPlaces="3" minValue="0" type="numeric" clrRef="none">
+</GuiType>
+</Parameter>
+<Parameter index="3534" name="Powermeter Cal Factor 4" dataType="INT16" access="service" subIndex="8" type="actValue">
+<GuiType defaultValue="0" readonly="false" maxValue="20000" step="2" decimalPlaces="3" minValue="0" type="numeric" clrRef="none">
+</GuiType>
+</Parameter>
+<Parameter index="3511" name="PowerCtrl Powermeter Cal Offset" dataType="INT16" access="service" subIndex="none" type="setValue">
+<GuiType defaultValue="0" readonly="false" maxValue="10000" step="2" decimalPlaces="3" minValue="0" type="numeric" clrRef="none">
+</GuiType>
+</Parameter>
+<Parameter index="353E" name="PowerCtrl Powermeter Cal Offset 2" dataType="INT16" access="manufacturer" subIndex="none" type="setValue">
+<GuiType defaultValue="0" readonly="false" maxValue="10000" step="2" decimalPlaces="3" minValue="0" type="numeric" clrRef="none">
+</GuiType>
+</Parameter>
+<Parameter index="2502" name="Rep. Rate" dataType="BYTE" access="service" subIndex="none" type="setValue">
+<GuiType mask="0" ref="EType_reprate" type="enum">
+</GuiType>
+</Parameter>
+<Parameter index="2509" name="PowerCtrl Modus Act" dataType="UINT8" access="service" subIndex="3" type="statusValue">
+<GuiType mask="0" ref="Etype_pwrctrl_power_mode" type="enum">
+</GuiType>
+</Parameter>
+<Parameter index="250A" name="Int Reprate act [kHz]" dataType="UINT16" access="service" subIndex="1" type="statusValue">
+<GuiType defaultValue="0" readonly="false" maxValue="10000" step="1" decimalPlaces="1" minValue="0" type="numeric" clrRef="none">
+</GuiType>
+</Parameter>
+<Parameter index="2502" name="Rep. Rate" dataType="BYTE" access="service" subIndex="none" type="statusValue">
+<GuiType mask="0" ref="EType_reprate" type="enum">
+</GuiType>
+</Parameter>
+<Parameter index="353F" name="PowerCtrl Feedback Value [%]" dataType="UINT16" access="service" subIndex="1" type="statusValue">
+<GuiType defaultValue="0" readonly="false" maxValue="60000" step="1" decimalPlaces="2" minValue="0" type="numeric" clrRef="none">
+</GuiType>
+</Parameter>
+<Parameter index="3530" name="Powermeter Cal Factor gr 0" dataType="INT16" access="service" subIndex="9" type="actValue">
+<GuiType defaultValue="0" readonly="false" maxValue="20000" step="2" decimalPlaces="3" minValue="0" type="numeric" clrRef="none">
+</GuiType>
+</Parameter>
+<Parameter index="3531" name="Powermeter Cal Factor gr 1" dataType="INT16" access="service" subIndex="9" type="actValue">
+<GuiType defaultValue="0" readonly="false" maxValue="20000" step="2" decimalPlaces="3" minValue="0" type="numeric" clrRef="none">
+</GuiType>
+</Parameter>
+<Parameter index="3532" name="Powermeter Cal Factor gr 2" dataType="INT16" access="service" subIndex="9" type="actValue">
+<GuiType defaultValue="0" readonly="false" maxValue="20000" step="2" decimalPlaces="3" minValue="0" type="numeric" clrRef="none">
+</GuiType>
+</Parameter>
+<Parameter index="3533" name="Powermeter Cal Factor gr 3" dataType="INT16" access="service" subIndex="9" type="actValue">
+<GuiType defaultValue="0" readonly="false" maxValue="20000" step="2" decimalPlaces="3" minValue="0" type="numeric" clrRef="none">
+</GuiType>
+</Parameter>
+<Parameter index="3534" name="Powermeter Cal Factor gr 4" dataType="INT16" access="service" subIndex="9" type="actValue">
+<GuiType defaultValue="0" readonly="false" maxValue="20000" step="2" decimalPlaces="3" minValue="0" type="numeric" clrRef="none">
+</GuiType>
+</Parameter>
+<Parameter index="3530" name="PowerCtrl Power calibrate IR 0" dataType="UINT16" access="service" subIndex="10" type="setValue">
+<GuiType defaultValue="0" readonly="false" maxValue="100000" step="1" decimalPlaces="2" minValue="0" type="numeric" clrRef="none">
+</GuiType>
+</Parameter>
+<Parameter index="3531" name="PowerCtrl Power calibrate IR 200kHz" dataType="UINT16" access="service" subIndex="10" type="setValue">
+<GuiType defaultValue="0" readonly="false" maxValue="100000" step="1" decimalPlaces="2" minValue="0" type="numeric" clrRef="none">
+</GuiType>
+</Parameter>
+<Parameter index="3532" name="PowerCtrl Power calibrate IR 500kHz" dataType="UINT16" access="service" subIndex="10" type="setValue">
+<GuiType defaultValue="0" readonly="false" maxValue="100000" step="1" decimalPlaces="2" minValue="0" type="numeric" clrRef="none">
+</GuiType>
+</Parameter>
+<Parameter index="3533" name="PowerCtrl Power calibrate IR 750kHz" dataType="UINT16" access="service" subIndex="10" type="setValue">
+<GuiType defaultValue="0" readonly="false" maxValue="100000" step="1" decimalPlaces="2" minValue="0" type="numeric" clrRef="none">
+</GuiType>
+</Parameter>
+<Parameter index="3534" name="PowerCtrl Power calibrate IR 1MHZ" dataType="UINT16" access="service" subIndex="10" type="setValue">
+<GuiType defaultValue="0" readonly="false" maxValue="100000" step="1" decimalPlaces="2" minValue="0" type="numeric" clrRef="none">
+</GuiType>
+</Parameter>
+<Parameter index="2508" name="PowerCtrl Modus User" dataType="BYTE" access="service" subIndex="none" type="setValue">
+<GuiType mask="0" ref="EType_power_mod_user" type="enum">
+</GuiType>
+</Parameter>
+<Parameter index="2504" name="User PowerCtrl Shutter On" dataType="BYTE" access="service" subIndex="none" type="setValue">
+<GuiType mask="1.0" type="bit" clrRef="none">
+</GuiType>
+</Parameter>
+<Parameter index="3530" name="PowerCtrl Power calibrate GREEN 0" dataType="UINT16" access="service" subIndex="11" type="setValue">
+<GuiType defaultValue="0" readonly="false" maxValue="100000" step="1" decimalPlaces="2" minValue="0" type="numeric" clrRef="none">
+</GuiType>
+</Parameter>
+<Parameter index="3531" name="PowerCtrl Power calibrate GREEN 200kHz" dataType="UINT16" access="service" subIndex="11" type="setValue">
+<GuiType defaultValue="0" readonly="false" maxValue="100000" step="1" decimalPlaces="2" minValue="0" type="numeric" clrRef="none">
+</GuiType>
+</Parameter>
+<Parameter index="3532" name="PowerCtrl Power calibrate GREEN 500kHz" dataType="UINT16" access="service" subIndex="11" type="setValue">
+<GuiType defaultValue="0" readonly="false" maxValue="100000" step="1" decimalPlaces="2" minValue="0" type="numeric" clrRef="none">
+</GuiType>
+</Parameter>
+<Parameter index="3533" name="PowerCtrl Power calibrate GREEN 750kHz" dataType="UINT16" access="service" subIndex="11" type="setValue">
+<GuiType defaultValue="0" readonly="false" maxValue="100000" step="1" decimalPlaces="2" minValue="0" type="numeric" clrRef="none">
+</GuiType>
+</Parameter>
+<Parameter index="3534" name="PowerCtrl Power calibrate GREEN 1MHZ" dataType="UINT16" access="service" subIndex="11" type="setValue">
+<GuiType defaultValue="0" readonly="false" maxValue="100000" step="1" decimalPlaces="2" minValue="0" type="numeric" clrRef="none">
+</GuiType>
+</Parameter>
+</ParameterSet>
+</SubDevice>
+</Module>
+<!-- XML file for SPIRIT, $Id: spirit_675_xml.xml 52 2014-01-17 10:59:10Z Hannes.Wachter $ -->

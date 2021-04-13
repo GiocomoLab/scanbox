@@ -1,0 +1,6 @@
+
+function sts = dmd_setexternaltriggerslope(slope)
+
+sts = calllib('PortabilityLayer','DLP_Trigger_SetExternalTriggerEdge',slope);
+
+

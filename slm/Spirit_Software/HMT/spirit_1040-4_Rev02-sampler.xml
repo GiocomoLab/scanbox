@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DataLogger>
+  <GeneralSettings sampler="On" sampleRate="10000" />
+  <!-- 300000 .. 5 min-->
+  <ParameterSet>
+    <!-- **** Common -->
+    <Parameter name="Common Errors" index="2101" subIndex="none" dataType="UINT16" decimalPlaces="0" />
+    <Parameter name="Common Warnings" index="2100" subIndex="none" dataType="UINT16" decimalPlaces="0" />
+    <Parameter name="Common OnOff Statistic" index="2003" subIndex="none" dataType="UINT32" decimalPlaces="0" />
+    <!-- **** Chiller -->
+    <Parameter name="Chiller Warnings" index="2102" subIndex="none" dataType="UINT16" decimalPlaces="0" />
+    <Parameter name="Chiller Act" index="2300" subIndex="none" dataType="INT16" decimalPlaces="1" />
+    <!-- **** Osc -->
+    <Parameter name="Osc Warnings" index="2104" subIndex="none" dataType="UINT16" decimalPlaces="0" />
+    <Parameter name="Osc Errors" index="2105" subIndex="none" dataType="UINT16" decimalPlaces="0" />
+    <!-- Osc.Diode -->
+    <Parameter name="Osc Diode Cur Act" index="2301" subIndex="none" dataType="UINT16" decimalPlaces="3" />
+    <Parameter name="Osc Diode Cur Volt Act" index="2302" subIndex="none" dataType="INT16" decimalPlaces="2" />
+    <Parameter name="Osc Diode Temp Act" index="2303" subIndex="none" dataType="INT16" decimalPlaces="2" />
+    <Parameter name="Osc Diode Temp Cur Act" index="2304" subIndex="none" dataType="INT16" decimalPlaces="3" />
+    <Parameter name="Osc Diode Temp Volt Act" index="2305" subIndex="none" dataType="INT16" decimalPlaces="2" />
+    <!-- Osc.Xtal -->
+    <Parameter name="Osc Xtal Temp Act" index="2306" subIndex="none" dataType="INT16" decimalPlaces="2" />
+    <Parameter name="Osc Xtal Temp Cur Act" index="2307" subIndex="none" dataType="INT16" decimalPlaces="3" />
+    <Parameter name="Osc Xtal Temp Volt Act" index="2308" subIndex="none" dataType="INT16" decimalPlaces="2" />
+    <Parameter name="Osc Seeder Level" index="2311" subIndex="none" dataType="INT16" decimalPlaces="1" />
+    <!-- **** Amp -->
+    <Parameter name="Amp Warnings" index="2106" subIndex="none" dataType="UINT16" decimalPlaces="0" />
+    <Parameter name="Amp Errors" index="2107" subIndex="none" dataType="UINT16" decimalPlaces="0" />
+    <!-- Amp.Diode -->
+    <Parameter name="Amp Diode Cur Act" index="2309" subIndex="none" dataType="UINT16" decimalPlaces="3" />
+    <Parameter name="Amp Diode Cur Volt Act" index="230A" subIndex="none" dataType="INT16" decimalPlaces="2" />
+    <Parameter name="Amp Diode Temp Act" index="230B" subIndex="none" dataType="INT16" decimalPlaces="2" />
+    <Parameter name="Amp Diode Temp Cur Act" index="230C" subIndex="none" dataType="INT16" decimalPlaces="3" />
+    <Parameter name="Amp Diode Temp Volt Act" index="230D" subIndex="none" dataType="INT16" decimalPlaces="2" />
+    <!-- Amp.Xtal -->
+    <Parameter name="Amp Xtal Temp Act" index="230E" subIndex="none" dataType="INT16" decimalPlaces="2" />
+    <Parameter name="Amp Xtal Temp Cur Act" index="230F" subIndex="none" dataType="INT16" decimalPlaces="3" />
+    <Parameter name="Amp Xtal Temp Volt Act" index="2310" subIndex="none" dataType="INT16" decimalPlaces="2" />
+    <!-- **** PowerCtrl -->
+    <Parameter name="PowerCtrl Warnings" index="210A" subIndex="none" dataType="UINT16" decimalPlaces="0" />
+    <Parameter name="PowerCtrl Errors" index="210B" subIndex="none" dataType="UINT16" decimalPlaces="0" />
+    <Parameter name="PowerCtrl Schutter Act" index="2313" subIndex="none" dataType="BYTE" decimalPlaces="0" />
+    <Parameter name="PowerCtrl Output Power" index="2312" subIndex="none" dataType="INT16" decimalPlaces="2" />
+    <!-- **** Ctrl -->
+    <Parameter name="Ctrl Warnings" index="210C" subIndex="none" dataType="UINT16" decimalPlaces="0" />
+    <Parameter name="Ctrl Errors" index="210D" subIndex="none" dataType="UINT16" decimalPlaces="0" />
+    <Parameter name="Ctrl Supply" index="2314" subIndex="none" dataType="INT16" decimalPlaces="2" />
+    <Parameter name="Ctrl Temp" index="2315" subIndex="none" dataType="INT16" decimalPlaces="2" />
+    <Parameter name="Ctrl DSAMP Status" index="2316" subIndex="none" dataType="UINT16" decimalPlaces="0" />
+    <Parameter name="Ctrl DSAMP Head Temp" index="2317" subIndex="none" dataType="INT16" decimalPlaces="2" />
+    <Parameter name="Ctrl DSOSC Status" index="2318" subIndex="none" dataType="UINT16" decimalPlaces="0" />
+    <Parameter name="Ctrl DSOSC Head Temp" index="2319" subIndex="none" dataType="INT16" decimalPlaces="2" />
+    <Parameter name="Ctrl PSXTAL Status" index="231A" subIndex="none" dataType="UINT16" decimalPlaces="0" />
+    <Parameter name="Ctrl PSXTAL HeadTemp" index="231B" subIndex="none" dataType="INT16" decimalPlaces="2" />
+  </ParameterSet>
+</DataLogger>

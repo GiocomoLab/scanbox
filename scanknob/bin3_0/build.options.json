@@ -1,0 +1,10 @@
+{
+  "builtInLibrariesFolders": "C:\\Program Files (x86)\\Arduino\\libraries",
+  "customBuildProperties": "build.warn_data_percentage=75,runtime.tools.arm-none-eabi-gcc.path=C:\\Users\\dario\\AppData\\Local\\Arduino15\\packages\\arduino\\tools\\arm-none-eabi-gcc\\4.8.3-2014q1,runtime.tools.bossac.path=C:\\Users\\dario\\AppData\\Local\\Arduino15\\packages\\arduino\\tools\\bossac\\1.6.1-arduino",
+  "fqbn": "arduino:sam:arduino_due_x_dbg",
+  "hardwareFolders": "C:\\Program Files (x86)\\Arduino\\hardware,C:\\Users\\dario\\AppData\\Local\\Arduino15\\packages",
+  "otherLibrariesFolders": "C:\\Users\\dario\\Documents\\Arduino\\libraries",
+  "runtime.ide.version": "10803",
+  "sketchLocation": "C:\\Users\\dario\\Documents\\MATLAB\\Scanbox5\\scanknob\\knobby3_0\\knobby3_0.ino",
+  "toolsFolders": "C:\\Program Files (x86)\\Arduino\\tools-builder,C:\\Program Files (x86)\\Arduino\\hardware\\tools\\avr,C:\\Users\\dario\\AppData\\Local\\Arduino15\\packages"
+}

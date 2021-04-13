@@ -1,0 +1,63 @@
+// Scanknob firmware v4.0 - by Dario Ringach 
+// 09/07/2018
+
+F0: JA Nop
+F1: JA Valign
+F2: JA Trk
+F3: JA init
+
+init: SGP 0, 2, 0    //set User variable 0 to 0
+      VECT 40, panic
+      SGP 40, 3, 1 				//configure interrupt to trigger on rising edge of input 1 (0=off,1=low-high,2=high-low,3=both)
+      EI 40
+      EI 255
+      JA Nop
+
+Nop:  JA Nop
+
+Valign:
+      GAP 11, 3           // left switch status
+      JC ZE, LOOP2
+      
+LOOP1:MVP REL,3,-100      // objective in negative angle
+      GAP 11, 3
+      JC NZ, LOOP1
+L12:  MVP REL,3,4         
+      GAP 11, 3
+      JC ZE, L12
+L13:  MVP REL,3,-1        
+      GAP 11, 3
+      JC NZ, L13
+L14:  MVP REL,3,1        
+      GAP 11, 3
+      JC ZE, L14
+      JA Nop
+        
+LOOP2:MVP REL,3,100       // objective in postive angle 
+      GAP 11, 3
+      JC ZE, LOOP2
+L21:  MVP REL,3,-4       
+      GAP 11, 3
+      JC NZ, L21
+L22:  MVP REL,3,1        
+      GAP 11, 3
+      JC ZE, L22
+L23:  MVP REL,3,-1        
+      GAP 11, 3
+      JC NZ, L23  
+      JA Nop
+      
+Trk:  GGP 0, 2    //get User variable 0
+      JC NZ, Nop
+      MVP COORD, $8F, 10   // track axes 0,1,2 without interpolation
+      JA Trk
+
+panic: MST 0
+       MST 1
+       MST 2
+       MST 3
+       SGP 0, 2, 1    //set User variable 0 to 1
+       RETI 
+
+
+

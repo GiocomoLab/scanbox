@@ -1,0 +1,55 @@
+// Scanknob firmware v3.0 - by Dario Ringach 
+// 12/13/2017
+
+F0: JA Nop
+F1: JA Valign
+F2: JA Trk
+
+Nop:  STOP
+
+Valign:				   // aligns objective to mechanical vertical
+      GAP 11, 3           // left switch status
+      JC ZE, LOOP2
+      
+LOOP1:MVP REL,3,-100      // objective in negative angle	3-step binary search
+      GAP 11, 3
+      JC NZ, LOOP1
+L12:  MVP REL,3,4         
+      GAP 11, 3
+      JC ZE, L12
+L13:  MVP REL,3,-1        
+      GAP 11, 3
+      JC NZ, L13
+L14:  MVP REL,3,1        
+      GAP 11, 3
+      JC ZE, L14
+      STOP        
+        
+LOOP2:MVP REL,3,100       // objective in postive angle 	3-step binary search
+      GAP 11, 3
+      JC ZE, LOOP2
+L21:  MVP REL,3,-4       
+      GAP 11, 3
+      JC NZ, L21
+L22:  MVP REL,3,1        
+      GAP 11, 3
+      JC ZE, L22
+L23:  MVP REL,3,-1        
+      GAP 11, 3
+      JC NZ, L23  
+      STOP
+      
+Trk:  GCO 10,0		     // get the the coordinate of motor 0 (z)
+      CALCX LOAD			 // load ACC value into X register
+      GAP 1, 0    		     // get the actual position of motor 0 (z)
+      CALCX SUB             // subract X from accumulator. ACC is now (actual position - desired coordinate)
+      COMP 3000             // compare to a threshold
+      JC LT,Trk2            // if the change during tracking is smaller than a threshold then track it...
+      MST 0                 // Emergency stop all motors!
+      MST 1
+      MST 2
+      MST 3                 // need LED indicator...
+      STOP
+
+Trk2: MVP COORD, $8F, 10    // track axes 0,1,2 without interpolation
+      JA Trk
